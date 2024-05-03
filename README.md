@@ -1,36 +1,207 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛠️ Developer Toolkit
 
-## Getting Started
+A comprehensive collection of developer tools built with Next.js 15, featuring crypto utilities, generators, and analyzers. Perfect for developers who need quick access to common development tools.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 🔐 Crypto & Security Tools
+- **Token Generator** - Generate secure tokens for authentication
+- **Hash Text** - Create MD5, SHA-1, SHA-256, and other hash functions
+- **Bcrypt** - Hash and verify passwords with bcrypt
+- **Text Encrypt/Decrypt** - Secure text encryption and decryption
+- **HMAC Generator** - Generate HMAC signatures
+- **RSA Key Pair Generator** - Create RSA public/private key pairs
+- **Password Strength Analyzer** - Analyze and improve password security
+- **PDF Signature Checker** - Verify PDF digital signatures
+
+### 🆔 ID Generators
+- **UUID Generator** - Generate version 4 UUIDs
+- **ULID Generator** - Generate Universally Unique Lexicographically Sortable Identifiers
+
+### 🔑 Blockchain Tools
+- **BIP39 Passphrase Generator** - Generate mnemonic phrases for crypto wallets
+
+## 🌐 Internationalization
+
+The toolkit supports multiple languages:
+- 🇺🇸 **English**
+- 🇨🇳 **中文 (Chinese)**
+
+Switch between languages using the language picker in the top navigation.
+
+## 🎨 Features
+
+- **🌙 Dark/Light Mode** - Toggle between themes
+- **📱 Responsive Design** - Works on all devices
+- **⚡ Fast Performance** - Built with Next.js 15 and React 18
+- **🎯 Type Safe** - Full TypeScript support
+- **♿ Accessible** - Following WCAG guidelines
+- **🌍 International** - Multi-language support with next-intl
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Internationalization**: [next-intl](https://next-intl-docs.vercel.app/)
+- **Theme**: [next-themes](https://github.com/pacocoursey/next-themes)
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/honkinglin/toolkit.git
+   cd toolkit
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🏗️ Project Structure
+
+```
+toolkit/
+├── app/                          # Next.js App Router
+│   ├── [locale]/                # Internationalized routes
+│   │   ├── layout.tsx           # Locale-specific layout
+│   │   ├── page.tsx             # Home page
+│   │   └── [tool-routes]/       # Individual tool pages
+│   ├── layout.tsx               # Root layout
+│   └── globals.css              # Global styles
+├── components/                   # React components
+│   ├── ui/                      # shadcn/ui components
+│   └── layout/                  # Layout components
+├── lib/                         # Utility functions
+│   └── routes.ts               # Route configuration
+├── locales/                     # Internationalization files
+│   ├── en.json                 # English translations
+│   └── zh.json                 # Chinese translations
+├── hooks/                       # Custom React hooks
+├── i18n.ts                     # Internationalization config
+├── middleware.ts               # Next.js middleware
+└── next.config.ts              # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Available Tools
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Crypto Tools
+| Tool | Description | Route |
+|------|-------------|-------|
+| Token Generator | Generate secure random tokens | `/token-generator` |
+| Hash Text | Create various hash functions | `/hash-text` |
+| Bcrypt | Password hashing with bcrypt | `/bcrypt` |
+| Encrypt/Decrypt | Secure text encryption | `/encrypt-decrypt-text` |
+| HMAC Generator | Generate HMAC signatures | `/hmac-generator` |
+| RSA Key Pair | Generate RSA keys | `/rsa-key-pair-generator` |
+| Password Analyzer | Analyze password strength | `/password-strength-analyzer` |
+| PDF Signature | Check PDF signatures | `/pdf-signature-checker` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ID Generators
+| Tool | Description | Route |
+|------|-------------|-------|
+| UUID Generator | Generate UUIDs | `/uuids-generator` |
+| ULID Generator | Generate ULIDs | `/ulid-generator` |
 
-## Learn More
+### Blockchain Tools
+| Tool | Description | Route |
+|------|-------------|-------|
+| BIP39 Generator | Generate mnemonic phrases | `/bip39-passphrase-generator` |
 
-To learn more about Next.js, take a look at the following resources:
+## 🌍 Adding New Languages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Create a new locale file**
+   ```bash
+   touch locales/[locale].json
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Add translations**
+   ```json
+   {
+     "sidebar": {
+       "crypto": "Your translation",
+       // ... other keys
+     }
+   }
+   ```
 
-## Deploy on Vercel
+3. **Update the configuration**
+   ```typescript
+   // lib/routes.ts
+   const locales = ['en', 'zh', 'your-locale'];
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Here's how you can help:
+
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-tool
+   ```
+3. **Commit your changes**
+   ```bash
+   git commit -m 'Add amazing new tool'
+   ```
+4. **Push to the branch**
+   ```bash
+   git push origin feature/amazing-tool
+   ```
+5. **Open a Pull Request**
+
+### Adding New Tools
+
+1. **Create a new route in `lib/routes.ts`**
+2. **Add translations in `locales/*.json`**
+3. **Create the page component in `app/[locale]/your-tool/page.tsx`**
+4. **Add appropriate icons from Lucide React**
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [Lucide](https://lucide.dev/) for the icon set
+- [Next.js](https://nextjs.org/) team for the amazing framework
+- [Vercel](https://vercel.com/) for hosting and deployment
+
+## 📧 Contact
+
+- **GitHub**: [@honkinglin](https://github.com/honkinglin)
+- **Repository**: [https://github.com/honkinglin/toolkit](https://github.com/honkinglin/toolkit)
+
+---
+
+<div align="center">
+  <p>Made with ❤️ for developers</p>
+  <p>
+    <a href="https://github.com/honkinglin/toolkit">⭐ Star this repo</a>
+    •
+    <a href="https://github.com/honkinglin/toolkit/issues">🐛 Report Bug</a>
+    •
+    <a href="https://github.com/honkinglin/toolkit/issues">💡 Request Feature</a>
+  </p>
+</div>

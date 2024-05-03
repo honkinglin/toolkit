@@ -1,0 +1,16 @@
+{
+  "sidebar": {
+    "crypto": "Crypto",
+    "tokenGenerator": "Token generator",
+    "hashText": "Hash text",
+    "bcrypt": "Bcrypt",
+    "uuidsGenerator": "UUIDs generator",
+    "ulidGenerator": "ULID generator",
+    "encryptDecryptText": "Encrypt / decrypt text",
+    "bip39PassphraseGenerator": "BIP39 passphrase generator",
+    "hmacGenerator": "Hmac generator",
+    "rsaKeyPairGenerator": "RSA key pair generator",
+    "passwordStrengthAnalyzer": "Password strength analyzer",
+    "pdfSignatureChecker": "PDF signature checker"
+  }
+}

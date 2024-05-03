@@ -1,0 +1,16 @@
+{
+  "sidebar": {
+    "crypto": "加密",
+    "tokenGenerator": "令牌生成器",
+    "hashText": "哈希文本",
+    "bcrypt": "Bcrypt加密",
+    "uuidsGenerator": "UUID生成器",
+    "ulidGenerator": "ULID生成器",
+    "encryptDecryptText": "文本加密/解密",
+    "bip39PassphraseGenerator": "BIP39助记词生成器",
+    "hmacGenerator": "HMAC生成器",
+    "rsaKeyPairGenerator": "RSA密钥对生成器",
+    "passwordStrengthAnalyzer": "密码强度分析",
+    "pdfSignatureChecker": "PDF签名检查器"
+  }
+}
