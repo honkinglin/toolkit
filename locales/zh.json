@@ -12,5 +12,20 @@
     "rsaKeyPairGenerator": "RSA密钥对生成器",
     "passwordStrengthAnalyzer": "密码强度分析",
     "pdfSignatureChecker": "PDF签名检查器"
+  },
+  "tokenGenerator": {
+    "title": "令牌生成器",
+    "description": "生成具有自定义选项的安全随机令牌",
+    "uppercase": "大写 (ABC...)",
+    "lowercase": "小写 (abc...)",
+    "numbers": "数字 (123...)",
+    "symbols": "符号 (!-...)",
+    "length": "长度",
+    "generatedToken": "生成的令牌",
+    "tokenPlaceholder": "生成的令牌将显示在这里...",
+    "copy": "复制",
+    "refresh": "刷新",
+    "copySuccess": "令牌已复制到剪贴板",
+    "errorMessage": "请至少选择一种字符类型"
   }
 }

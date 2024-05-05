@@ -12,5 +12,20 @@
     "rsaKeyPairGenerator": "RSA key pair generator",
     "passwordStrengthAnalyzer": "Password strength analyzer",
     "pdfSignatureChecker": "PDF signature checker"
+  },
+  "tokenGenerator": {
+    "title": "Token Generator",
+    "description": "Generate secure random tokens with customizable options",
+    "uppercase": "Uppercase (ABC...)",
+    "lowercase": "Lowercase (abc...)",
+    "numbers": "Numbers (123...)",
+    "symbols": "Symbols (!-...)",
+    "length": "Length",
+    "generatedToken": "Generated Token",
+    "tokenPlaceholder": "Generated token will appear here...",
+    "copy": "Copy",
+    "refresh": "Refresh",
+    "copySuccess": "Token copied to clipboard",
+    "errorMessage": "Please select at least one character type"
   }
 }

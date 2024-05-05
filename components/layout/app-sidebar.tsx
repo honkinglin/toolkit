@@ -4,7 +4,7 @@ import * as React from "react"
 import { ChevronRight } from "lucide-react"
 import { useNavigation } from '@/hooks/use-navigation'
 import Link from 'next/link'
-import Image from 'next/image'
+import { Logo } from '@/components/layout/logo'
 
 import {
   Collapsible,
@@ -31,13 +31,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     <Sidebar {...props}>
       <SidebarHeader>
         <Link className="flex items-center gap-2 w-fit m-auto" href={'/'}>
-          <Image
-            src="/logo.svg"
-            alt="Logo"
-            width={32}
-            height={32}
-            priority
-          />
+          <Logo />
           <span className="text-lg font-semibold">Toolkit</span>
         </Link>
       </SidebarHeader>
