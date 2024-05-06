@@ -45,5 +45,19 @@
     "yes": "是",
     "no": "否",
     "hashCopied": "哈希已复制到剪贴板"
+  },
+  "hashText": {
+    "title": "Hash 文本",
+    "description": "使用常见的摘要函数：MD5、SHA1、SHA256、SHA224、SHA512、SHA384、SHA3、RIPEMD160",
+    "yourTextToHash": "要哈希的文本:",
+    "placeholder": "请输入要哈希的字符串...",
+    "digestEncoding": "摘要编码",
+    "encodings": {
+      "binary": "二进制 (base 2)",
+      "hexadecimal": "十六进制 (base 16)",
+      "base64": "Base64 (base 64)",
+      "base64url": "Base64url (base 64 with url safe chars)"
+    },
+    "hashCopied": "哈希已复制到剪贴板"
   }
 }
