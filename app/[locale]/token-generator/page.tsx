@@ -89,11 +89,6 @@ export default function TokenGenerator() {
     successMessage: t('copySuccess')
   });
 
-  // 滑块变化处理（只更新本地状态）
-  const handleLengthChange = useCallback((value: number[]) => {
-    setLength(value[0]);
-  }, []);
-
   return (
     <ToolLayout title={t("title")} description={t("description")}>
       <Card className="w-full">
@@ -151,7 +146,7 @@ export default function TokenGenerator() {
             </div>
             <Slider
               value={[length]}
-              onValueChange={handleLengthChange}
+              onValueChange={(value) => setLength(value[0])}
               max={512}
               min={1}
               step={1}
