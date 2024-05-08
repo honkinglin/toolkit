@@ -59,5 +59,20 @@
       "base64url": "Base64url (base 64 with url safe chars)"
     },
     "hashCopied": "Hash copied to clipboard"
+  },
+  "uuidsGenerator": {
+    "title": "UUIDs Generator",
+    "description": "A universally unique identifier (UUID) is a 128-bit number used to identify information in computer systems. The number of possible UUIDs is 16^32, which is 2^128 or about 3.4x10^38 (which is a very large number!).",
+    "uuidVersion": "UUID version",
+    "quantity": "Quantity",
+    "namespace": "Namespace",
+    "name": "Name",
+    "namespacePlaceholder": "Namespace",
+    "namePlaceholder": "Name",
+    "uuidPlaceholder": "Your UUIDs",
+    "copy": "Copy",
+    "refresh": "Refresh",
+    "uuidsCopied": "UUIDs copied to the clipboard",
+    "invalidUuid": "Invalid UUID"
   }
 }
