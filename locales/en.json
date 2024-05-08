@@ -74,5 +74,14 @@
     "refresh": "Refresh",
     "uuidsCopied": "UUIDs copied to the clipboard",
     "invalidUuid": "Invalid UUID"
+  },
+  "ulidGenerator": {
+    "title": "ULID Generator",
+    "description": "Generate random machine-readable universally unique lexicographically sortable identifiers (ULID).",
+    "quantity": "Quantity:",
+    "format": "Format:",
+    "refresh": "Refresh",
+    "copy": "Copy",
+    "ulidsCopied": "ULIDs copied to the clipboard"
   }
 }
