@@ -83,5 +83,23 @@
     "refresh": "Refresh",
     "copy": "Copy",
     "ulidsCopied": "ULIDs copied to the clipboard"
+  },
+  "encryptDecryptText": {
+    "title": "Encrypt/Decrypt Text",
+    "description": "Encrypt and decrypt text using various algorithms (like AES, TripleDES, Rabbit, RC4).",
+    "encrypt": "Encrypt",
+    "decrypt": "Decrypt",
+    "yourText": "Your text:",
+    "yourSecretKey": "Your secret key:",
+    "encryptionAlgorithm": "Encryption algorithm:",
+    "yourTextEncrypted": "Your text encrypted:",
+    "yourEncryptedText": "Your encrypted text:",
+    "yourDecryptedText": "Your decrypted text:",
+    "textPlaceholder": "The string to encrypt",
+    "encryptedTextPlaceholder": "The encrypted string to decrypt",
+    "secretKeyPlaceholder": "Enter your secret key",
+    "hashPlaceholder": "Your encrypted result",
+    "errorWhileDecrypting": "Error while decrypting",
+    "unableToDecrypt": "Unable to decrypt your text"
   }
 }
