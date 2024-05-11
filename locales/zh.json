@@ -101,5 +101,21 @@
     "hashPlaceholder": "您的加密结果",
     "errorWhileDecrypting": "解密时出错",
     "unableToDecrypt": "无法解密您的文本"
+  },
+  "bip39Generator": {
+    "title": "BIP39密码生成器",
+    "description": "从现有或随机助记符生成BIP39密码短语，或从密码短语获取熵数据帮助记忆。",
+    "language": "语言:",
+    "entropy": "熵值 (种子):",
+    "passphrase": "密码短语 (助记词):",
+    "refresh": "刷新",
+    "copy": "复制",
+    "generateNew": "生成新的",
+    "entropyPlaceholder": "输入十六进制格式的熵值",
+    "passphrasePlaceholder": "输入BIP39助记词",
+    "invalidEntropy": "无效的熵值格式",
+    "invalidMnemonic": "无效的助记词",
+    "entropyCopied": "熵值已复制到剪贴板",
+    "passphraseCopied": "助记词已复制到剪贴板"
   }
 }
