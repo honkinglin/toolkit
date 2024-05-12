@@ -117,5 +117,19 @@
     "invalidMnemonic": "无效的助记词",
     "entropyCopied": "熵值已复制到剪贴板",
     "passphraseCopied": "助记词已复制到剪贴板"
+  },
+  "hmacGenerator": {
+    "title": "HMAC生成器",
+    "description": "使用密钥和您喜欢的哈希算法计算基于哈希的消息身份验证代码（HMAC）。",
+    "plainText": "要计算哈希的纯文本",
+    "secretKey": "密钥",
+    "hashingFunction": "哈希函数",
+    "outputEncoding": "输出编码",
+    "hmacResult": "您文本的HMAC",
+    "plainTextPlaceholder": "要计算哈希的纯文本...",
+    "secretKeyPlaceholder": "输入密钥...",
+    "resultPlaceholder": "HMAC的结果...",
+    "copyHMAC": "复制HMAC",
+    "hmacCopied": "HMAC已复制到剪贴板"
   }
 }

@@ -117,5 +117,19 @@
     "invalidMnemonic": "Invalid mnemonic passphrase",
     "entropyCopied": "Entropy copied to clipboard",
     "passphraseCopied": "Passphrase copied to clipboard"
+  },
+  "hmacGenerator": {
+    "title": "HMAC Generator",
+    "description": "Generate Hash-based Message Authentication Code (HMAC) using your preferred hashing algorithm.",
+    "plainText": "Plain text to compute the hash",
+    "secretKey": "Secret key",
+    "hashingFunction": "Hashing function",
+    "outputEncoding": "Output encoding",
+    "hmacResult": "HMAC of your text",
+    "plainTextPlaceholder": "Plain text to compute the hash...",
+    "secretKeyPlaceholder": "Enter the secret key...",
+    "resultPlaceholder": "The result of the HMAC...",
+    "copyHMAC": "Copy HMAC",
+    "hmacCopied": "HMAC copied to clipboard"
   }
 }
