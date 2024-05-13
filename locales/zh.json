@@ -131,5 +131,18 @@
     "resultPlaceholder": "HMAC的结果...",
     "copyHMAC": "复制HMAC",
     "hmacCopied": "HMAC已复制到剪贴板"
+  },
+  "rsaKeyPairGenerator": {
+    "title": "RSA密钥对生成器",
+    "description": "生成新的和加密的RSA密钥对到Pem过程。",
+    "bits": "位数:",
+    "refreshKeyPair": "刷新密钥对",
+    "publicKey": "公钥",
+    "privateKey": "私钥",
+    "generating": "生成中...",
+    "bitsValidation": "位数应该在256到16384之间，且必须是8的倍数",
+    "generationError": "生成密钥对失败",
+    "publicKeyCopied": "公钥已复制到剪贴板",
+    "privateKeyCopied": "私钥已复制到剪贴板"
   }
 }

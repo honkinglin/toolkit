@@ -1,75 +1,77 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Minus, Plus } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { cn } from "@/lib/utils"
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Minus, Plus } from "lucide-react";
 
-interface NumberInputProps {
-  value: number
-  onChange: (value: number) => void
-  min?: number
-  max?: number
-  step?: number
-  className?: string
-  placeholder?: string
+interface NumberInputControlledProps {
+  value: number;
+  onChange: (value: number) => void;
+  min?: number;
+  max?: number;
+  step?: number;
+  className?: string;
+  disabled?: boolean;
 }
 
 export function NumberInput({
   value,
   onChange,
   min = 0,
-  max = 100,
+  max = Number.MAX_SAFE_INTEGER,
   step = 1,
   className,
-  placeholder
-}: NumberInputProps) {
-  const handleIncrement = () => {
-    const newValue = Math.min(value + step, max)
-    onChange(newValue)
-  }
-
-  const handleDecrement = () => {
-    const newValue = Math.max(value - step, min)
-    onChange(newValue)
-  }
-
+  disabled = false
+}: NumberInputControlledProps) {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = parseInt(e.target.value) || min
-    const clampedValue = Math.min(Math.max(newValue, min), max)
-    onChange(clampedValue)
-  }
+    const newValue = parseInt(e.target.value, 10);
+    if (!isNaN(newValue)) {
+      onChange(Math.max(min, Math.min(max, newValue)));
+    }
+  };
+
+  const increment = () => {
+    const newValue = Math.min(max, value + step);
+    onChange(newValue);
+  };
+
+  const decrement = () => {
+    const newValue = Math.max(min, value - step);
+    onChange(newValue);
+  };
 
   return (
-    <div className={cn("flex items-center", className)}>
+    <div className={`flex items-center ${className || ''}`}>
       <Button
         variant="outline"
-        size="icon"
-        className="h-10 w-10 shrink-0 rounded-r-none"
-        onClick={handleDecrement}
-        disabled={value <= min}
+        size="sm"
+        onClick={decrement}
+        disabled={disabled || value <= min}
+        className="rounded-r-none px-3"
       >
-        <Minus className="h-4 w-4" />
+        <Minus className="w-4 h-4" />
       </Button>
+      
       <Input
         type="number"
         value={value}
         onChange={handleInputChange}
-        className="h-10 rounded-none border-l-0 border-r-0 text-center"
         min={min}
         max={max}
-        placeholder={placeholder}
+        step={step}
+        disabled={disabled}
+        className="text-center rounded-none border-x-0 focus-visible:ring-0 focus-visible:border-x-0"
       />
+      
       <Button
         variant="outline"
-        size="icon"
-        className="h-10 w-10 shrink-0 rounded-l-none"
-        onClick={handleIncrement}
-        disabled={value >= max}
+        size="sm"
+        onClick={increment}
+        disabled={disabled || value >= max}
+        className="rounded-l-none px-3"
       >
-        <Plus className="h-4 w-4" />
+        <Plus className="w-4 h-4" />
       </Button>
     </div>
-  )
+  );
 }
