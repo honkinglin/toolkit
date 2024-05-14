@@ -144,5 +144,17 @@
     "generationError": "生成密钥对失败",
     "publicKeyCopied": "公钥已复制到剪贴板",
     "privateKeyCopied": "私钥已复制到剪贴板"
+  },
+  "passwordStrengthAnalyzer": {
+    "title": "密码强度分析仪",
+    "description": "使用此密码强度分析器和破解时间估计工具来检查密码的强度。",
+    "passwordPlaceholder": "输入密码...",
+    "crackDuration": "使用暴力破解此密码所需的时间",
+    "passwordLength": "密码长度:",
+    "entropy": "熵值:",
+    "characterSetSize": "字符集大小:",
+    "score": "评分:",
+    "note": "注意:",
+    "noteText": "计算出的强度基于使用暴力破解方法破解密码所需的时间，它没有考虑到字典攻击的可能性。"
   }
 }
