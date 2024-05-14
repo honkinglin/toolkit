@@ -5,7 +5,9 @@ import { ChevronRight } from "lucide-react"
 import { useNavigation } from '@/hooks/use-navigation'
 import Link from 'next/link'
 import { Logo } from '@/components/layout/logo'
+import { FavoritesList } from '@/components/layout/favorites-list'
 
+import { Separator } from "@/components/ui/separator";
 import {
   Collapsible,
   CollapsibleContent,
@@ -35,7 +37,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <span className="text-lg font-semibold">Toolkit</span>
         </Link>
       </SidebarHeader>
+      <Separator className="my-2" />
       <SidebarContent className="gap-0">
+        <FavoritesList />
         {navigationData.map((group) => (
           <Collapsible
             key={group.titleKey}

@@ -9,7 +9,6 @@ import {
   GitBranch,
   KeyRound,
   ShieldCheck,
-  FileText,
   LucideIcon
 } from 'lucide-react';
 
@@ -101,11 +100,6 @@ export const navigationConfig: NavGroup[] = [
         titleKey: 'passwordStrengthAnalyzer',
         url: ROUTES.CRYPTO.PASSWORD_STRENGTH_ANALYZER,
         icon: ShieldCheck,
-      },
-      {
-        titleKey: 'pdfSignatureChecker',
-        url: ROUTES.CRYPTO.PDF_SIGNATURE_CHECKER,
-        icon: FileText,
       },
     ],
   },
