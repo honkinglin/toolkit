@@ -12,7 +12,7 @@ export function encryptText(text: string, secret: string, algorithm: AlgorithmTy
   try {
     return algorithms[algorithm].encrypt(text, secret).toString();
   } catch (error) {
-    throw new Error('Failed to encrypt text');
+    throw new Error(`Failed to encrypt text: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
 
@@ -25,6 +25,6 @@ export function decryptText(encryptedText: string, secret: string, algorithm: Al
     }
     return result;
   } catch (error) {
-    throw new Error('Unable to decrypt your text');
+    throw new Error(`Unable to decrypt your text: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }

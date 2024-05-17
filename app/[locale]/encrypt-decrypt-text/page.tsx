@@ -49,7 +49,7 @@ export default function EncryptDecryptText() {
     try {
       if (!encryptInput || !encryptSecret) return "";
       return encryptText(encryptInput, encryptSecret, encryptAlgorithm);
-    } catch (error) {
+    } catch {
       return "";
     }
   }, [encryptInput, encryptSecret, encryptAlgorithm]);

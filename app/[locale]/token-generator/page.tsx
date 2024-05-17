@@ -40,7 +40,7 @@ export default function TokenGenerator() {
         withNumbers,
         withSymbols,
       });
-    } catch (error) {
+    } catch {
       return t('errorMessage');
     }
   }, [length, withUppercase, withLowercase, withNumbers, withSymbols, t]);

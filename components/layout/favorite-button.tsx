@@ -4,7 +4,6 @@ import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useFavorites } from "@/contexts/favorites-context";
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
 
 interface FavoriteButtonProps {
   toolId: string;
@@ -23,7 +22,6 @@ export function FavoriteButton({
   variant = "ghost",
   size = "icon",
 }: FavoriteButtonProps) {
-  const t = useTranslations();
   const { toggleFavorite, isFavorited } = useFavorites();
   const favorited = isFavorited(toolId);
 
