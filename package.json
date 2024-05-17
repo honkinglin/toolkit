@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://github.com/honkinglin/toolkit",
   "scripts": {
+    "generate-tools": "node scripts/generate-tools.js",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",

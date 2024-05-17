@@ -1,4 +1,69 @@
 {
+  "home": {
+    "title": "开发者工具集合",
+    "subtitle": "为开发者和技术人员提供的实用工具集合",
+    "description": "包含加密解密、数据转换、代码生成等多种实用工具",
+    "featuredTools": "特色工具",
+    "stats": {
+      "totalTools": "总工具数",
+      "categories": "工具分类",
+      "freeToUse": "免费使用",
+      "available": "随时可用"
+    },
+    "badges": {
+      "recommended": "推荐",
+      "addToFavorites": "添加收藏",
+      "removeFromFavorites": "取消收藏"
+    },
+    "categories": {
+      "crypto": "加密",
+      "generator": "生成器",
+      "security": "安全",
+      "converter": "转换器"
+    },
+    "tools": {
+      "token-generator": {
+        "title": "Token 生成器",
+        "description": "使用您想要的字符，大写或小写字母，数字和/或符号生成随机字符串。"
+      },
+      "hash-text": {
+        "title": "Hash 文本",
+        "description": "使用所需的函数哈希文本字符串：MD5、SHA1、SHA256、SHA224、SHA512..."
+      },
+      "bcrypt": {
+        "title": "Bcrypt",
+        "description": "使用bcrypt对文本字符串进行哈希和比较。Bcrypt是一个基于Blowfish密码的密码哈希函数..."
+      },
+      "uuids-generator": {
+        "title": "UUIDs 生成器",
+        "description": "通用唯一标识符（UUID）是一个128位数字，用于标识计算机系统中的信息。"
+      },
+      "ulid-generator": {
+        "title": "ULID 生成器",
+        "description": "生成随机的通用唯一一词典可排序标识符（ULID）"
+      },
+      "encrypt-decrypt-text": {
+        "title": "加密/解密文本",
+        "description": "使用加密算法（如AES、TripleDES、Rabbit或RC4）加密和解密文本明文。"
+      },
+      "bip39-generator": {
+        "title": "BIP39密码生成器",
+        "description": "从现有或随机助记词生成BIP39密码短语，或从密码短语获取助记词。"
+      },
+      "hmac-generator": {
+        "title": "HMAC 生成器",
+        "description": "使用密钥和基于哈希的希希算法计算基于哈希的消息身份验证代码（HMAC）。"
+      },
+      "rsa-key-pair-generator": {
+        "title": "RSA密钥对生成器",
+        "description": "生成新的随机RSA私钥和公钥pem证书。"
+      },
+      "password-strength-analyzer": {
+        "title": "密码强度分析仪",
+        "description": "使用此密码强度分析器和破解时间估算工具来发现密码的强度。"
+      }
+    }
+  },
   "sidebar": {
     "crypto": "加密",
     "tokenGenerator": "令牌生成器",
