@@ -75,7 +75,28 @@
     "bip39PassphraseGenerator": "BIP39 passphrase generator",
     "hmacGenerator": "Hmac generator",
     "rsaKeyPairGenerator": "RSA key pair generator",
-    "passwordStrengthAnalyzer": "Password strength analyzer"
+    "passwordStrengthAnalyzer": "Password strength analyzer",
+    "converter": "Converter",
+    "dateTimeConverter": "Date Time Converter",
+    "integerBaseConverter": "Integer Base Converter",
+    "romanNumeralConverter": "Roman Numeral Converter",
+    "base64StringEncodeDecode": "Base64 String Encode/Decode",
+    "base64FileConverter": "Base64 File Converter",
+    "colorPicker": "Color Picker",
+    "caseConverter": "Case Converter",
+    "textToNatoAlphabet": "Text to NATO Alphabet",
+    "textToAsciiBinary": "Text to ASCII Binary",
+    "textToUnicode": "Text to Unicode",
+    "yamlToJson": "YAML to JSON",
+    "yamlToToml": "YAML to TOML",
+    "jsonToYaml": "JSON to YAML",
+    "jsonToToml": "JSON to TOML",
+    "listConverter": "List Converter",
+    "tomlToJson": "TOML to JSON",
+    "tomlToYaml": "TOML to YAML",
+    "xmlToJson": "XML to JSON",
+    "jsonToXml": "JSON to XML",
+    "markdownToHtml": "Markdown to HTML"
   },
   "tokenGenerator": {
     "title": "Token Generator",
@@ -220,5 +241,10 @@
     "score": "Score:",
     "note": "Note:",
     "noteText": "The computed strength is based on the time it would take to crack the password using a brute force approach, it does not take into account the possibility of a dictionary attack."
+  },
+  "dateTimeConverter": {
+    "inputPlaceholder": "Put your date string here...",
+    "invalidDateError": "This date is invalid for this format",
+    "invalidDatePlaceholder": "Invalid date..."
   }
 }

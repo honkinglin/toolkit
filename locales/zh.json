@@ -75,7 +75,28 @@
     "bip39PassphraseGenerator": "BIP39助记词生成器",
     "hmacGenerator": "HMAC生成器",
     "rsaKeyPairGenerator": "RSA密钥对生成器",
-    "passwordStrengthAnalyzer": "密码强度分析"
+    "passwordStrengthAnalyzer": "密码强度分析",
+    "converter": "转换器",
+    "dateTimeConverter": "日期时间转换器",
+    "integerBaseConverter": "整数基础转换器",
+    "romanNumeralConverter": "罗马数字转换器",
+    "base64StringEncodeDecode": "Base64字符串编码/解码",
+    "base64FileConverter": "Base64文件转换器",
+    "colorPicker": "颜色选择器",
+    "caseConverter": "大小写转换",
+    "textToNatoAlphabet": "文本转北约字母表",
+    "textToAsciiBinary": "文本到ASCII二进制",
+    "textToUnicode": "文本转Unicode",
+    "yamlToJson": "YAML到JSON转换器",
+    "yamlToToml": "YAML到TOML",
+    "jsonToYaml": "JSON到YAML转换器",
+    "jsonToToml": "JSON转TOML",
+    "listConverter": "列表转换器",
+    "tomlToJson": "TOML到JSON",
+    "tomlToYaml": "TOML到YAML",
+    "xmlToJson": "XML到JSON",
+    "jsonToXml": "JSON到XML",
+    "markdownToHtml": "Markdown到HTML"
   },
   "tokenGenerator": {
     "title": "令牌生成器",
@@ -220,5 +241,10 @@
     "score": "评分:",
     "note": "注意:",
     "noteText": "计算出的强度基于使用暴力破解方法破解密码所需的时间，它没有考虑到字典攻击的可能性。"
+  },
+  "dateTimeConverter": {
+    "inputPlaceholder": "请在此输入您的日期字符串...",
+    "invalidDateError": "此日期格式无效",
+    "invalidDatePlaceholder": "无效日期..."
   }
 }
