@@ -257,5 +257,10 @@
     "hexadecimal": "Hexadecimal (16)",
     "base64": "Base64 (64)",
     "custom": "Custom:"
+  },
+  "romanNumeralConverter": {
+    "arabicToRoman": "Arabic to roman",
+    "romanToArabic": "Roman to arabic",
+    "copy": "Copy"
   }
 }

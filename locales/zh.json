@@ -257,5 +257,10 @@
     "hexadecimal": "十六进制 (16)",
     "base64": "Base64 (64)",
     "custom": "自定义:"
+  },
+  "romanNumeralConverter": {
+    "arabicToRoman": "阿拉伯数字转罗马数字",
+    "romanToArabic": "罗马数字转阿拉伯数字",
+    "copy": "复制"
   }
 }
