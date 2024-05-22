@@ -262,5 +262,21 @@
     "arabicToRoman": "Arabic to roman",
     "romanToArabic": "Roman to arabic",
     "copy": "Copy"
+  },
+  "base64StringConverter": {
+    "stringToBase64": "String to base64",
+    "base64ToString": "Base64 to string",
+    "encodeUrlSafe": "Encode URL safe",
+    "decodeUrlSafe": "Decode URL safe",
+    "stringToEncode": "String to encode",
+    "stringPlaceholder": "Put your string here...",
+    "base64OfString": "Base64 of string",
+    "base64OutputPlaceholder": "The base64 encoding of your string will be here",
+    "copyBase64": "Copy base64",
+    "base64StringToDecode": "Base64 string to decode",
+    "base64Placeholder": "Your base64 string...",
+    "decodedString": "Decoded string",
+    "decodedPlaceholder": "The decoded string will be here",
+    "copyDecodedString": "Copy decoded string"
   }
 }
