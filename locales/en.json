@@ -278,5 +278,26 @@
     "decodedString": "Decoded string",
     "decodedPlaceholder": "The decoded string will be here",
     "copyDecodedString": "Copy decoded string"
+  },
+  "base64FileConverter": {
+    "base64ToFile": "Base64 to file",
+    "fileToBase64": "File to base64",
+    "fileName": "File Name",
+    "fileNamePlaceholder": "Download filename",
+    "extension": "Extension",
+    "extensionPlaceholder": "Extension",
+    "base64Input": "Base64 string",
+    "base64InputPlaceholder": "Put your base64 file string here...",
+    "previewImage": "Preview image",
+    "downloadFile": "Download file",
+    "fileUploadTitle": "Drag and drop a file here, or click to select a file",
+    "fileUploadDescription": "Upload any file to convert to base64",
+    "fileInBase64": "File in base64 will be here",
+    "copy": "Copy",
+    "browse": "Browse files",
+    "or": "or",
+    "clear": "Clear",
+    "invalidBase64": "Invalid Base64 string",
+    "maxFileSize": "Max file size: 10MB"
   }
 }

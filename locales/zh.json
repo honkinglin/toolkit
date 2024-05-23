@@ -278,5 +278,26 @@
     "decodedString": "解码后的字符串",
     "decodedPlaceholder": "解码后的字符串将显示在这里",
     "copyDecodedString": "复制解码字符串"
+  },
+  "base64FileConverter": {
+    "base64ToFile": "Base64转文件",
+    "fileToBase64": "文件转Base64",
+    "fileName": "文件名",
+    "fileNamePlaceholder": "下载文件名",
+    "extension": "扩展名",
+    "extensionPlaceholder": "扩展名",
+    "base64Input": "Base64字符串",
+    "base64InputPlaceholder": "请在此输入您的base64文件字符串...",
+    "previewImage": "预览图片",
+    "downloadFile": "下载文件",
+    "fileUploadTitle": "拖拽文件到这里，或点击选择文件",
+    "fileUploadDescription": "上传任何文件转换为base64",
+    "fileInBase64": "文件的base64编码将显示在这里",
+    "copy": "复制",
+    "browse": "浏览文件",
+    "or": "或",
+    "clear": "清除",
+    "invalidBase64": "无效的Base64字符串",
+    "maxFileSize": "最大文件大小：10MB"
   }
 }
