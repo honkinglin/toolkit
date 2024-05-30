@@ -373,5 +373,14 @@
     "textOutputPlaceholder": "The text representation of your unicode will be here",
     "copyUnicodeButton": "Copy unicode to clipboard",
     "copyTextButton": "Copy text to clipboard"
+  },
+  "yamlToJson": {
+    "title": "YAML to JSON",
+    "description": "Use this online converter to convert your YAML to JSON",
+    "inputLabel": "Your YAML",
+    "inputPlaceholder": "Paste your yaml here...",
+    "outputLabel": "JSON from your YAML",
+    "outputPlaceholder": "The JSON representation of your YAML will appear here",
+    "copyButton": "Copy JSON"
   }
 }
