@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@iarna/toml": "^2.2.5",
     "@radix-ui/react-collapsible": "^1.1.11",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-dropdown-menu": "^2.1.15",

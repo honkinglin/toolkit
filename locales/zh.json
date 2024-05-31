@@ -382,5 +382,14 @@
     "outputLabel": "来自您YAML的JSON",
     "outputPlaceholder": "您的YAML的JSON表示将显示在这里",
     "copyButton": "复制JSON"
+  },
+  "yamlToToml": {
+    "title": "YAML到TOML",
+    "description": "解析YAML并将其转换为TOML",
+    "inputLabel": "您的YAML",
+    "inputPlaceholder": "请在此粘贴您的YAML...",
+    "outputLabel": "来自您YAML的TOML",
+    "outputPlaceholder": "您的YAML的TOML表示将显示在这里",
+    "copyButton": "复制TOML"
   }
 }
