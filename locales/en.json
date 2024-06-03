@@ -432,5 +432,14 @@
     "wrapList": "Wrap list",
     "listPrefix": "List prefix",
     "listSuffix": "List suffix"
+  },
+  "tomlToJson": {
+    "title": "TOML to JSON",
+    "description": "Parse TOML and convert it to JSON",
+    "inputLabel": "Your TOML",
+    "inputPlaceholder": "Paste your TOML here...",
+    "outputLabel": "JSON from your TOML",
+    "outputPlaceholder": "The JSON representation of your TOML will appear here",
+    "copyButton": "Copy JSON"
   }
 }
