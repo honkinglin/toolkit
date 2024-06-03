@@ -409,5 +409,28 @@
     "outputLabel": "来自您JSON的TOML",
     "outputPlaceholder": "您的JSON的TOML表示将显示在这里",
     "copyButton": "复制TOML"
+  },
+  "listConverter": {
+    "title": "List转换器",
+    "description": "该工具可以处理不同的数据，并将其转换为（特定、添加前缀或后缀、反向列表、排序列表、小写等）应用于每一行。",
+    "inputLabel": "您的输入数据",
+    "inputPlaceholder": "请在此粘贴您的输入数据...",
+    "outputLabel": "您的转换数据",
+    "outputPlaceholder": "您的转换数据将显示在这里",
+    "copyButton": "复制结果",
+    "trimItems": "修剪列表项目",
+    "removeDuplicates": "移除重复项",
+    "convertToLowercase": "转换为小写",
+    "keepLineBreaks": "保持换行符",
+    "sortList": "排序列表",
+    "sortPlaceholder": "按字母顺序排序",
+    "noSort": "不排序",
+    "separator": "分隔符",
+    "wrapItem": "包装项目",
+    "itemPrefix": "项目前缀",
+    "itemSuffix": "项目后缀",
+    "wrapList": "包装列表",
+    "listPrefix": "列表前缀",
+    "listSuffix": "列表后缀"
   }
 }
