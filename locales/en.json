@@ -450,5 +450,14 @@
     "outputLabel": "YAML from your TOML",
     "outputPlaceholder": "The YAML representation of your TOML will appear here",
     "copyButton": "Copy YAML"
+  },
+  "xmlToJson": {
+    "title": "XML to JSON",
+    "description": "Convert XML to JSON",
+    "inputLabel": "Your XML content",
+    "inputPlaceholder": "Paste your XML content here...",
+    "outputLabel": "Converted JSON",
+    "outputPlaceholder": "The JSON representation of your XML will appear here",
+    "copyButton": "Copy JSON"
   }
 }
