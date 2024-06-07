@@ -459,5 +459,14 @@
     "outputLabel": "Converted JSON",
     "outputPlaceholder": "The JSON representation of your XML will appear here",
     "copyButton": "Copy JSON"
+  },
+  "jsonToXml": {
+    "title": "JSON to XML",
+    "description": "Convert JSON to XML",
+    "inputLabel": "Your JSON content",
+    "inputPlaceholder": "Paste your JSON content here...",
+    "outputLabel": "Converted XML",
+    "outputPlaceholder": "The XML representation of your JSON will appear here",
+    "copyButton": "Copy XML"
   }
 }
