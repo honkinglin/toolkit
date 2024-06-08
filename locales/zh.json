@@ -468,5 +468,15 @@
     "outputLabel": "转换后的XML",
     "outputPlaceholder": "您的JSON的XML表示将显示在这里",
     "copyButton": "复制XML"
+  },
+  "markdownToHtml": {
+    "title": "Markdown到HTML",
+    "description": "将Markdown转换为HTML并允许打印（为PDF）",
+    "inputLabel": "您要转换的Markdown：",
+    "inputPlaceholder": "您的Markdown内容...",
+    "outputLabel": "输出HTML：",
+    "outputPlaceholder": "您的Markdown的HTML表示将显示在这里",
+    "copyButton": "复制HTML",
+    "printButton": "打印为PDF"
   }
 }
