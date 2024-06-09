@@ -10,14 +10,16 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { Copy } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { convertTomlToYaml, isValidToml, withDefaultOnError } from '@/lib/toml-to-yaml';
+import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 export default function TomlToYamlPage() {
   const t = useTranslations('sidebar');
   const ty = useTranslations('tomlToYaml');
 
   const [inputToml, setInputToml] = useState('');
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
+
+  // Use the custom copy hook
+  const { copied, tooltipOpen, handleCopy, handleTooltipOpenChange } = useCopyWithTooltip();
 
   // Convert TOML to YAML with error handling
   const yamlFromToml = useMemo(() => {
@@ -37,35 +39,8 @@ export default function TomlToYamlPage() {
     };
   }, [inputToml]);
 
-  const handleCopy = async () => {
-    if (!yamlFromToml) return;
-
-    try {
-      await navigator.clipboard.writeText(yamlFromToml);
-
-      // Set copied state
-      setCopied(true);
-      setTooltipOpen(true);
-
-      // Reset after 2 seconds
-      setTimeout(() => {
-        setCopied(false);
-        setTooltipOpen(false);
-      }, 2000);
-
-      console.log('YAML copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
-
-  const handleTooltipOpenChange = (open: boolean) => {
-    setTooltipOpen(open);
-
-    // If tooltip is being closed, also reset copied state
-    if (!open) {
-      setCopied(false);
-    }
+  const handleCopyYaml = () => {
+    handleCopy(yamlFromToml);
   };
 
   return (
@@ -105,7 +80,7 @@ export default function TomlToYamlPage() {
           <div className="flex justify-center">
             <Tooltip open={tooltipOpen} onOpenChange={handleTooltipOpenChange}>
               <TooltipTrigger asChild>
-                <Button onClick={handleCopy} disabled={!yamlFromToml} className="px-6">
+                <Button onClick={handleCopyYaml} disabled={!yamlFromToml} className="px-6">
                   <Copy className="h-4 w-4 mr-2" />
                   {ty('copyButton')}
                 </Button>

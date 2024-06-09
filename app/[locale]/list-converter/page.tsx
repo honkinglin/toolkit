@@ -20,6 +20,7 @@ import { Copy } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { convert } from '@/lib/list-converter';
 import type { ConvertOptions, SortOrder, SortOption } from '@/lib/list-converter.types';
+import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 const sortOrderOptions: SortOption[] = [
   {
@@ -54,8 +55,9 @@ export default function ListConverterPage() {
 
   const [inputData, setInputData] = useState('');
   const [config, setConfig] = useState<ConvertOptions>(defaultConfig);
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
+
+  // Use the custom copy hook
+  const { copied, tooltipOpen, handleCopy, handleTooltipOpenChange } = useCopyWithTooltip();
 
   // Load config from localStorage on mount
   useEffect(() => {
@@ -83,31 +85,8 @@ export default function ListConverterPage() {
     setConfig((prev) => ({ ...prev, ...updates }));
   };
 
-  const handleCopy = async () => {
-    if (!transformedData) return;
-
-    try {
-      await navigator.clipboard.writeText(transformedData);
-
-      setCopied(true);
-      setTooltipOpen(true);
-
-      setTimeout(() => {
-        setCopied(false);
-        setTooltipOpen(false);
-      }, 2000);
-
-      console.log('Transformed data copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
-
-  const handleTooltipOpenChange = (open: boolean) => {
-    setTooltipOpen(open);
-    if (!open) {
-      setCopied(false);
-    }
+  const handleCopyTransformed = () => {
+    handleCopy(transformedData);
   };
 
   return (
@@ -255,7 +234,11 @@ export default function ListConverterPage() {
           <div className="flex justify-center">
             <Tooltip open={tooltipOpen} onOpenChange={handleTooltipOpenChange}>
               <TooltipTrigger asChild>
-                <Button onClick={handleCopy} disabled={!transformedData} className="px-6">
+                <Button
+                  onClick={handleCopyTransformed}
+                  disabled={!transformedData}
+                  className="px-6"
+                >
                   <Copy className="h-4 w-4 mr-2" />
                   {lc('copyButton')}
                 </Button>

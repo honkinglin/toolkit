@@ -10,6 +10,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { Copy } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { convertJsonToXml, isValidJsonForXml, withDefaultOnError } from '@/lib/json-to-xml';
+import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 const defaultValue = '{"a":{"_attributes":{"x":"1.234","y":"It\'s"}}}';
 
@@ -18,9 +19,10 @@ export default function JsonToXmlPage() {
   const jx = useTranslations('jsonToXml');
 
   const [inputJson, setInputJson] = useState(defaultValue);
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
+
+  // Use the custom copy hook
+  const { copied, tooltipOpen, handleCopy, handleTooltipOpenChange } = useCopyWithTooltip();
 
   // Ensure we're on the client side
   useEffect(() => {
@@ -45,35 +47,8 @@ export default function JsonToXmlPage() {
     };
   }, [inputJson, isClient]);
 
-  const handleCopy = async () => {
-    if (!xmlFromJson) return;
-
-    try {
-      await navigator.clipboard.writeText(xmlFromJson);
-
-      // Set copied state
-      setCopied(true);
-      setTooltipOpen(true);
-
-      // Reset after 2 seconds
-      setTimeout(() => {
-        setCopied(false);
-        setTooltipOpen(false);
-      }, 2000);
-
-      console.log('XML copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
-
-  const handleTooltipOpenChange = (open: boolean) => {
-    setTooltipOpen(open);
-
-    // If tooltip is being closed, also reset copied state
-    if (!open) {
-      setCopied(false);
-    }
+  const handleCopyXml = () => {
+    handleCopy(xmlFromJson);
   };
 
   return (
@@ -115,7 +90,7 @@ export default function JsonToXmlPage() {
           <div className="flex justify-center">
             <Tooltip open={tooltipOpen} onOpenChange={handleTooltipOpenChange}>
               <TooltipTrigger asChild>
-                <Button onClick={handleCopy} disabled={!xmlFromJson} className="px-6">
+                <Button onClick={handleCopyXml} disabled={!xmlFromJson} className="px-6">
                   <Copy className="h-4 w-4 mr-2" />
                   {jx('copyButton')}
                 </Button>

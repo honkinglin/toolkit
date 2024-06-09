@@ -10,14 +10,16 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { Copy } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { convertYamlToJson, isValidYaml, withDefaultOnError } from '@/lib/yaml-to-json';
+import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 export default function YamlToJsonPage() {
   const t = useTranslations('sidebar');
   const yj = useTranslations('yamlToJson');
 
   const [inputYaml, setInputYaml] = useState('');
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
+
+  // Use the custom copy hook
+  const { copied, tooltipOpen, handleCopy, handleTooltipOpenChange } = useCopyWithTooltip();
 
   // Convert YAML to JSON with error handling
   const jsonFromYaml = useMemo(() => {
@@ -37,35 +39,8 @@ export default function YamlToJsonPage() {
     };
   }, [inputYaml]);
 
-  const handleCopy = async () => {
-    if (!jsonFromYaml) return;
-
-    try {
-      await navigator.clipboard.writeText(jsonFromYaml);
-
-      // Set copied state
-      setCopied(true);
-      setTooltipOpen(true);
-
-      // Reset after 2 seconds
-      setTimeout(() => {
-        setCopied(false);
-        setTooltipOpen(false);
-      }, 2000);
-
-      console.log('JSON copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
-
-  const handleTooltipOpenChange = (open: boolean) => {
-    setTooltipOpen(open);
-
-    // If tooltip is being closed, also reset copied state
-    if (!open) {
-      setCopied(false);
-    }
+  const handleCopyJson = () => {
+    handleCopy(jsonFromYaml);
   };
 
   return (
@@ -105,7 +80,7 @@ export default function YamlToJsonPage() {
           <div className="flex justify-center">
             <Tooltip open={tooltipOpen} onOpenChange={handleTooltipOpenChange}>
               <TooltipTrigger asChild>
-                <Button onClick={handleCopy} disabled={!jsonFromYaml} className="px-6">
+                <Button onClick={handleCopyJson} disabled={!jsonFromYaml} className="px-6">
                   <Copy className="h-4 w-4 mr-2" />
                   {yj('copyButton')}
                 </Button>
