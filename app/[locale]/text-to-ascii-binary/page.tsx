@@ -63,12 +63,6 @@ export default function TextToAsciiBinaryPage() {
       // Keep tooltip open and show "Copied!" message
       setTooltipOpen((prev) => ({ ...prev, [key]: true }));
 
-      // Reset after 2 seconds
-      setTimeout(() => {
-        setCopiedStates((prev) => ({ ...prev, [key]: false }));
-        setTooltipOpen((prev) => ({ ...prev, [key]: false }));
-      }, 2000);
-
       console.log('Copied to clipboard:', value);
     } catch (err) {
       console.error('Failed to copy:', err);
