@@ -498,6 +498,21 @@
   },
   "urlEncoderDecoder": {
     "title": "URL编码/解码器",
-    "description": "对URL字符串进行编码和解码，正确处理特殊字符和空格"
+    "description": "对URL字符串进行编码和解码，正确处理特殊字符和空格",
+    "encodeTitle": "编码",
+    "decodeTitle": "解码",
+    "inputStringLabel": "您的字符串：",
+    "encodedStringLabel": "编码后的字符串：",
+    "encodedInputLabel": "您的编码字符串：",
+    "decodedStringLabel": "解码后的字符串：",
+    "encodeInputPlaceholder": "要编码的字符串",
+    "encodedOutputPlaceholder": "您编码后的字符串",
+    "decodeInputPlaceholder": "要解码的字符串",
+    "decodedOutputPlaceholder": "您解码后的字符串",
+    "copyButton": "复制",
+    "copyEncodedTooltip": "复制编码字符串到剪贴板",
+    "copyDecodedTooltip": "复制解码字符串到剪贴板",
+    "copySuccessTooltip": "已复制！",
+    "parseError": "无法解析此字符串"
   }
 }

@@ -34,8 +34,7 @@ function isNotThrowing(fn: () => unknown): boolean {
 }
 
 export default function UrlEncoderDecoderPage() {
-  const t = useTranslations('sidebar');
-  const ued = useTranslations('urlEncoderDecoder');
+  const t = useTranslations('urlEncoderDecoder');
 
   // Encode section state
   const [encodeInput, setEncodeInput] = useState(defaultEncodeInput);
@@ -75,9 +74,9 @@ export default function UrlEncoderDecoderPage() {
     const isValid = isNotThrowing(() => encodeURIComponent(encodeInput));
     return {
       isValid,
-      error: isValid ? '' : 'Impossible to parse this string',
+      error: isValid ? '' : t('parseError'),
     };
-  }, [encodeInput]);
+  }, [encodeInput, t]);
 
   // Validation for decode input
   const decodeValidation = useMemo(() => {
@@ -88,9 +87,9 @@ export default function UrlEncoderDecoderPage() {
     const isValid = isNotThrowing(() => decodeURIComponent(decodeInput));
     return {
       isValid,
-      error: isValid ? '' : 'Impossible to parse this string',
+      error: isValid ? '' : t('parseError'),
     };
-  }, [decodeInput]);
+  }, [decodeInput, t]);
 
   const handleCopyEncoded = () => {
     handleEncodeCodeCopy(encodeOutput);
@@ -101,20 +100,20 @@ export default function UrlEncoderDecoderPage() {
   };
 
   return (
-    <ToolLayout title={t('urlEncoderDecoder')} description={ued('description')}>
+    <ToolLayout title={t('title')} description={t('description')}>
       {/* Encode Section */}
       <Card className="w-full">
         <CardHeader>
-          <Label className="text-lg font-semibold">Encode</Label>
+          <Label className="text-lg font-semibold">{t('encodeTitle')}</Label>
         </CardHeader>
         <CardContent className="space-y-4">
           {/* Input String */}
           <div className="space-y-2">
-            <Label className="text-sm font-medium">Your string :</Label>
+            <Label className="text-sm font-medium">{t('inputStringLabel')}</Label>
             <Textarea
               value={encodeInput}
               onChange={(e) => setEncodeInput(e.target.value)}
-              placeholder="The string to encode"
+              placeholder={t('encodeInputPlaceholder')}
               className={`font-mono min-h-[80px] resize-y ${
                 encodeValidation.error ? 'border-red-500' : ''
               }`}
@@ -127,12 +126,12 @@ export default function UrlEncoderDecoderPage() {
 
           {/* Encoded Output */}
           <div className="space-y-2">
-            <Label className="text-sm font-medium">Your string encoded :</Label>
+            <Label className="text-sm font-medium">{t('encodedStringLabel')}</Label>
             <Textarea
               value={encodeOutput}
               readOnly
               className="font-mono min-h-[80px] resize-y bg-muted"
-              placeholder="Your string encoded"
+              placeholder={t('encodedOutputPlaceholder')}
               rows={2}
             />
           </div>
@@ -142,11 +141,11 @@ export default function UrlEncoderDecoderPage() {
               <TooltipTrigger asChild>
                 <Button onClick={handleCopyEncoded} disabled={!encodeOutput} className="px-6">
                   <Copy className="h-4 w-4 mr-2" />
-                  Copy
+                  {t('copyButton')}
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                <p>{encodeCopied ? 'Copied!' : 'Copy encoded string to clipboard'}</p>
+                <p>{encodeCopied ? t('copySuccessTooltip') : t('copyEncodedTooltip')}</p>
               </TooltipContent>
             </Tooltip>
           </div>
@@ -156,16 +155,16 @@ export default function UrlEncoderDecoderPage() {
       {/* Decode Section */}
       <Card className="w-full">
         <CardHeader>
-          <Label className="text-lg font-semibold">Decode</Label>
+          <Label className="text-lg font-semibold">{t('decodeTitle')}</Label>
         </CardHeader>
         <CardContent className="space-y-4">
           {/* Input Encoded String */}
           <div className="space-y-2">
-            <Label className="text-sm font-medium">Your encoded string :</Label>
+            <Label className="text-sm font-medium">{t('encodedInputLabel')}</Label>
             <Textarea
               value={decodeInput}
               onChange={(e) => setDecodeInput(e.target.value)}
-              placeholder="The string to decode"
+              placeholder={t('decodeInputPlaceholder')}
               className={`font-mono min-h-[80px] resize-y ${
                 decodeValidation.error ? 'border-red-500' : ''
               }`}
@@ -178,12 +177,12 @@ export default function UrlEncoderDecoderPage() {
 
           {/* Decoded Output */}
           <div className="space-y-2">
-            <Label className="text-sm font-medium">Your string decoded :</Label>
+            <Label className="text-sm font-medium">{t('decodedStringLabel')}</Label>
             <Textarea
               value={decodeOutput}
               readOnly
               className="font-mono min-h-[80px] resize-y bg-muted"
-              placeholder="Your string decoded"
+              placeholder={t('decodedOutputPlaceholder')}
               rows={2}
             />
           </div>
@@ -193,11 +192,11 @@ export default function UrlEncoderDecoderPage() {
               <TooltipTrigger asChild>
                 <Button onClick={handleCopyDecoded} disabled={!decodeOutput} className="px-6">
                   <Copy className="h-4 w-4 mr-2" />
-                  Copy
+                  {t('copyButton')}
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                <p>{decodeCopied ? 'Copied!' : 'Copy decoded string to clipboard'}</p>
+                <p>{decodeCopied ? t('copySuccessTooltip') : t('copyDecodedTooltip')}</p>
               </TooltipContent>
             </Tooltip>
           </div>
