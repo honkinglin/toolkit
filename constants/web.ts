@@ -19,7 +19,7 @@ import {
 export const WEB_ROUTES = {
   URL_ENCODER_DECODER: '/url-encoder-decoder',
   HTML_ENTITIES: '/html-entities',
-  URI_PARSER: '/uri-parser',
+  URL_PARSER: '/url-parser',
   DEVICE_INFO: '/device-info',
   BASIC_AUTH_GENERATOR: '/basic-auth-generator',
   OPEN_GRAPH_GENERATOR: '/open-graph-generator',
@@ -51,8 +51,8 @@ export const webNavigationConfig = {
       icon: Code,
     },
     {
-      titleKey: 'uriParser',
-      url: WEB_ROUTES.URI_PARSER,
+      titleKey: 'urlParser',
+      url: WEB_ROUTES.URL_PARSER,
       icon: Search,
     },
     {

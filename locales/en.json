@@ -100,7 +100,7 @@
     "web": "Web",
     "urlEncoderDecoder": "URL Encoder/Decoder",
     "htmlEntities": "HTML Entities",
-    "uriParser": "URI Parser",
+    "urlParser": "URL Parser",
     "deviceInfo": "Device Info",
     "basicAuthGenerator": "Basic Auth Generator",
     "openGraphGenerator": "Open Graph Generator",
@@ -535,5 +535,22 @@
     "copyButton": "Copy",
     "copyTooltip": "Copy to clipboard",
     "copySuccessTooltip": "Copied!"
+  },
+  "urlParser": {
+    "title": "URL Parser",
+    "description": "Parse URL strings to extract different components like protocol, host, path, parameters...",
+    "cardTitle": "URL Parser",
+    "inputLabel": "Your url to parse:",
+    "inputPlaceholder": "Your url to parse...",
+    "invalidUrl": "Invalid URL",
+    "properties": {
+      "protocol": "Protocol",
+      "username": "Username",
+      "password": "Password",
+      "hostname": "Hostname",
+      "port": "Port",
+      "pathname": "Path",
+      "search": "Params"
+    }
   }
 }
