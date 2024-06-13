@@ -514,5 +514,26 @@
     "copyDecodedTooltip": "Copy decoded string to clipboard",
     "copySuccessTooltip": "Copied!",
     "parseError": "Impossible to parse this string"
+  },
+  "htmlEntities": {
+    "title": "HTML Entities Encoder/Decoder",
+    "description": "Escape and unescape HTML entities to handle special characters in HTML",
+    "escape": {
+      "title": "Escape HTML Entities",
+      "inputLabel": "Your string :",
+      "outputLabel": "Your string escaped :",
+      "inputPlaceholder": "The string to escape",
+      "outputPlaceholder": "Your string escaped"
+    },
+    "unescape": {
+      "title": "Unescape HTML Entities",
+      "inputLabel": "Your escaped string :",
+      "outputLabel": "Your string unescaped :",
+      "inputPlaceholder": "The string to unescape",
+      "outputPlaceholder": "Your string unescaped"
+    },
+    "copyButton": "Copy",
+    "copyTooltip": "Copy to clipboard",
+    "copySuccessTooltip": "Copied!"
   }
 }
