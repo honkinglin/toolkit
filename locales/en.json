@@ -552,5 +552,27 @@
       "pathname": "Path",
       "search": "Params"
     }
+  },
+  "deviceInfo": {
+    "title": "Device Information",
+    "description": "Get information about your current device (screen size, browser, user agent...)",
+    "sections": {
+      "screen": "Screen",
+      "device": "Device"
+    },
+    "screen": {
+      "screenSize": "Screen size",
+      "orientation": "Orientation",
+      "orientationAngle": "Orientation angle",
+      "colorDepth": "Color depth",
+      "pixelRatio": "Pixel ratio",
+      "windowSize": "Window size"
+    },
+    "device": {
+      "browserVendor": "Browser vendor",
+      "languages": "Languages",
+      "platform": "Platform",
+      "userAgent": "User agent"
+    }
   }
 }

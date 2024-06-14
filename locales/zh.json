@@ -552,5 +552,27 @@
       "pathname": "路径",
       "search": "参数"
     }
+  },
+  "deviceInfo": {
+    "title": "设备信息",
+    "description": "获取关于当前设备的信息（屏幕大小、像素比率、用户代理...）",
+    "sections": {
+      "screen": "屏幕",
+      "device": "设备"
+    },
+    "screen": {
+      "screenSize": "屏幕尺寸",
+      "orientation": "方向",
+      "orientationAngle": "方向角度",
+      "colorDepth": "颜色深度",
+      "pixelRatio": "像素比率",
+      "windowSize": "窗口大小"
+    },
+    "device": {
+      "browserVendor": "浏览器厂商",
+      "languages": "语言",
+      "platform": "平台",
+      "userAgent": "用户代理"
+    }
   }
 }
