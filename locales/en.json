@@ -574,5 +574,19 @@
       "platform": "Platform",
       "userAgent": "User agent"
     }
+  },
+  "basicAuthGenerator": {
+    "title": "Basic Auth Generator",
+    "description": "Generate basic authentication header from username and password with base64 encoding",
+    "cardTitle": "Basic Auth Generator",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "usernamePlaceholder": "Your username...",
+    "passwordPlaceholder": "Your password...",
+    "authorizationHeader": "Authorization header:",
+    "headerPlaceholder": "Enter username and password to generate authorization header",
+    "copyButton": "Copy header",
+    "copyTooltip": "Copy authorization header to clipboard",
+    "copySuccessTooltip": "Header copied to clipboard!"
   }
 }
