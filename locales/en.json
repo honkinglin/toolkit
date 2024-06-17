@@ -588,5 +588,49 @@
     "copyButton": "Copy header",
     "copyTooltip": "Copy authorization header to clipboard",
     "copySuccessTooltip": "Header copied to clipboard!"
+  },
+  "openGraphGenerator": {
+    "title": "Open Graph Generator",
+    "description": "Generate Open Graph meta tags for your website's social media sharing",
+    "sections": {
+      "general": "General information",
+      "image": "Image",
+      "twitter": "Twitter"
+    },
+    "general": {
+      "pageType": "Page type",
+      "pageTypePlaceholder": "Select the type of your website...",
+      "title": "Title",
+      "titlePlaceholder": "Enter the title of your website...",
+      "description": "Description",
+      "descriptionPlaceholder": "Enter the description of your website...",
+      "pageUrl": "Page URL",
+      "pageUrlPlaceholder": "Enter the url of your website..."
+    },
+    "image": {
+      "imageUrl": "Image url",
+      "imageUrlPlaceholder": "The url of your website social image...",
+      "imageAlt": "Image alt",
+      "imageAltPlaceholder": "The alternative text of your website social image...",
+      "width": "Width",
+      "widthPlaceholder": "Width in px of your website social image...",
+      "height": "Height",
+      "heightPlaceholder": "Height in px of your website social image..."
+    },
+    "twitter": {
+      "cardType": "Card type",
+      "cardTypePlaceholder": "The Twitter card type...",
+      "siteAccount": "Site account",
+      "siteAccountPlaceholder": "The name of the Twitter account of the site (ex: @ittoolsdottech)...",
+      "creatorAccount": "Creator acc.",
+      "creatorAccountPlaceholder": "The name of the Twitter account of the creator (ex: @cthmsst)..."
+    },
+    "output": {
+      "title": "Your meta tags",
+      "placeholder": "Generated meta tags will appear here...",
+      "copyButton": "Copy meta tags",
+      "copyTooltip": "Copy meta tags to clipboard",
+      "copySuccessTooltip": "Meta tags copied to clipboard!"
+    }
   }
 }

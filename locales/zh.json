@@ -588,5 +588,49 @@
     "copyButton": "复制标头",
     "copyTooltip": "复制授权标头到剪贴板",
     "copySuccessTooltip": "标头已复制到剪贴板！"
+  },
+  "openGraphGenerator": {
+    "title": "开放式图形元生成器",
+    "description": "为您的网站生成开放式图形元社交标签",
+    "sections": {
+      "general": "一般信息",
+      "image": "图片",
+      "twitter": "Twitter"
+    },
+    "general": {
+      "pageType": "页面类型",
+      "pageTypePlaceholder": "选择您网站的类型...",
+      "title": "标题",
+      "titlePlaceholder": "输入您网站的标题...",
+      "description": "描述",
+      "descriptionPlaceholder": "输入您网站的描述...",
+      "pageUrl": "页面URL",
+      "pageUrlPlaceholder": "输入您网站的url..."
+    },
+    "image": {
+      "imageUrl": "图片url",
+      "imageUrlPlaceholder": "您网站社交图片的url...",
+      "imageAlt": "图片alt",
+      "imageAltPlaceholder": "您网站社交图片的替代文本...",
+      "width": "宽度",
+      "widthPlaceholder": "您网站社交图片的像素宽度...",
+      "height": "高度",
+      "heightPlaceholder": "您网站社交图片的像素高度..."
+    },
+    "twitter": {
+      "cardType": "卡片类型",
+      "cardTypePlaceholder": "Twitter卡片类型...",
+      "siteAccount": "网站账号",
+      "siteAccountPlaceholder": "网站的Twitter账号名称 (例如: @ittoolsdottech)...",
+      "creatorAccount": "创建者账号",
+      "creatorAccountPlaceholder": "创建者的Twitter账号名称 (例如: @cthmsst)..."
+    },
+    "output": {
+      "title": "您的meta标签",
+      "placeholder": "生成的meta标签将在这里显示...",
+      "copyButton": "复制meta标签",
+      "copyTooltip": "复制meta标签到剪贴板",
+      "copySuccessTooltip": "Meta标签已复制到剪贴板！"
+    }
   }
 }
