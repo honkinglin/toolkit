@@ -632,5 +632,29 @@
       "copyTooltip": "复制meta标签到剪贴板",
       "copySuccessTooltip": "Meta标签已复制到剪贴板！"
     }
+  },
+  "otpCodeGenerator": {
+    "title": "OTP代码生成器",
+    "description": "为多因素身份验证生成基于时间的一次性密码（一次性密码）",
+    "secret": "密钥",
+    "secretPlaceholder": "粘贴您的TOTP密钥...",
+    "secretValidation": "密钥应为base32字符串",
+    "generateSecret": "生成新的随机密钥",
+    "previous": "上一个",
+    "currentOtp": "当前OTP",
+    "next": "下一个",
+    "nextIn": "下一个在",
+    "copied": "已复制！",
+    "copyPrevious": "复制上一个OTP",
+    "copyCurrent": "复制当前OTP",
+    "copyNext": "复制下一个OTP",
+    "openKeyUri": "在新标签页中打开密钥URI",
+    "generatingQR": "正在生成二维码...",
+    "technicalDetails": "技术细节",
+    "secretInHex": "十六进制密钥",
+    "epoch": "时间戳",
+    "iteration": "迭代",
+    "count": "计数",
+    "paddedHex": "填充十六进制"
   }
 }
