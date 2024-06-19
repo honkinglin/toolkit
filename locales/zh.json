@@ -656,5 +656,31 @@
     "iteration": "迭代",
     "count": "计数",
     "paddedHex": "填充十六进制"
+  },
+  "mimeTypes": {
+    "title": "MIME类型",
+    "description": "将MIME类型转换为文件扩展名，反之亦然",
+    "mimeToExtension": {
+      "title": "MIME类型转扩展名",
+      "description": "了解哪些文件扩展名与MIME类型相关联",
+      "selectLabel": "选择MIME类型",
+      "placeholder": "在此选择您的MIME类型... (例如: application/pdf)",
+      "resultText": "具有",
+      "mimeType": "MIME类型的文件扩展名:"
+    },
+    "extensionToMime": {
+      "title": "文件扩展名转MIME类型",
+      "description": "了解哪种MIME类型与文件扩展名相关联",
+      "selectLabel": "选择扩展名",
+      "placeholder": "在此选择您的扩展名... (例如: .pdf)",
+      "resultText": "与扩展名",
+      "fileExtension": "关联的MIME类型:"
+    },
+    "table": {
+      "title": "所有MIME类型参考",
+      "description": "MIME类型及其关联文件扩展名的完整参考表",
+      "mimeTypeHeader": "MIME类型",
+      "extensionsHeader": "扩展名"
+    }
   }
 }

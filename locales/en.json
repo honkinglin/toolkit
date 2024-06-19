@@ -656,5 +656,31 @@
     "iteration": "Iteration",
     "count": "Count",
     "paddedHex": "Padded hex"
+  },
+  "mimeTypes": {
+    "title": "MIME Types",
+    "description": "Convert MIME types to file extensions and vice versa",
+    "mimeToExtension": {
+      "title": "MIME type to extension",
+      "description": "Know which file extensions are associated to a MIME-type",
+      "selectLabel": "Select MIME type",
+      "placeholder": "Select your mimetype here... (ex: application/pdf)",
+      "resultText": "Extensions of files with the",
+      "mimeType": "MIME-type:"
+    },
+    "extensionToMime": {
+      "title": "File extension to MIME type",
+      "description": "Know which MIME type is associated to a file extension",
+      "selectLabel": "Select extension",
+      "placeholder": "Select your extension here... (ex: .pdf)",
+      "resultText": "MIME type associated to the extension",
+      "fileExtension": "file extension:"
+    },
+    "table": {
+      "title": "All MIME Types Reference",
+      "description": "Complete reference table of MIME types and their associated file extensions",
+      "mimeTypeHeader": "MIME types",
+      "extensionsHeader": "Extensions"
+    }
   }
 }
