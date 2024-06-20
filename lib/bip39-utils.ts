@@ -12,7 +12,7 @@ export const SUPPORTED_LANGUAGES = [
   { label: 'Español', value: 'spanish' },
 ] as const;
 
-export type Language = typeof SUPPORTED_LANGUAGES[number]['value'];
+export type Language = (typeof SUPPORTED_LANGUAGES)[number]['value'];
 
 export function generateEntropy(): string {
   // 生成 128 位熵（16 字节）
@@ -21,15 +21,20 @@ export function generateEntropy(): string {
 }
 
 export function generateMnemonic(entropy: string, language: Language = 'english'): string {
+  // 预检查熵值格式
+  if (!entropy || !/^[0-9a-fA-F]+$/.test(entropy) || entropy.length % 2 !== 0) {
+    return '';
+  }
+
   try {
     // 设置语言
     const wordlist = getWordlist(language);
-    
+
     // 从熵生成助记词
     const entropyBuffer = Buffer.from(entropy, 'hex');
     return bip39.entropyToMnemonic(entropyBuffer, wordlist);
-  } catch (error) {
-    throw new Error(`Failed to generate mnemonic from entropy ${entropy}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  } catch {
+    return '';
   }
 }
 
@@ -43,11 +48,16 @@ export function validateMnemonic(mnemonic: string, language: Language = 'english
 }
 
 export function mnemonicToEntropy(mnemonic: string, language: Language = 'english'): string {
+  // 预检查助记词
+  if (!mnemonic.trim()) {
+    return '';
+  }
+
   try {
     const wordlist = getWordlist(language);
     return bip39.mnemonicToEntropy(mnemonic, wordlist);
-  } catch (error) {
-    throw new Error(`Failed to convert mnemonic to entropy: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  } catch {
+    return '';
   }
 }
 

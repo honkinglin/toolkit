@@ -27,12 +27,12 @@ export default function JWTParserPage() {
       return { data: null, error: 'Invalid JWT format' };
     }
 
-    try {
-      const data = decodeJwt(rawJwt);
-      return { data, error: null };
-    } catch {
+    const data = decodeJwt(rawJwt);
+    if (!data) {
       return { data: null, error: 'Invalid JWT token' };
     }
+
+    return { data, error: null };
   }, [rawJwt]);
 
   const sections = [

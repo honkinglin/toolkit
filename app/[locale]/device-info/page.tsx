@@ -43,15 +43,6 @@ function useWindowSize() {
   return size;
 }
 
-// Safely get value with fallback
-function getSafeValue(getValue: () => string): string {
-  try {
-    return getValue();
-  } catch {
-    return 'unknown';
-  }
-}
-
 export default function DeviceInfoPage() {
   const di = useTranslations('deviceInfo');
   const { width, height } = useWindowSize();
@@ -75,23 +66,23 @@ export default function DeviceInfoPage() {
       information: [
         {
           label: di('screen.screenSize'),
-          value: getSafeValue(() => `${window.screen.availWidth} x ${window.screen.availHeight}`),
+          value: `${window.screen?.availWidth || 0} x ${window.screen?.availHeight || 0}`,
         },
         {
           label: di('screen.orientation'),
-          value: getSafeValue(() => window.screen.orientation?.type || 'unknown'),
+          value: window.screen?.orientation?.type || 'unknown',
         },
         {
           label: di('screen.orientationAngle'),
-          value: getSafeValue(() => `${window.screen.orientation?.angle || 0}°`),
+          value: `${window.screen?.orientation?.angle || 0}°`,
         },
         {
           label: di('screen.colorDepth'),
-          value: getSafeValue(() => `${window.screen.colorDepth} bits`),
+          value: `${window.screen?.colorDepth || 0} bits`,
         },
         {
           label: di('screen.pixelRatio'),
-          value: getSafeValue(() => `${window.devicePixelRatio} dppx`),
+          value: `${window.devicePixelRatio || 1} dppx`,
         },
         {
           label: di('screen.windowSize'),
@@ -104,19 +95,19 @@ export default function DeviceInfoPage() {
       information: [
         {
           label: di('device.browserVendor'),
-          value: getSafeValue(() => navigator.vendor || 'unknown'),
+          value: navigator?.vendor || 'unknown',
         },
         {
           label: di('device.languages'),
-          value: getSafeValue(() => navigator.languages?.join(', ') || 'unknown'),
+          value: navigator?.languages?.join(', ') || 'unknown',
         },
         {
           label: di('device.platform'),
-          value: getSafeValue(() => navigator.platform || 'unknown'),
+          value: navigator?.platform || 'unknown',
         },
         {
           label: di('device.userAgent'),
-          value: getSafeValue(() => navigator.userAgent || 'unknown'),
+          value: navigator?.userAgent || 'unknown',
         },
       ],
     },

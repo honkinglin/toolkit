@@ -25,13 +25,13 @@ export function createToken({
   if (withSymbols) charset += symbols;
 
   if (charset === '') {
-    throw new Error('At least one character type must be selected');
+    return ''; // 返回空字符串而不是抛出异常
   }
 
   let result = '';
   for (let i = 0; i < length; i++) {
     result += charset.charAt(Math.floor(Math.random() * charset.length));
   }
-  
+
   return result;
 }

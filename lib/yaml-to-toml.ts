@@ -11,7 +11,7 @@ export function convertYamlToToml(yamlString: string): string {
     const tomlResult = stringifyToml(parsed);
     return Array.isArray(tomlResult) ? tomlResult.join('\n').trim() : tomlResult.trim();
   } catch {
-    throw new Error('Invalid YAML format or conversion failed');
+    return '';
   }
 }
 

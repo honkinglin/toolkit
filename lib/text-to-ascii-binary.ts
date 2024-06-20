@@ -20,7 +20,7 @@ export function convertAsciiBinaryToText(binary: string): string {
   const cleanBinary = binary.replace(/[^01]/g, '');
 
   if (cleanBinary.length % 8 !== 0) {
-    throw new Error('Invalid binary string - length must be a multiple of 8');
+    return '';
   }
 
   return cleanBinary
@@ -31,10 +31,8 @@ export function convertAsciiBinaryToText(binary: string): string {
 }
 
 export function isValidAsciiBinary(binary: string): boolean {
-  try {
-    convertAsciiBinaryToText(binary);
-    return true;
-  } catch {
-    return false;
-  }
+  if (!binary) return true;
+
+  const cleanBinary = binary.replace(/[^01]/g, '');
+  return cleanBinary.length % 8 === 0;
 }

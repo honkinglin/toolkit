@@ -8,12 +8,23 @@ export function convertJsonToYaml(jsonString: string): string {
     const parsed = JSON5.parse(jsonString);
     return stringify(parsed);
   } catch {
-    throw new Error('Invalid JSON format');
+    return '';
   }
 }
 
 export function isValidJsonForYaml(jsonString: string): boolean {
   if (!jsonString.trim()) return true;
+
+  // 简单的 JSON 格式预检查
+  const trimmed = jsonString.trim();
+  if (
+    !(
+      (trimmed.startsWith('{') && trimmed.endsWith('}')) ||
+      (trimmed.startsWith('[') && trimmed.endsWith(']'))
+    )
+  ) {
+    return false;
+  }
 
   try {
     const parsed = JSON5.parse(jsonString);

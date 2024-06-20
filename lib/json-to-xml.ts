@@ -21,6 +21,17 @@ export function isValidJsonForXml(value: string): boolean {
     return true;
   }
 
+  // 简单的 JSON 格式预检查
+  const trimmed = value.trim();
+  if (
+    !(
+      (trimmed.startsWith('{') && trimmed.endsWith('}')) ||
+      (trimmed.startsWith('[') && trimmed.endsWith(']'))
+    )
+  ) {
+    return false;
+  }
+
   try {
     JSON5.parse(value);
     return true;

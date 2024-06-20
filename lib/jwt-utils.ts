@@ -12,16 +12,31 @@ export interface DecodedJWT {
   payload: ParsedClaim[];
 }
 
-export function decodeJwt(jwt: string): DecodedJWT {
+export function decodeJwt(jwt: string): DecodedJWT | null {
   // 分割JWT的三个部分
   const parts = jwt.split('.');
   if (parts.length !== 3) {
-    throw new Error('Invalid JWT format');
+    return null;
   }
 
-  // 解码header和payload
-  const rawHeader = JSON.parse(base64UrlDecode(parts[0]));
-  const rawPayload = JSON.parse(base64UrlDecode(parts[1]));
+  // 检查是否为有效的 base64 字符串
+  if (!isValidBase64Url(parts[0]) || !isValidBase64Url(parts[1])) {
+    return null;
+  }
+
+  const headerStr = base64UrlDecode(parts[0]);
+  const payloadStr = base64UrlDecode(parts[1]);
+
+  if (!headerStr || !payloadStr) {
+    return null;
+  }
+
+  const rawHeader = parseJSON(headerStr);
+  const rawPayload = parseJSON(payloadStr);
+
+  if (!rawHeader || !rawPayload) {
+    return null;
+  }
 
   const header = Object.entries(rawHeader).map(([claim, value]) => parseClaim({ claim, value }));
   const payload = Object.entries(rawPayload).map(([claim, value]) => parseClaim({ claim, value }));
@@ -29,22 +44,41 @@ export function decodeJwt(jwt: string): DecodedJWT {
   return { header, payload };
 }
 
-// Base64 URL解码函数
-function base64UrlDecode(str: string): string {
-  // 将Base64 URL编码转换为标准Base64编码
-  let base64 = str.replace(/-/g, '+').replace(/_/g, '/');
+// 检查是否为有效的 base64url 字符串
+function isValidBase64Url(str: string): boolean {
+  return /^[A-Za-z0-9_-]+$/.test(str);
+}
 
-  // 添加填充
-  while (base64.length % 4) {
-    base64 += '=';
+// 安全的 JSON 解析
+function parseJSON(str: string): Record<string, unknown> | null {
+  try {
+    const result = JSON.parse(str);
+    return typeof result === 'object' && result !== null ? result : null;
+  } catch {
+    return null;
   }
+}
 
-  // 解码
-  if (typeof atob !== 'undefined') {
-    return atob(base64);
-  } else {
-    // Node.js环境
-    return Buffer.from(base64, 'base64').toString('utf-8');
+// Base64 URL解码函数
+function base64UrlDecode(str: string): string | null {
+  try {
+    // 将Base64 URL编码转换为标准Base64编码
+    let base64 = str.replace(/-/g, '+').replace(/_/g, '/');
+
+    // 添加填充
+    while (base64.length % 4) {
+      base64 += '=';
+    }
+
+    // 解码
+    if (typeof atob !== 'undefined') {
+      return atob(base64);
+    } else {
+      // Node.js环境
+      return Buffer.from(base64, 'base64').toString('utf-8');
+    }
+  } catch {
+    return null;
   }
 }
 

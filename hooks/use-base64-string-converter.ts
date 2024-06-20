@@ -12,8 +12,16 @@ export function useBase64StringConverter() {
   }, [textInput, encodeUrlSafe]);
 
   const textOutput = useMemo(() => {
+    const trimmed = base64Input.trim();
+    if (!trimmed) return '';
+
+    // 简单的 base64 格式检查
+    const base64Regex = decodeUrlSafe ? /^[A-Za-z0-9_-]*={0,2}$/ : /^[A-Za-z0-9+/]*={0,2}$/;
+
+    if (!base64Regex.test(trimmed)) return '';
+
     try {
-      return base64ToText(base64Input.trim(), { makeUrlSafe: decodeUrlSafe });
+      return base64ToText(trimmed, { makeUrlSafe: decodeUrlSafe });
     } catch {
       return '';
     }
