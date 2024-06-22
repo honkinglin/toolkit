@@ -19,7 +19,8 @@
       "crypto": "加密",
       "generator": "生成器",
       "security": "安全",
-      "converter": "转换器"
+      "converter": "转换器",
+      "utility": "实用工具"
     },
     "tools": {
       "token-generator": {
@@ -61,6 +62,10 @@
       "password-strength-analyzer": {
         "title": "密码强度分析仪",
         "description": "使用此密码强度分析器和破解时间估算工具来发现密码的强度。"
+      },
+      "keycode-info": {
+        "title": "键码信息",
+        "description": "通过按下键盘上的任意键来获取JavaScript键码和按键信息。"
       }
     }
   },
@@ -107,7 +112,7 @@
     "otpCodeGenerator": "OTP代码生成器",
     "mimeTypes": "mime类型",
     "jwtParser": "JWT解析器",
-    "keycodeInfo": "Keycode信息",
+    "keycodeInfo": "键码信息",
     "unicodeCharCodes": "打乱字符串",
     "htmlWysiwygEditor": "HTML所见即所得编辑器",
     "userAgentParser": "用户代理分析器",
@@ -686,5 +691,11 @@
   "jwtParser": {
     "title": "JWT 解析器",
     "description": "解析和解码JSON Web Token (JWT) 并显示其内容。"
+  },
+  "keycodeInfo": {
+    "title": "键码信息",
+    "description": "通过按下键盘上的任意键获取键码和按键信息",
+    "instructions": "按下键盘上的任意键以查看其信息：",
+    "noKeyPressed": "按下任意键以在此查看其信息"
   }
 }

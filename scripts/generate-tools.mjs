@@ -110,11 +110,11 @@ function generateToolsData() {
   const tsContent = `// 此文件由脚本自动生成，请勿手动修改
 import { 
   ${icons.join(',\n  ')}
-} from "lucide-react";
+} from 'lucide-react';
 
 export interface Tool {
   id: string;
-  icon: any;
+  icon: React.ComponentType;
   category: string;
   featured: boolean;
   href: string;
