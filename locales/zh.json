@@ -70,6 +70,10 @@
       "user-agent-parser": {
         "title": "用户代理分析器",
         "description": "解析和分析用户代理字符串，提取浏览器、引擎、操作系统、CPU和设备信息。"
+      },
+      "http-status-codes": {
+        "title": "HTTP状态码",
+        "description": "所有HTTP状态的列表对其含义和描述。"
       }
     }
   },
@@ -737,5 +741,15 @@
       "noDeviceVendor": "无设备供应商信息",
       "noCpuArchitecture": "无CPU架构信息"
     }
+  },
+  "httpStatusCodes": {
+    "title": "HTTP状态码",
+    "description": "所有HTTP状态的列表对其含义和描述",
+    "searchPlaceholder": "搜索HTTP状态码...",
+    "searchResults": "搜索结果",
+    "code": "状态码",
+    "name": "名称",
+    "descriptionHeader": "描述",
+    "type": "类型"
   }
 }

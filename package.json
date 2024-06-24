@@ -40,6 +40,7 @@
     "colord": "^2.9.3",
     "crypto-js": "^4.2.0",
     "date-fns": "^4.1.0",
+    "fuse.js": "^7.1.0",
     "json5": "^2.2.3",
     "lucide-react": "^0.535.0",
     "markdown-it": "^14.1.0",
