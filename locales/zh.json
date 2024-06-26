@@ -751,5 +751,16 @@
     "name": "名称",
     "descriptionHeader": "描述",
     "type": "类型"
+  },
+  "jsonDiff": {
+    "title": "JSON差异比较",
+    "description": "比较两个JSON对象并获得它们之间的差异。",
+    "yourFirstJson": "您的第一个JSON",
+    "pasteFirstJsonHere": "请在此粘贴您的第一个JSON...",
+    "yourJsonToCompare": "要比较的JSON",
+    "pasteJsonToCompareHere": "请在此粘贴要比较的JSON...",
+    "invalidJsonFormat": "无效的JSON格式",
+    "onlyShowDifferences": "仅显示差异",
+    "jsonAreTheSame": "提供的JSON是相同的"
   }
 }

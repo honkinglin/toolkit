@@ -751,5 +751,16 @@
     "name": "Name",
     "descriptionHeader": "Description",
     "type": "Type"
+  },
+  "jsonDiff": {
+    "title": "JSON Diff",
+    "description": "Compare two JSON objects and get the differences between them.",
+    "yourFirstJson": "Your first JSON",
+    "pasteFirstJsonHere": "Paste your first JSON here...",
+    "yourJsonToCompare": "Your JSON to compare",
+    "pasteJsonToCompareHere": "Paste your JSON to compare here...",
+    "invalidJsonFormat": "Invalid JSON format",
+    "onlyShowDifferences": "Only show differences",
+    "jsonAreTheSame": "The provided JSONs are the same"
   }
 }
