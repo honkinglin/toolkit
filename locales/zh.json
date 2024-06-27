@@ -124,8 +124,7 @@
     "htmlWysiwygEditor": "HTML所见即所得编辑器",
     "userAgentParser": "用户代理分析器",
     "httpStatusCodes": "HTTP状态码",
-    "jsonDiff": "JSON差异比较",
-    "outlookSafelinkDecoder": "Outlook Safelink decoder"
+    "jsonDiff": "JSON差异比较"
   },
   "tokenGenerator": {
     "title": "令牌生成器",

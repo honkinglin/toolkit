@@ -124,8 +124,7 @@
     "htmlWysiwygEditor": "HTML WYSIWYG Editor",
     "userAgentParser": "User Agent Parser",
     "httpStatusCodes": "HTTP Status Codes",
-    "jsonDiff": "JSON Diff",
-    "outlookSafelinkDecoder": "Outlook Safelink Decoder"
+    "jsonDiff": "JSON Diff"
   },
   "tokenGenerator": {
     "title": "Token Generator",
