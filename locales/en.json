@@ -4,6 +4,10 @@
     "subtitle": "A collection of practical tools for developers and technical professionals",
     "description": "Including encryption/decryption, data conversion, code generation and other practical tools",
     "featuredTools": "Featured Tools",
+    "searchPlaceholder": "Search tools...",
+    "allCategories": "All",
+    "searchResults": "Search Results",
+    "noToolsFound": "No matching tools found",
     "stats": {
       "totalTools": "Total Tools",
       "categories": "Categories",
@@ -18,8 +22,9 @@
     "categories": {
       "crypto": "Cryptography",
       "generator": "Generators",
-      "security": "Security",
       "converter": "Converters",
+      "format": "Format Converters",
+      "web": "Web Tools",
       "utility": "Utilities"
     },
     "tools": {
@@ -33,7 +38,7 @@
       },
       "bcrypt": {
         "title": "Bcrypt",
-        "description": "Hash and compare text strings using bcrypt. Bcrypt is a password hashing function based on the Blowfish cipher..."
+        "description": "Hash and compare text strings using bcrypt. Bcrypt is a password hashing function based on the Blowfish cipher."
       },
       "uuids-generator": {
         "title": "UUIDs Generator",
@@ -47,7 +52,7 @@
         "title": "Encrypt/Decrypt Text",
         "description": "Encrypt and decrypt text plaintext using encryption algorithms (such as AES, TripleDES, Rabbit or RC4)."
       },
-      "bip39-generator": {
+      "bip39-passphrase-generator": {
         "title": "BIP39 Passphrase Generator",
         "description": "Generate BIP39 passphrases from existing or random mnemonics, or get mnemonics from passphrases."
       },
@@ -74,6 +79,130 @@
       "http-status-codes": {
         "title": "HTTP Status Codes",
         "description": "Complete list of HTTP status codes with their meanings and descriptions."
+      },
+      "json-diff": {
+        "title": "JSON Diff",
+        "description": "Compare two JSON objects and get the differences between them."
+      },
+      "base64-string-encode-decode": {
+        "title": "Base64 String Encode/Decode",
+        "description": "Encode and decode Base64 strings with support for both standard and URL-safe encoding."
+      },
+      "base64-file-converter": {
+        "title": "Base64 File Converter",
+        "description": "Convert files to Base64 encoded strings and decode Base64 strings back to files."
+      },
+      "basic-auth-generator": {
+        "title": "Basic Auth Generator",
+        "description": "Generate HTTP Basic Authentication header from username and password."
+      },
+      "case-converter": {
+        "title": "Case Converter",
+        "description": "Convert text between different cases: camelCase, PascalCase, snake_case, kebab-case, and more."
+      },
+      "color-picker": {
+        "title": "Color Picker",
+        "description": "Pick colors and convert between different color formats: HEX, RGB, HSL, HSV."
+      },
+      "date-time-converter": {
+        "title": "Date Time Converter",
+        "description": "Convert between different date and time formats, including Unix timestamps."
+      },
+      "device-info": {
+        "title": "Device Info",
+        "description": "Get information about your device, browser, screen resolution, and more."
+      },
+      "html-entities": {
+        "title": "HTML Entities",
+        "description": "Encode and decode HTML entities to safely display special characters in HTML."
+      },
+      "html-wysiwyg-editor": {
+        "title": "HTML WYSIWYG Editor",
+        "description": "A rich text editor for creating and editing HTML content with a visual interface."
+      },
+      "integer-base-converter": {
+        "title": "Integer Base Converter",
+        "description": "Convert numbers between different bases: binary, octal, decimal, hexadecimal."
+      },
+      "json-to-toml": {
+        "title": "JSON to TOML",
+        "description": "Convert JSON data to TOML (Tom's Obvious, Minimal Language) format."
+      },
+      "json-to-xml": {
+        "title": "JSON to XML",
+        "description": "Convert JSON data to XML format with proper structure and formatting."
+      },
+      "json-to-yaml": {
+        "title": "JSON to YAML",
+        "description": "Convert JSON data to YAML format with proper indentation and structure."
+      },
+      "jwt-parser": {
+        "title": "JWT Parser",
+        "description": "Parse and decode JSON Web Tokens (JWT) to view header, payload, and signature."
+      },
+      "list-converter": {
+        "title": "List Converter",
+        "description": "Convert between different list formats: arrays, comma-separated, newline-separated."
+      },
+      "markdown-to-html": {
+        "title": "Markdown to HTML",
+        "description": "Convert Markdown text to HTML with support for syntax highlighting and formatting."
+      },
+      "mime-types": {
+        "title": "MIME Types",
+        "description": "Lookup MIME types for file extensions and file extensions for MIME types."
+      },
+      "open-graph-generator": {
+        "title": "Open Graph Generator",
+        "description": "Generate Open Graph meta tags for better social media sharing and SEO."
+      },
+      "otp-code-generator": {
+        "title": "OTP Code Generator",
+        "description": "Generate Time-based One-Time Password (TOTP) codes for two-factor authentication."
+      },
+      "roman-numeral-converter": {
+        "title": "Roman Numeral Converter",
+        "description": "Convert between Arabic numbers and Roman numerals."
+      },
+      "text-to-ascii-binary": {
+        "title": "Text to ASCII Binary",
+        "description": "Convert text to ASCII codes and binary representation."
+      },
+      "text-to-nato-alphabet": {
+        "title": "Text to NATO Alphabet",
+        "description": "Convert text to NATO phonetic alphabet for clear communication."
+      },
+      "text-to-unicode": {
+        "title": "Text to Unicode",
+        "description": "Convert text to Unicode code points and escape sequences."
+      },
+      "toml-to-json": {
+        "title": "TOML to JSON",
+        "description": "Convert TOML (Tom's Obvious, Minimal Language) data to JSON format."
+      },
+      "toml-to-yaml": {
+        "title": "TOML to YAML",
+        "description": "Convert TOML data to YAML format with proper structure."
+      },
+      "url-encoder-decoder": {
+        "title": "URL Encoder/Decoder",
+        "description": "Encode and decode URLs and URL components for safe transmission."
+      },
+      "url-parser": {
+        "title": "URL Parser",
+        "description": "Parse URLs and extract components: protocol, host, path, query parameters."
+      },
+      "xml-to-json": {
+        "title": "XML to JSON",
+        "description": "Convert XML data to JSON format with proper structure preservation."
+      },
+      "yaml-to-json": {
+        "title": "YAML to JSON",
+        "description": "Convert YAML data to JSON format with validation and error checking."
+      },
+      "yaml-to-toml": {
+        "title": "YAML to TOML",
+        "description": "Convert YAML data to TOML format with proper syntax conversion."
       }
     }
   },

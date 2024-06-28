@@ -8,9 +8,10 @@ const __dirname = path.dirname(__filename);
 
 // 工具配置映射
 const toolsConfig = {
-  'token-generator': {
-    icon: 'Shuffle',
-    category: 'generator',
+  // 加密工具
+  bcrypt: {
+    icon: 'Shield',
+    category: 'crypto',
     featured: true,
   },
   'hash-text': {
@@ -18,9 +19,41 @@ const toolsConfig = {
     category: 'crypto',
     featured: true,
   },
-  bcrypt: {
-    icon: 'Shield',
+  'encrypt-decrypt-text': {
+    icon: 'Lock',
     category: 'crypto',
+    featured: false,
+  },
+  'hmac-generator': {
+    icon: 'MessageSquare',
+    category: 'crypto',
+    featured: false,
+  },
+  'rsa-key-pair-generator': {
+    icon: 'Key',
+    category: 'crypto',
+    featured: false,
+  },
+  'jwt-parser': {
+    icon: 'FileJson',
+    category: 'crypto',
+    featured: false,
+  },
+  'basic-auth-generator': {
+    icon: 'UserCheck',
+    category: 'crypto',
+    featured: false,
+  },
+  'otp-code-generator': {
+    icon: 'Smartphone',
+    category: 'crypto',
+    featured: false,
+  },
+
+  // 生成器工具
+  'token-generator': {
+    icon: 'Shuffle',
+    category: 'generator',
     featured: true,
   },
   'uuids-generator': {
@@ -33,30 +66,168 @@ const toolsConfig = {
     category: 'generator',
     featured: false,
   },
-  'encrypt-decrypt-text': {
-    icon: 'Lock',
-    category: 'crypto',
-    featured: false,
-  },
-  'bip39-generator': {
+  'bip39-passphrase-generator': {
     icon: 'QrCode',
-    category: 'generator',
-    featured: false,
-  },
-  'hmac-generator': {
-    icon: 'MessageSquare',
-    category: 'crypto',
-    featured: false,
-  },
-  'rsa-key-pair-generator': {
-    icon: 'Key',
     category: 'generator',
     featured: false,
   },
   'password-strength-analyzer': {
     icon: 'Target',
-    category: 'security',
+    category: 'generator',
     featured: false,
+  },
+  'open-graph-generator': {
+    icon: 'Globe',
+    category: 'generator',
+    featured: false,
+  },
+
+  // 转换工具
+  'base64-string-encode-decode': {
+    icon: 'Binary',
+    category: 'converter',
+    featured: true,
+  },
+  'base64-file-converter': {
+    icon: 'File',
+    category: 'converter',
+    featured: false,
+  },
+  'case-converter': {
+    icon: 'Type',
+    category: 'converter',
+    featured: false,
+  },
+  'date-time-converter': {
+    icon: 'Clock',
+    category: 'converter',
+    featured: false,
+  },
+  'integer-base-converter': {
+    icon: 'Calculator',
+    category: 'converter',
+    featured: false,
+  },
+  'roman-numeral-converter': {
+    icon: 'Crown',
+    category: 'converter',
+    featured: false,
+  },
+  'text-to-ascii-binary': {
+    icon: 'Binary',
+    category: 'converter',
+    featured: false,
+  },
+  'text-to-nato-alphabet': {
+    icon: 'Radio',
+    category: 'converter',
+    featured: false,
+  },
+  'text-to-unicode': {
+    icon: 'Languages',
+    category: 'converter',
+    featured: false,
+  },
+  'list-converter': {
+    icon: 'List',
+    category: 'converter',
+    featured: false,
+  },
+
+  // 格式转换
+  'json-to-yaml': {
+    icon: 'FileText',
+    category: 'format',
+    featured: true,
+  },
+  'json-to-xml': {
+    icon: 'Code',
+    category: 'format',
+    featured: false,
+  },
+  'json-to-toml': {
+    icon: 'Settings',
+    category: 'format',
+    featured: false,
+  },
+  'yaml-to-json': {
+    icon: 'FileJson',
+    category: 'format',
+    featured: false,
+  },
+  'yaml-to-toml': {
+    icon: 'Settings',
+    category: 'format',
+    featured: false,
+  },
+  'xml-to-json': {
+    icon: 'Code2',
+    category: 'format',
+    featured: false,
+  },
+  'toml-to-json': {
+    icon: 'FileJson',
+    category: 'format',
+    featured: false,
+  },
+  'toml-to-yaml': {
+    icon: 'FileText',
+    category: 'format',
+    featured: false,
+  },
+  'markdown-to-html': {
+    icon: 'FileDown',
+    category: 'format',
+    featured: false,
+  },
+
+  // Web 工具
+  'url-encoder-decoder': {
+    icon: 'Link',
+    category: 'web',
+    featured: true,
+  },
+  'html-entities': {
+    icon: 'Code',
+    category: 'web',
+    featured: false,
+  },
+  'url-parser': {
+    icon: 'LinkIcon',
+    category: 'web',
+    featured: false,
+  },
+  'device-info': {
+    icon: 'Smartphone',
+    category: 'web',
+    featured: false,
+  },
+  'mime-types': {
+    icon: 'FileType',
+    category: 'web',
+    featured: false,
+  },
+  'user-agent-parser': {
+    icon: 'Users',
+    category: 'web',
+    featured: false,
+  },
+  'http-status-codes': {
+    icon: 'Globe',
+    category: 'web',
+    featured: false,
+  },
+
+  // 实用工具
+  'json-diff': {
+    icon: 'GitCompare',
+    category: 'utility',
+    featured: true,
+  },
+  'color-picker': {
+    icon: 'Palette',
+    category: 'utility',
+    featured: true,
   },
   'keycode-info': {
     icon: 'Keyboard',
@@ -64,7 +235,7 @@ const toolsConfig = {
     featured: false,
   },
   'html-wysiwyg-editor': {
-    icon: 'FileText',
+    icon: 'Edit',
     category: 'utility',
     featured: false,
   },
