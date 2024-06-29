@@ -25,7 +25,8 @@
       "converter": "转换器",
       "format": "格式转换",
       "web": "Web工具",
-      "utility": "实用工具"
+      "utility": "实用工具",
+      "media": "媒体工具"
     },
     "tools": {
       "token-generator": {
@@ -203,6 +204,22 @@
       "yaml-to-toml": {
         "title": "YAML转TOML",
         "description": "将YAML数据转换为具有适当语法转换的TOML格式。"
+      },
+      "qr-code-generator": {
+        "title": "二维码生成器",
+        "description": "为文本、URL和其他数据生成二维码，具有可自定义选项。"
+      },
+      "wifi-qr-code-generator": {
+        "title": "WiFi二维码生成器",
+        "description": "为WiFi网络凭据生成二维码，便于共享。"
+      },
+      "svg-placeholder-generator": {
+        "title": "SVG占位符生成器",
+        "description": "生成可自定义的SVG占位符图像，具有各种尺寸和颜色。"
+      },
+      "camera-recorder": {
+        "title": "摄像机记录器",
+        "description": "使用设备摄像头录制视频和拍摄照片。"
       }
     }
   },
@@ -253,7 +270,12 @@
     "htmlWysiwygEditor": "HTML所见即所得编辑器",
     "userAgentParser": "用户代理分析器",
     "httpStatusCodes": "HTTP状态码",
-    "jsonDiff": "JSON差异比较"
+    "jsonDiff": "JSON差异比较",
+    "media": "媒体工具",
+    "qrCodeGenerator": "二维码生成器",
+    "wifiQrCodeGenerator": "WiFi二维码生成器",
+    "svgPlaceholderGenerator": "SVG占位符生成器",
+    "cameraRecorder": "摄像机记录器"
   },
   "tokenGenerator": {
     "title": "令牌生成器",
@@ -890,5 +912,22 @@
     "invalidJsonFormat": "无效的JSON格式",
     "onlyShowDifferences": "仅显示差异",
     "jsonAreTheSame": "提供的JSON是相同的"
+  },
+  "qrCodeGenerator": {
+    "title": "二维码生成器",
+    "description": "为URL（或纯文本）生成并下载二维码，并自定义背景色和前景色。",
+    "textLabel": "文本：",
+    "textPlaceholder": "您的链接或文本...",
+    "foregroundColor": "前景色：",
+    "backgroundColor": "背景色：",
+    "errorCorrectionLevel": "容错级别：",
+    "downloadButton": "下载二维码",
+    "noQrCode": "输入文本以生成二维码",
+    "errorLevels": {
+      "low": "低 (~7%)",
+      "medium": "中 (~15%)",
+      "quartile": "高 (~25%)",
+      "high": "最高 (~30%)"
+    }
   }
 }
