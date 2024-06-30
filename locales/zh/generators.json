@@ -1,0 +1,100 @@
+{
+  "uuidsGenerator": {
+    "title": "UUIDs 生成器",
+    "description": "通用唯一标识符（UUID）是一个128位数字，用于标识计算机系统中的信息。可能的UUID数量为16^32，即2^128或约3.4x10^38（这是一个很大的数字！）。",
+    "uuidVersion": "UUID 版本",
+    "quantity": "数量",
+    "namespace": "命名空间",
+    "name": "名称",
+    "namespacePlaceholder": "命名空间",
+    "namePlaceholder": "名称",
+    "uuidPlaceholder": "生成的 UUIDs",
+    "copy": "复制",
+    "refresh": "刷新",
+    "uuidsCopied": "UUIDs 已复制到剪贴板",
+    "invalidUuid": "无效的 UUID"
+  },
+  "ulidGenerator": {
+    "title": "ULID 生成器",
+    "description": "生成随机机器可读的通用唯一词序标识符（ULID）。",
+    "quantity": "数量:",
+    "format": "格式:",
+    "refresh": "刷新",
+    "copy": "复制",
+    "ulidsCopied": "ULIDs 已复制到剪贴板"
+  },
+  "qrCodeGenerator": {
+    "title": "二维码生成器",
+    "description": "为URL（或纯文本）生成并下载二维码，并自定义背景色和前景色。",
+    "textLabel": "文本：",
+    "textPlaceholder": "您的链接或文本...",
+    "foregroundColor": "前景色：",
+    "backgroundColor": "背景色：",
+    "errorCorrectionLevel": "容错级别：",
+    "downloadButton": "下载二维码",
+    "noQrCode": "输入文本以生成二维码",
+    "errorLevels": {
+      "low": "低 (~7%)",
+      "medium": "中 (~15%)",
+      "quartile": "高 (~25%)",
+      "high": "最高 (~30%)"
+    }
+  },
+  "wifiQrCodeGenerator": {
+    "title": "WiFi 二维码生成器",
+    "description": "生成下载二维码以快速连接到WiFi网络。",
+    "encryptionMethod": "加密方式：",
+    "ssid": "SSID：",
+    "ssidPlaceholder": "您的WiFi SSID...",
+    "hiddenSsid": "隐藏SSID",
+    "password": "密码：",
+    "passwordPlaceholder": "您的WiFi密码...",
+    "eapMethod": "EAP方式：",
+    "eapIdentity": "身份：",
+    "eapIdentityPlaceholder": "您的EAP身份...",
+    "anonymous": "匿名？",
+    "eapPhase2Method": "EAP二阶段方式：",
+    "foregroundColor": "前景色：",
+    "backgroundColor": "背景色：",
+    "downloadButton": "下载二维码",
+    "noQrCode": "输入WiFi详情以生成二维码",
+    "encryptionOptions": {
+      "nopass": "无密码",
+      "wpa": "WPA/WPA2",
+      "wep": "WEP",
+      "wpa2eap": "WPA2-EAP"
+    }
+  },
+  "svgPlaceholderGenerator": {
+    "title": "SVG占位符生成器",
+    "description": "生成可自定义的SVG占位符图像，具有各种尺寸和颜色。"
+  },
+  "otpCodeGenerator": {
+    "title": "OTP代码生成器",
+    "description": "为多因素身份验证生成基于时间的一次性密码（一次性密码）",
+    "secret": "密钥",
+    "secretPlaceholder": "粘贴您的TOTP密钥...",
+    "secretValidation": "密钥应为base32字符串",
+    "generateSecret": "生成新的随机密钥",
+    "previous": "上一个",
+    "currentOtp": "当前OTP",
+    "next": "下一个",
+    "nextIn": "下一个在",
+    "copied": "已复制！",
+    "copyPrevious": "复制上一个OTP",
+    "copyCurrent": "复制当前OTP",
+    "copyNext": "复制下一个OTP",
+    "openKeyUri": "在新标签页中打开密钥URI",
+    "generatingQR": "正在生成二维码...",
+    "technicalDetails": "技术细节",
+    "secretInHex": "十六进制密钥",
+    "epoch": "时间戳",
+    "iteration": "迭代",
+    "count": "计数",
+    "paddedHex": "填充十六进制"
+  },
+  "cameraRecorder": {
+    "title": "摄像机记录器",
+    "description": "使用设备摄像头录制视频和拍摄照片。"
+  }
+}
