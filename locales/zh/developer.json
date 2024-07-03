@@ -1,0 +1,58 @@
+{
+  "gitMemo": {
+    "title": "Git备忘录",
+    "description": "Git命令和工作流程的快速参考"
+  },
+  "randomPortGenerator": {
+    "title": "随机端口生成器",
+    "description": "为开发生成随机可用端口号"
+  },
+  "crontabExpressionGenerator": {
+    "title": "Crontab表达式生成器",
+    "description": "生成和验证用于计划任务的crontab表达式"
+  },
+  "jsonBeautifyFormat": {
+    "title": "JSON美化和格式化",
+    "description": "使用适当的缩进格式化和美化JSON数据"
+  },
+  "jsonCompress": {
+    "title": "JSON压缩",
+    "description": "通过删除不必要的空白来压缩JSON数据"
+  },
+  "jsonToCsv": {
+    "title": "JSON转CSV",
+    "description": "将JSON数据转换为CSV格式"
+  },
+  "sqlBeautifyFormat": {
+    "title": "SQL美化和格式化",
+    "description": "使用适当的缩进格式化和美化SQL查询"
+  },
+  "chmodCalculator": {
+    "title": "Chmod计算器",
+    "description": "计算Unix文件权限和chmod值"
+  },
+  "dockerRunToDockerCompose": {
+    "title": "Docker Run到Docker Compose",
+    "description": "将Docker run命令转换为Docker Compose YAML格式"
+  },
+  "xmlFormat": {
+    "title": "XML格式化",
+    "description": "格式化和美化XML文档"
+  },
+  "yamlBeautifyFormat": {
+    "title": "YAML美化和格式化",
+    "description": "使用适当的缩进格式化和美化YAML文档"
+  },
+  "emailNormalizer": {
+    "title": "Email标准化器",
+    "description": "标准化和验证电子邮件地址"
+  },
+  "regexTester": {
+    "title": "正则表达式测试器",
+    "description": "使用实时匹配测试和调试正则表达式"
+  },
+  "regexCheatsheet": {
+    "title": "正则表达式速查表",
+    "description": "正则表达式语法和模式的快速参考指南"
+  }
+}

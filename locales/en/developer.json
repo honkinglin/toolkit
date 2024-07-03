@@ -1,0 +1,58 @@
+{
+  "gitMemo": {
+    "title": "Git Memo",
+    "description": "Quick reference for Git commands and workflows"
+  },
+  "randomPortGenerator": {
+    "title": "Random Port Generator",
+    "description": "Generate random available port numbers for development"
+  },
+  "crontabExpressionGenerator": {
+    "title": "Crontab Expression Generator",
+    "description": "Generate and validate crontab expressions for scheduled tasks"
+  },
+  "jsonBeautifyFormat": {
+    "title": "JSON Beautify & Format",
+    "description": "Format and beautify JSON data with proper indentation"
+  },
+  "jsonCompress": {
+    "title": "JSON Compress",
+    "description": "Compress JSON data by removing unnecessary whitespace"
+  },
+  "jsonToCsv": {
+    "title": "JSON to CSV",
+    "description": "Convert JSON data to CSV format"
+  },
+  "sqlBeautifyFormat": {
+    "title": "SQL Beautify & Format",
+    "description": "Format and beautify SQL queries with proper indentation"
+  },
+  "chmodCalculator": {
+    "title": "Chmod Calculator",
+    "description": "Calculate Unix file permissions and chmod values"
+  },
+  "dockerRunToDockerCompose": {
+    "title": "Docker Run to Docker Compose",
+    "description": "Convert Docker run commands to Docker Compose YAML format"
+  },
+  "xmlFormat": {
+    "title": "XML Format",
+    "description": "Format and beautify XML documents"
+  },
+  "yamlBeautifyFormat": {
+    "title": "YAML Beautify & Format",
+    "description": "Format and beautify YAML documents with proper indentation"
+  },
+  "emailNormalizer": {
+    "title": "Email Normalizer",
+    "description": "Normalize and validate email addresses"
+  },
+  "regexTester": {
+    "title": "Regex Tester",
+    "description": "Test and debug regular expressions with real-time matching"
+  },
+  "regexCheatsheet": {
+    "title": "Regex Cheatsheet",
+    "description": "Quick reference guide for regular expression syntax and patterns"
+  }
+}

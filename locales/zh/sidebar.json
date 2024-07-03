@@ -51,6 +51,20 @@
     "qrCodeGenerator": "二维码生成器",
     "wifiQrCodeGenerator": "WiFi二维码生成器",
     "svgPlaceholderGenerator": "SVG占位符生成器",
-    "cameraRecorder": "摄像机记录器"
+    "developer": "开发者工具",
+    "gitMemo": "Git备忘录",
+    "randomPortGenerator": "随机端口生成器",
+    "crontabExpressionGenerator": "Crontab表达式生成器",
+    "jsonBeautifyFormat": "JSON美化和格式化",
+    "jsonCompress": "JSON压缩",
+    "jsonToCsv": "JSON转CSV",
+    "sqlBeautifyFormat": "SQL美化和格式化",
+    "chmodCalculator": "Chmod计算器",
+    "dockerRunToDockerCompose": "Docker Run到Docker Compose",
+    "xmlFormat": "XML格式化",
+    "yamlBeautifyFormat": "YAML美化和格式化",
+    "emailNormalizer": "Email标准化器",
+    "regexTester": "正则表达式测试器",
+    "regexCheatsheet": "正则表达式速查表"
   }
 }

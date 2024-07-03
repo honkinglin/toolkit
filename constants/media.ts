@@ -1,15 +1,9 @@
-import {
-  QrCode,
-  Wifi,
-  Image,
-  Camera,
-} from 'lucide-react';
+import { QrCode, Wifi, Image } from 'lucide-react';
 
 export const MEDIA_ROUTES = {
   QR_CODE_GENERATOR: '/qr-code-generator',
   WIFI_QR_CODE_GENERATOR: '/wifi-qr-code-generator',
   SVG_PLACEHOLDER_GENERATOR: '/svg-placeholder-generator',
-  CAMERA_RECORDER: '/camera-recorder',
 };
 
 export const mediaNavigationConfig = {
@@ -23,7 +17,7 @@ export const mediaNavigationConfig = {
       icon: QrCode,
     },
     {
-      titleKey: 'wifiQrCodeGenerator', 
+      titleKey: 'wifiQrCodeGenerator',
       url: MEDIA_ROUTES.WIFI_QR_CODE_GENERATOR,
       icon: Wifi,
     },
@@ -31,11 +25,6 @@ export const mediaNavigationConfig = {
       titleKey: 'svgPlaceholderGenerator',
       url: MEDIA_ROUTES.SVG_PLACEHOLDER_GENERATOR,
       icon: Image,
-    },
-    {
-      titleKey: 'cameraRecorder',
-      url: MEDIA_ROUTES.CAMERA_RECORDER,
-      icon: Camera,
     },
   ],
 };
