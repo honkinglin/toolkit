@@ -67,7 +67,20 @@
   },
   "svgPlaceholderGenerator": {
     "title": "SVG占位符生成器",
-    "description": "生成可自定义的SVG占位符图像，具有各种尺寸和颜色。"
+    "description": "生成可自定义的SVG占位符图像，具有各种尺寸和颜色。",
+    "width": "宽度（像素）：",
+    "height": "高度（像素）：",
+    "fontSize": "字体大小：",
+    "background": "背景：",
+    "textColor": "文本颜色：",
+    "customText": "自定义文本：",
+    "customTextPlaceholder": "默认为 {dimensions}",
+    "useExactSize": "使用精确尺寸",
+    "svgHtmlElement": "SVG HTML元素",
+    "svgInBase64": "SVG Base64格式",
+    "copySvg": "复制SVG",
+    "copyBase64": "复制Base64",
+    "downloadSvg": "下载SVG"
   },
   "otpCodeGenerator": {
     "title": "OTP代码生成器",

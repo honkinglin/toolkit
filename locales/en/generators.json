@@ -88,5 +88,22 @@
       "wep": "WEP",
       "wpa2eap": "WPA2-EAP"
     }
+  },
+  "svgPlaceholderGenerator": {
+    "title": "SVG Placeholder Generator",
+    "description": "Generate customizable SVG placeholder images with various sizes and colors.",
+    "width": "Width (in px):",
+    "height": "Height (in px):",
+    "fontSize": "Font size:",
+    "background": "Background:",
+    "textColor": "Text color:",
+    "customText": "Custom text:",
+    "customTextPlaceholder": "Default is {dimensions}",
+    "useExactSize": "Use exact size",
+    "svgHtmlElement": "SVG HTML element",
+    "svgInBase64": "SVG in Base64",
+    "copySvg": "Copy SVG",
+    "copyBase64": "Copy Base64",
+    "downloadSvg": "Download SVG"
   }
 }
