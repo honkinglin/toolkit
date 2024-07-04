@@ -16,8 +16,6 @@ import {
 } from 'lucide-react';
 
 export const DEVELOPER_ROUTES = {
-  GIT_MEMO: '/git-memo',
-  RANDOM_PORT_GENERATOR: '/random-port-generator',
   CRONTAB_EXPRESSION_GENERATOR: '/crontab-expression-generator',
   JSON_BEAUTIFY_FORMAT: '/json-beautify-format',
   JSON_COMPRESS: '/json-compress',
@@ -37,16 +35,6 @@ export const developerNavigationConfig = {
   url: '#',
   icon: Code,
   items: [
-    {
-      titleKey: 'gitMemo',
-      url: DEVELOPER_ROUTES.GIT_MEMO,
-      icon: GitBranch,
-    },
-    {
-      titleKey: 'randomPortGenerator',
-      url: DEVELOPER_ROUTES.RANDOM_PORT_GENERATOR,
-      icon: Terminal,
-    },
     {
       titleKey: 'crontabExpressionGenerator',
       url: DEVELOPER_ROUTES.CRONTAB_EXPRESSION_GENERATOR,
