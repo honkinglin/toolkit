@@ -67,5 +67,29 @@
       "success": "Copied to clipboard",
       "error": "Failed to copy"
     }
+  },
+  "sqlBeautifyFormat": {
+    "title": "SQL Beautify & Format",
+    "description": "Format and beautify SQL queries online (supports various SQL dialects)",
+    "config": {
+      "dialect": "Dialect",
+      "keywordCase": "Keyword case",
+      "indentStyle": "Indent style"
+    },
+    "input": {
+      "label": "Your SQL query",
+      "placeholder": "Put your SQL query here..."
+    },
+    "output": {
+      "label": "Prettify version of your query"
+    },
+    "error": {
+      "invalidSQL": "Invalid SQL syntax"
+    },
+    "copy": "Copy",
+    "copyMessages": {
+      "success": "Copied to clipboard",
+      "error": "Failed to copy"
+    }
   }
 }
