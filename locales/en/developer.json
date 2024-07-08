@@ -44,5 +44,28 @@
       "success": "Copied to clipboard",
       "error": "Failed to copy"
     }
+  },
+  "jsonToCsv": {
+    "title": "JSON to CSV",
+    "description": "Convert JSON array to CSV format automatically",
+    "input": {
+      "label": "Your raw JSON",
+      "placeholder": "Paste your raw JSON here..."
+    },
+    "output": {
+      "label": "CSV version of your JSON",
+      "placeholder": "Your CSV output will appear here..."
+    },
+    "validation": {
+      "invalidJson": "Provided JSON is not valid.",
+      "mustBeArray": "JSON must be an array",
+      "arrayNotEmpty": "Array must not be empty",
+      "mustBeObjectArray": "Array must contain objects only"
+    },
+    "copy": "Copy",
+    "copyMessages": {
+      "success": "Copied to clipboard",
+      "error": "Failed to copy"
+    }
   }
 }

@@ -44,5 +44,28 @@
       "success": "已复制到剪贴板",
       "error": "复制失败"
     }
+  },
+  "jsonToCsv": {
+    "title": "JSON 转 CSV",
+    "description": "自动将JSON数组转换为CSV格式",
+    "input": {
+      "label": "原始JSON",
+      "placeholder": "在此粘贴您的原始JSON..."
+    },
+    "output": {
+      "label": "CSV格式的数据",
+      "placeholder": "CSV输出将在此显示..."
+    },
+    "validation": {
+      "invalidJson": "提供的JSON无效。",
+      "mustBeArray": "JSON必须是数组",
+      "arrayNotEmpty": "数组不能为空",
+      "mustBeObjectArray": "数组必须只包含对象"
+    },
+    "copy": "复制",
+    "copyMessages": {
+      "success": "已复制到剪贴板",
+      "error": "复制失败"
+    }
   }
 }
