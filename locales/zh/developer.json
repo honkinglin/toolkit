@@ -91,5 +91,27 @@
       "success": "已复制到剪贴板",
       "error": "复制失败"
     }
+  },
+  "chmodCalculator": {
+    "title": "Chmod计算器",
+    "description": "使用此在线chmod计算器来计算chmod权限和概念",
+    "permissions": {
+      "read": "读取 (4)",
+      "write": "写入 (2)",
+      "execute": "执行 (1)"
+    },
+    "groups": {
+      "owner": "所有者 (u)",
+      "group": "组 (g)",
+      "public": "其他 (o)"
+    },
+    "command": {
+      "title": "chmod命令"
+    },
+    "copy": "复制",
+    "copyMessages": {
+      "success": "已复制到剪贴板",
+      "error": "复制失败"
+    }
   }
 }
