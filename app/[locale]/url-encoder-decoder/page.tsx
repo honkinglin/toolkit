@@ -10,28 +10,10 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { Copy } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { useCopyWithTooltip } from '@/hooks/use-copy';
+import { withDefaultOnError, isNotThrowing } from '@/lib/utils';
 
 const defaultEncodeInput = 'Hello world :)';
 const defaultDecodeInput = 'Hello%20world%20%3A)';
-
-// Utility function to safely encode/decode
-function withDefaultOnError<T>(fn: () => T, defaultValue: T): T {
-  try {
-    return fn();
-  } catch {
-    return defaultValue;
-  }
-}
-
-// Validation function to check if encoding/decoding is possible
-function isNotThrowing(fn: () => unknown): boolean {
-  try {
-    fn();
-    return true;
-  } catch {
-    return false;
-  }
-}
 
 export default function UrlEncoderDecoderPage() {
   const t = useTranslations('urlEncoderDecoder');

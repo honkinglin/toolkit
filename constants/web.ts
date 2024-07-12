@@ -13,7 +13,11 @@ import {
   Tag,
   Settings,
   Database,
-  Mail,
+  Network,
+  Router,
+  Wifi,
+  MapPin,
+  Shield,
 } from 'lucide-react';
 
 export const WEB_ROUTES = {
@@ -32,6 +36,12 @@ export const WEB_ROUTES = {
   USER_AGENT_PARSER: '/user-agent-parser',
   HTTP_STATUS_CODES: '/http-status-codes',
   JSON_DIFF: '/json-diff',
+  IPV4_NETWORK_CALCULATOR: '/ipv4-network-calculator',
+  IPV4_ADDRESS_CONVERTER: '/ipv4-address-converter',
+  IPV4_RANGE_EXPANDER: '/ipv4-range-expander',
+  MAC_ADDRESS_LOOKUP: '/mac-address-lookup',
+  MAC_ADDRESS_GENERATOR: '/mac-address-generator',
+  IPV6_ULA_GENERATOR: '/ipv6-ula-generator',
 };
 
 export const webNavigationConfig = {
@@ -108,6 +118,36 @@ export const webNavigationConfig = {
       titleKey: 'jsonDiff',
       url: WEB_ROUTES.JSON_DIFF,
       icon: Search,
+    },
+    {
+      titleKey: 'ipv4NetworkCalculator',
+      url: WEB_ROUTES.IPV4_NETWORK_CALCULATOR,
+      icon: Network,
+    },
+    {
+      titleKey: 'ipv4AddressConverter',
+      url: WEB_ROUTES.IPV4_ADDRESS_CONVERTER,
+      icon: Router,
+    },
+    {
+      titleKey: 'ipv4RangeExpander',
+      url: WEB_ROUTES.IPV4_RANGE_EXPANDER,
+      icon: Wifi,
+    },
+    {
+      titleKey: 'macAddressLookup',
+      url: WEB_ROUTES.MAC_ADDRESS_LOOKUP,
+      icon: MapPin,
+    },
+    {
+      titleKey: 'macAddressGenerator',
+      url: WEB_ROUTES.MAC_ADDRESS_GENERATOR,
+      icon: Shield,
+    },
+    {
+      titleKey: 'ipv6UlaGenerator',
+      url: WEB_ROUTES.IPV6_ULA_GENERATOR,
+      icon: Network,
     },
   ],
 };

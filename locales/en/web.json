@@ -229,5 +229,40 @@
     "invalidJsonFormat": "Invalid JSON format",
     "onlyShowDifferences": "Only show differences",
     "jsonAreTheSame": "The provided JSONs are the same"
+  },
+  "ipv4NetworkCalculator": {
+    "title": "IPv4 Network Calculator",
+    "description": "Parse IPv4 CIDR blocks and get all the information about the subnet",
+    "input": {
+      "title": "IPv4 Address Input",
+      "label": "An IPv4 address with or without mask",
+      "placeholder": "192.168.1.0/24"
+    },
+    "fields": {
+      "netmask": "Netmask",
+      "networkAddress": "Network address",
+      "networkMask": "Network mask",
+      "networkMaskBinary": "Network mask in binary",
+      "cidrNotation": "CIDR notation",
+      "wildcardMask": "Wildcard mask",
+      "networkSize": "Network size",
+      "firstAddress": "First address",
+      "lastAddress": "Last address",
+      "broadcastAddress": "Broadcast address",
+      "ipClass": "IP class",
+      "noBroadcast": "No broadcast address with this mask",
+      "unknownClass": "Unknown class type"
+    },
+    "navigation": {
+      "previousBlock": "Previous block",
+      "nextBlock": "Next block"
+    },
+    "validation": {
+      "invalidFormat": "We cannot parse this address, check the format"
+    },
+    "copyMessages": {
+      "success": "Copied to clipboard",
+      "error": "Failed to copy"
+    }
   }
 }

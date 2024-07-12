@@ -9,14 +9,7 @@ import { Label } from '@/components/ui/label';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import UserAgentResultCards from './user-agent-result-cards';
 import type { UserAgentResultSection } from './types';
-
-function withDefaultOnError<T>(fn: () => T, defaultValue: T): T {
-  try {
-    return fn();
-  } catch {
-    return defaultValue;
-  }
-}
+import { withDefaultOnError } from '@/lib/utils';
 
 function getUserAgentInfo(userAgent: string): UAParser.IResult {
   return userAgent.trim().length > 0

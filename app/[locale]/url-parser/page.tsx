@@ -9,28 +9,10 @@ import { ArrowDownRight } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { InputCopyable } from '@/components/ui/input-copyable';
 import { Separator } from '@/components/ui/separator';
+import { withDefaultOnError, isNotThrowing } from '@/lib/utils';
 
 const defaultUrl =
   'https://me:pwd@toolkit-ashen-two.vercel.app:3000/url-parser?key1=value&key2=value2#the-hash';
-
-// Utility function to safely parse URL
-function withDefaultOnError<T>(fn: () => T, defaultValue: T): T {
-  try {
-    return fn();
-  } catch {
-    return defaultValue;
-  }
-}
-
-// Validation function to check if URL is valid
-function isNotThrowing(fn: () => unknown): boolean {
-  try {
-    fn();
-    return true;
-  } catch {
-    return false;
-  }
-}
 
 interface UrlProperty {
   title: string;
