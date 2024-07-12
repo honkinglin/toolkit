@@ -264,5 +264,16 @@
       "success": "Copied to clipboard",
       "error": "Failed to copy"
     }
+  },
+  "ipv4AddressConverter": {
+    "title": "IPv4 Address Converter",
+    "description": "Convert IPv4 addresses to decimal, hexadecimal, binary and IPv6 formats",
+    "inputTitle": "Input",
+    "outputTitle": "Converted Results",
+    "ipAddressLabel": "The IPv4 address:",
+    "ipAddressPlaceholder": "Enter an IPv4 address (e.g., 192.168.1.1)",
+    "invalidIpAddress": "Invalid IPv4 address format",
+    "enterValidIp": "Enter a valid IPv4 address to see converted formats",
+    "copy": "Copy to clipboard"
   }
 }
