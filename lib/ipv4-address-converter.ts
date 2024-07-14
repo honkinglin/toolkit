@@ -11,7 +11,13 @@ function ipv4ToInt({ ip }: { ip: string }): number {
     .reduce((acc, part, index) => acc + Number(part) * 256 ** (3 - index), 0);
 }
 
-function ipv4ToIpv6({ ip, prefix = '0000:0000:0000:0000:0000:ffff:' }: { ip: string; prefix?: string }): string {
+function ipv4ToIpv6({
+  ip,
+  prefix = '0000:0000:0000:0000:0000:ffff:',
+}: {
+  ip: string;
+  prefix?: string;
+}): string {
   if (!isValidIpv4({ ip })) {
     return '';
   }
@@ -19,14 +25,14 @@ function ipv4ToIpv6({ ip, prefix = '0000:0000:0000:0000:0000:ffff:' }: { ip: str
   const parts = ip
     .trim()
     .split('.')
-    .map(part => Number.parseInt(part).toString(16).padStart(2, '0'));
-  
+    .map((part) => Number.parseInt(part).toString(16).padStart(2, '0'));
+
   // Group pairs and join with ':'
   const hexPairs = [];
   for (let i = 0; i < parts.length; i += 2) {
     hexPairs.push(parts.slice(i, i + 2).join(''));
   }
-  
+
   return prefix + hexPairs.join(':');
 }
 
@@ -36,7 +42,15 @@ function isValidIpv4({ ip }: { ip: string }): boolean {
 }
 
 // Base converter function for different number bases
-export function convertBase({ fromBase, toBase, value }: { fromBase: number; toBase: number; value: string }): string {
+export function convertBase({
+  fromBase,
+  toBase,
+  value,
+}: {
+  fromBase: number;
+  toBase: number;
+  value: string;
+}): string {
   const decimal = parseInt(value, fromBase);
   if (isNaN(decimal)) {
     return '';
