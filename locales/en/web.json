@@ -275,5 +275,22 @@
     "invalidIpAddress": "Invalid IPv4 address format",
     "enterValidIp": "Enter a valid IPv4 address to see converted formats",
     "copy": "Copy to clipboard"
+  },
+  "ipv4RangeExpander": {
+    "title": "IPv4 Range Expander",
+    "description": "Given a start and an end IPv4 address, this tool finds the optimal CIDR representation for all valid IPv4 networks.",
+    "inputTitle": "Input",
+    "resultTitle": "Result",
+    "startAddressLabel": "Start address",
+    "endAddressLabel": "End address",
+    "startAddressPlaceholder": "Start IPv4 address...",
+    "endAddressPlaceholder": "End IPv4 address...",
+    "invalidIpAddress": "Invalid IPv4 address",
+    "oldValue": "old value",
+    "newValue": "new value",
+    "invalidCombinationTitle": "Invalid combination of start and end IPv4 address",
+    "invalidCombinationDescription": "The end IPv4 address is lower than the start IPv4 address. This is not valid and no result could be calculated. In most cases the solution to solve this problem is to change start and end address.",
+    "switchAddresses": "Switch start and end IPv4 address",
+    "copy": "Copy"
   }
 }
