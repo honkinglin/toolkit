@@ -292,5 +292,18 @@
     "invalidCombinationDescription": "The end IPv4 address is lower than the start IPv4 address. This is not valid and no result could be calculated. In most cases the solution to solve this problem is to change start and end address.",
     "switchAddresses": "Switch start and end IPv4 address",
     "copy": "Copy"
+  },
+  "macAddressLookup": {
+    "title": "MAC Address Lookup",
+    "description": "Find the vendor and manufacturer of a device by its MAC address",
+    "inputTitle": "Input",
+    "macAddressLabel": "MAC address:",
+    "macAddressPlaceholder": "Type a MAC address",
+    "invalidMacAddress": "Invalid MAC address",
+    "vendorInfoTitle": "Vendor info:",
+    "unknownVendor": "Unknown vendor for this address",
+    "copyVendorInfo": "Copy vendor info",
+    "copyTooltip": "Copy vendor info to clipboard",
+    "copySuccess": "Vendor info copied!"
   }
 }
