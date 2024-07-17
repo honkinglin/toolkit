@@ -305,5 +305,21 @@
     "copyVendorInfo": "Copy vendor info",
     "copyTooltip": "Copy vendor info to clipboard",
     "copySuccess": "Vendor info copied!"
+  },
+  "macAddressGenerator": {
+    "title": "MAC Address Generator",
+    "description": "Generate random MAC addresses with customizable prefix, case, and separator options",
+    "configTitle": "Configuration",
+    "resultTitle": "Generated MAC Addresses",
+    "quantityLabel": "Quantity:",
+    "prefixLabel": "MAC address prefix:",
+    "prefixPlaceholder": "Set a prefix, e.g. 64:16:7F",
+    "invalidPrefix": "Invalid MAC address prefix format",
+    "caseLabel": "Case:",
+    "separatorLabel": "Separator:",
+    "noValidPrefix": "Enter a valid MAC address prefix to generate addresses",
+    "refreshButton": "Refresh",
+    "copyButton": "Copy",
+    "copySuccess": "MAC addresses copied to clipboard!"
   }
 }
