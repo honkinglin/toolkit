@@ -321,5 +321,19 @@
     "refreshButton": "刷新",
     "copyButton": "复制",
     "copySuccess": "MAC地址已复制到剪贴板！"
+  },
+  "ipv6UlaGenerator": {
+    "title": "IPv6 ULA生成器",
+    "description": "根据RFC4193在网络上生成您自己的本地不可路由IP地址。",
+    "infoTitle": "信息",
+    "infoDescription": "此工具使用IETF建议的第一种方法，使用当前时间戳加上MAC地址，SHA1哈希，以及低40位来生成您的随机ULA。",
+    "inputTitle": "输入",
+    "resultTitle": "生成的IPv6 ULA",
+    "macAddressLabel": "MAC地址：",
+    "macAddressPlaceholder": "输入MAC地址",
+    "invalidMacAddress": "无效的MAC地址格式",
+    "enterValidMac": "输入有效的MAC地址以生成IPv6 ULA",
+    "copyTooltip": "复制到剪贴板",
+    "copySuccess": "IPv6 ULA已复制到剪贴板！"
   }
 }
