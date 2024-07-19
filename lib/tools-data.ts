@@ -6,6 +6,7 @@ import {
   Shield,
   QrCode,
   Type,
+  Calculator,
   Palette,
   Clock,
   Smartphone,
@@ -15,26 +16,33 @@ import {
   Code,
   Edit,
   Globe,
-  Calculator,
+  Network,
+  Expand,
+  Archive,
   GitCompare,
+  Table,
   Settings,
   FileText,
   FileJson,
   Keyboard,
   List,
+  Shuffle,
+  Search,
   FileDown,
   FileType,
   Target,
   Crown,
   Key,
+  Database,
+  Image,
   Radio,
   Languages,
-  Shuffle,
   Snowflake,
   Link,
   LinkIcon,
   Users,
   Fingerprint,
+  Wifi,
   Code2
 } from 'lucide-react';
 
@@ -90,11 +98,25 @@ export const implementedTools: Tool[] = [
     href: "/case-converter"
   },
   {
+    id: "chmod-calculator",
+    icon: Calculator,
+    category: "utility",
+    featured: false,
+    href: "/chmod-calculator"
+  },
+  {
     id: "color-picker",
     icon: Palette,
     category: "utility",
     featured: true,
     href: "/color-picker"
+  },
+  {
+    id: "crontab-expression-generator",
+    icon: Clock,
+    category: "utility",
+    featured: false,
+    href: "/crontab-expression-generator"
   },
   {
     id: "date-time-converter",
@@ -160,11 +182,60 @@ export const implementedTools: Tool[] = [
     href: "/integer-base-converter"
   },
   {
+    id: "ipv4-address-converter",
+    icon: Network,
+    category: "network",
+    featured: false,
+    href: "/ipv4-address-converter"
+  },
+  {
+    id: "ipv4-network-calculator",
+    icon: Calculator,
+    category: "network",
+    featured: false,
+    href: "/ipv4-network-calculator"
+  },
+  {
+    id: "ipv4-range-expander",
+    icon: Expand,
+    category: "network",
+    featured: false,
+    href: "/ipv4-range-expander"
+  },
+  {
+    id: "ipv6-ula-generator",
+    icon: Globe,
+    category: "network",
+    featured: false,
+    href: "/ipv6-ula-generator"
+  },
+  {
+    id: "json-beautify-format",
+    icon: Code,
+    category: "format",
+    featured: false,
+    href: "/json-beautify-format"
+  },
+  {
+    id: "json-compress",
+    icon: Archive,
+    category: "format",
+    featured: false,
+    href: "/json-compress"
+  },
+  {
     id: "json-diff",
     icon: GitCompare,
     category: "utility",
     featured: true,
     href: "/json-diff"
+  },
+  {
+    id: "json-to-csv",
+    icon: Table,
+    category: "format",
+    featured: false,
+    href: "/json-to-csv"
   },
   {
     id: "json-to-toml",
@@ -209,6 +280,20 @@ export const implementedTools: Tool[] = [
     href: "/list-converter"
   },
   {
+    id: "mac-address-generator",
+    icon: Shuffle,
+    category: "network",
+    featured: false,
+    href: "/mac-address-generator"
+  },
+  {
+    id: "mac-address-lookup",
+    icon: Search,
+    category: "network",
+    featured: false,
+    href: "/mac-address-lookup"
+  },
+  {
     id: "markdown-to-html",
     icon: FileDown,
     category: "format",
@@ -244,6 +329,13 @@ export const implementedTools: Tool[] = [
     href: "/password-strength-analyzer"
   },
   {
+    id: "qr-code-generator",
+    icon: QrCode,
+    category: "utility",
+    featured: false,
+    href: "/qr-code-generator"
+  },
+  {
     id: "roman-numeral-converter",
     icon: Crown,
     category: "converter",
@@ -256,6 +348,20 @@ export const implementedTools: Tool[] = [
     category: "crypto",
     featured: false,
     href: "/rsa-key-pair-generator"
+  },
+  {
+    id: "sql-beautify-format",
+    icon: Database,
+    category: "format",
+    featured: false,
+    href: "/sql-beautify-format"
+  },
+  {
+    id: "svg-placeholder-generator",
+    icon: Image,
+    category: "utility",
+    featured: false,
+    href: "/svg-placeholder-generator"
   },
   {
     id: "text-to-ascii-binary",
@@ -333,6 +439,13 @@ export const implementedTools: Tool[] = [
     category: "generator",
     featured: false,
     href: "/uuids-generator"
+  },
+  {
+    id: "wifi-qr-code-generator",
+    icon: Wifi,
+    category: "utility",
+    featured: false,
+    href: "/wifi-qr-code-generator"
   },
   {
     id: "xml-to-json",
