@@ -26,7 +26,8 @@
       "format": "格式转换",
       "web": "Web工具",
       "utility": "实用工具",
-      "media": "媒体工具"
+      "media": "媒体工具",
+      "network": "网络工具"
     },
     "tools": {
       "token-generator": {
@@ -220,6 +221,54 @@
       "camera-recorder": {
         "title": "摄像机记录器",
         "description": "使用设备摄像头录制视频和拍摄照片。"
+      },
+      "chmod-calculator": {
+        "title": "Chmod计算器",
+        "description": "计算和转换Unix文件权限，支持八进制、符号和可读格式之间的转换。"
+      },
+      "crontab-expression-generator": {
+        "title": "Crontab表达式生成器",
+        "description": "生成和验证定时任务的cron表达式，提供可视化界面。"
+      },
+      "ipv4-address-converter": {
+        "title": "IPv4地址转换器",
+        "description": "在不同格式之间转换IPv4地址：十进制、二进制和十六进制。"
+      },
+      "ipv4-network-calculator": {
+        "title": "IPv4网络计算器",
+        "description": "从IPv4地址和CIDR记法计算网络信息，包括子网详情。"
+      },
+      "ipv4-range-expander": {
+        "title": "IPv4范围扩展器",
+        "description": "将IPv4 CIDR记法或范围扩展为单独的IP地址列表。"
+      },
+      "ipv6-ula-generator": {
+        "title": "IPv6 ULA生成器",
+        "description": "生成IPv6唯一本地地址（ULA），支持自定义前缀和设置。"
+      },
+      "mac-address-generator": {
+        "title": "MAC地址生成器",
+        "description": "生成随机MAC地址，支持自定义厂商前缀和格式。"
+      },
+      "mac-address-lookup": {
+        "title": "MAC地址查询",
+        "description": "查询MAC地址的厂商信息和制造商详情。"
+      },
+      "json-beautify-format": {
+        "title": "JSON美化格式化",
+        "description": "格式化和美化JSON数据，提供正确的缩进和语法高亮。"
+      },
+      "json-compress": {
+        "title": "JSON压缩",
+        "description": "通过移除空白和格式化来压缩和精简JSON数据。"
+      },
+      "json-to-csv": {
+        "title": "JSON转CSV",
+        "description": "将JSON数据转换为CSV格式，支持自定义字段映射和选项。"
+      },
+      "sql-beautify-format": {
+        "title": "SQL美化格式化",
+        "description": "格式化和美化SQL查询，提供正确的缩进和语法高亮。"
       }
     }
   }
