@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { navigationConfig, type NavGroup, type NavItem } from '@/constants/routes';
 import { type LucideIcon } from 'lucide-react';
 
@@ -17,6 +17,7 @@ interface TranslatedNavGroup extends Omit<NavGroup, 'titleKey' | 'items'> {
 
 export const useNavigation = () => {
   const t = useTranslations('sidebar');
+  const locale = useLocale();
 
   const getNavigationData = (): TranslatedNavGroup[] => {
     return navigationConfig.map(group => ({
@@ -25,6 +26,8 @@ export const useNavigation = () => {
       items: group.items.map(item => ({
         ...item,
         title: t(item.titleKey as string),
+        // 在这里添加语言前缀
+        url: `/${locale}${item.url}`,
       })),
     }));
   };
