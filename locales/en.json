@@ -27,5 +27,23 @@
     "refresh": "Refresh",
     "copySuccess": "Token copied to clipboard",
     "errorMessage": "Please select at least one character type"
+  },
+  "bcrypt": {
+    "title": "Bcrypt",
+    "description": "Hash and compare passwords using bcrypt. Bcrypt is a secure password hashing function based on the Blowfish cipher.",
+    "hash": "Hash",
+    "compareStringWithHash": "Compare string with hash",
+    "yourString": "Your string:",
+    "saltCount": "Salt count:",
+    "yourStringPlaceholder": "Your string to bcrypt...",
+    "saltCountPlaceholder": "Salt rounds...",
+    "copyHash": "Copy hash",
+    "yourHash": "Your hash:",
+    "yourStringToCompare": "Your string to compare...",
+    "yourHashToCompare": "Your hash to compare...",
+    "doTheyMatch": "Do they match?",
+    "yes": "Yes",
+    "no": "No",
+    "hashCopied": "Hash copied to clipboard"
   }
 }

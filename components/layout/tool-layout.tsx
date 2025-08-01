@@ -7,7 +7,7 @@ export function ToolLayout({ title, description, children }: { title: string, de
         <h2 className="text-4xl font-bold">{title}</h2>
         <p className="text-lg text-gray-500 pt-4">{description}</p>
       </div>
-      <div className="tool-layout-body w-full flex justify-center gap-8">{children}</div>
+      <div className="tool-layout-body w-full flex flex-col items-center gap-8">{children}</div>
     </div>
   )
 }

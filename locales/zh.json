@@ -27,5 +27,23 @@
     "refresh": "刷新",
     "copySuccess": "令牌已复制到剪贴板",
     "errorMessage": "请至少选择一种字符类型"
+  },
+  "bcrypt": {
+    "title": "Bcrypt 加密",
+    "description": "使用 bcrypt 对文字符串进行哈希和比较。Bcrypt 是一个基于 Blowfish 密码的密码哈希函数。",
+    "hash": "加密",
+    "compareStringWithHash": "比较字符串与哈希",
+    "yourString": "您的字符串:",
+    "saltCount": "盐值轮数:",
+    "yourStringPlaceholder": "请输入要加密的字符串...",
+    "saltCountPlaceholder": "盐值轮数...",
+    "copyHash": "复制哈希",
+    "yourHash": "您的哈希:",
+    "yourStringToCompare": "请输入要比较的字符串...",
+    "yourHashToCompare": "请输入要比较的哈希...",
+    "doTheyMatch": "是否匹配？",
+    "yes": "是",
+    "no": "否",
+    "hashCopied": "哈希已复制到剪贴板"
   }
 }
