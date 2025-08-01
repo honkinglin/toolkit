@@ -83,5 +83,23 @@
     "refresh": "刷新",
     "copy": "复制",
     "ulidsCopied": "ULIDs 已复制到剪贴板"
+  },
+  "encryptDecryptText": {
+    "title": "加密/解密文本",
+    "description": "使用加密算法（如AES、TripleDES、Rabbit或RC4）加密和解密文本。",
+    "encrypt": "加密",
+    "decrypt": "解密",
+    "yourText": "您的文本:",
+    "yourSecretKey": "您的密钥:",
+    "encryptionAlgorithm": "加密算法:",
+    "yourTextEncrypted": "您的加密文本:",
+    "yourEncryptedText": "您的加密文本:",
+    "yourDecryptedText": "您的解密文本:",
+    "textPlaceholder": "要加密的字符串",
+    "encryptedTextPlaceholder": "要解密的加密字符串",
+    "secretKeyPlaceholder": "输入您的密钥",
+    "hashPlaceholder": "您的加密结果",
+    "errorWhileDecrypting": "解密时出错",
+    "unableToDecrypt": "无法解密您的文本"
   }
 }
