@@ -101,5 +101,21 @@
     "hashPlaceholder": "Your encrypted result",
     "errorWhileDecrypting": "Error while decrypting",
     "unableToDecrypt": "Unable to decrypt your text"
+  },
+  "bip39Generator": {
+    "title": "BIP39 Passphrase Generator",
+    "description": "Generate BIP39 mnemonic passphrases from existing entropy or random generation, or get entropy from mnemonic for help.",
+    "language": "Language:",
+    "entropy": "Entropy (seed):",
+    "passphrase": "Passphrase (mnemonic):",
+    "refresh": "Refresh",
+    "copy": "Copy",
+    "generateNew": "Generate New",
+    "entropyPlaceholder": "Enter entropy in hex format",
+    "passphrasePlaceholder": "Enter BIP39 mnemonic passphrase",
+    "invalidEntropy": "Invalid entropy format",
+    "invalidMnemonic": "Invalid mnemonic passphrase",
+    "entropyCopied": "Entropy copied to clipboard",
+    "passphraseCopied": "Passphrase copied to clipboard"
   }
 }
