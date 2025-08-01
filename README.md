@@ -21,19 +21,11 @@ A comprehensive collection of developer tools built with Next.js 15, featuring c
 ### 🔑 Blockchain Tools
 - **BIP39 Passphrase Generator** - Generate mnemonic phrases for crypto wallets
 
-## 🌐 Internationalization
-
-The toolkit supports multiple languages:
-- 🇺🇸 **English**
-- 🇨🇳 **中文 (Chinese)**
-
-Switch between languages using the language picker in the top navigation.
-
 ## 🎨 Features
 
 - **🌙 Dark/Light Mode** - Toggle between themes
 - **📱 Responsive Design** - Works on all devices
-- **⚡ Fast Performance** - Built with Next.js 15 and React 18
+- **⚡ Fast Performance** - Built with Next.js 15 and React 19
 - **🎯 Type Safe** - Full TypeScript support
 - **♿ Accessible** - Following WCAG guidelines
 - **🌍 International** - Multi-language support with next-intl
@@ -78,31 +70,6 @@ Switch between languages using the language picker in the top navigation.
    
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🏗️ Project Structure
-
-```
-toolkit/
-├── app/                          # Next.js App Router
-│   ├── [locale]/                # Internationalized routes
-│   │   ├── layout.tsx           # Locale-specific layout
-│   │   ├── page.tsx             # Home page
-│   │   └── [tool-routes]/       # Individual tool pages
-│   ├── layout.tsx               # Root layout
-│   └── globals.css              # Global styles
-├── components/                   # React components
-│   ├── ui/                      # shadcn/ui components
-│   └── layout/                  # Layout components
-├── lib/                         # Utility functions
-│   └── routes.ts               # Route configuration
-├── locales/                     # Internationalization files
-│   ├── en.json                 # English translations
-│   └── zh.json                 # Chinese translations
-├── hooks/                       # Custom React hooks
-├── i18n.ts                     # Internationalization config
-├── middleware.ts               # Next.js middleware
-└── next.config.ts              # Next.js configuration
-```
-
 ## 🛠️ Available Tools
 
 ### Crypto Tools
@@ -127,29 +94,6 @@ toolkit/
 | Tool | Description | Route |
 |------|-------------|-------|
 | BIP39 Generator | Generate mnemonic phrases | `/bip39-passphrase-generator` |
-
-## 🌍 Adding New Languages
-
-1. **Create a new locale file**
-   ```bash
-   touch locales/[locale].json
-   ```
-
-2. **Add translations**
-   ```json
-   {
-     "sidebar": {
-       "crypto": "Your translation",
-       // ... other keys
-     }
-   }
-   ```
-
-3. **Update the configuration**
-   ```typescript
-   // lib/routes.ts
-   const locales = ['en', 'zh', 'your-locale'];
-   ```
 
 ## 🤝 Contributing
 
