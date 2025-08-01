@@ -74,5 +74,14 @@
     "refresh": "刷新",
     "uuidsCopied": "UUIDs 已复制到剪贴板",
     "invalidUuid": "无效的 UUID"
+  },
+  "ulidGenerator": {
+    "title": "ULID 生成器",
+    "description": "生成随机机器可读的通用唯一词序标识符（ULID）。",
+    "quantity": "数量:",
+    "format": "格式:",
+    "refresh": "刷新",
+    "copy": "复制",
+    "ulidsCopied": "ULIDs 已复制到剪贴板"
   }
 }

@@ -31,6 +31,7 @@ export function ButtonSelect<T extends string>({
           size="sm"
           onClick={() => onChange(key as T)}
           className="h-8"
+          suppressHydrationWarning
         >
           {label}
         </Button>
