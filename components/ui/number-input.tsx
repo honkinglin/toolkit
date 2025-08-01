@@ -13,6 +13,7 @@ interface NumberInputProps {
   max?: number
   step?: number
   className?: string
+  placeholder?: string
 }
 
 export function NumberInput({
@@ -21,7 +22,8 @@ export function NumberInput({
   min = 0,
   max = 100,
   step = 1,
-  className
+  className,
+  placeholder
 }: NumberInputProps) {
   const handleIncrement = () => {
     const newValue = Math.min(value + step, max)
@@ -44,7 +46,7 @@ export function NumberInput({
       <Button
         variant="outline"
         size="icon"
-        className="h-8 w-8 shrink-0 rounded-r-none"
+        className="h-10 w-10 shrink-0 rounded-r-none"
         onClick={handleDecrement}
         disabled={value <= min}
       >
@@ -54,14 +56,15 @@ export function NumberInput({
         type="number"
         value={value}
         onChange={handleInputChange}
-        className="h-8 rounded-none border-l-0 border-r-0 text-center"
+        className="h-10 rounded-none border-l-0 border-r-0 text-center"
         min={min}
         max={max}
+        placeholder={placeholder}
       />
       <Button
         variant="outline"
         size="icon"
-        className="h-8 w-8 shrink-0 rounded-l-none"
+        className="h-10 w-10 shrink-0 rounded-l-none"
         onClick={handleIncrement}
         disabled={value >= max}
       >

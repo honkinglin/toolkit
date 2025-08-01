@@ -59,5 +59,20 @@
       "base64url": "Base64url (base 64 with url safe chars)"
     },
     "hashCopied": "哈希已复制到剪贴板"
+  },
+  "uuidsGenerator": {
+    "title": "UUIDs 生成器",
+    "description": "通用唯一标识符（UUID）是一个128位数字，用于标识计算机系统中的信息。可能的UUID数量为16^32，即2^128或约3.4x10^38（这是一个很大的数字！）。",
+    "uuidVersion": "UUID 版本",
+    "quantity": "数量",
+    "namespace": "命名空间",
+    "name": "名称",
+    "namespacePlaceholder": "命名空间",
+    "namePlaceholder": "名称",
+    "uuidPlaceholder": "生成的 UUIDs",
+    "copy": "复制",
+    "refresh": "刷新",
+    "uuidsCopied": "UUIDs 已复制到剪贴板",
+    "invalidUuid": "无效的 UUID"
   }
 }
