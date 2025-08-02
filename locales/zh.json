@@ -299,5 +299,19 @@
     "clear": "清除",
     "invalidBase64": "无效的Base64字符串",
     "maxFileSize": "最大文件大小：10MB"
+  },
+  "colorPicker": {
+    "title": "颜色选择器",
+    "description": "在不同颜色格式之间转换（十六进制、rgb、hsl和css命名等）",
+    "colorPicker": "color picker:",
+    "hex": "hex:",
+    "rgb": "rgb:",
+    "hsl": "hsl:",
+    "hwb": "hwb:",
+    "lch": "lch:",
+    "cmyk": "cmyk:",
+    "name": "name:",
+    "copy": "复制",
+    "clear": "清除"
   }
 }

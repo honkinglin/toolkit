@@ -299,5 +299,19 @@
     "clear": "Clear",
     "invalidBase64": "Invalid Base64 string",
     "maxFileSize": "Max file size: 10MB"
+  },
+  "colorPicker": {
+    "title": "Color Picker",
+    "description": "Convert colors between different formats (hex, rgb, hsl, hwb, lch, cmyk, named colors)",
+    "colorPicker": "color picker:",
+    "hex": "hex:",
+    "rgb": "rgb:",
+    "hsl": "hsl:",
+    "hwb": "hwb:",
+    "lch": "lch:",
+    "cmyk": "cmyk:",
+    "name": "name:",
+    "copy": "Copy",
+    "clear": "Clear"
   }
 }

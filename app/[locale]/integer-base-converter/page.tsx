@@ -8,8 +8,6 @@ import { NumberInput } from '@/components/ui/number-input';
 import { Separator } from '@/components/ui/separator';
 import { InputCopyable } from '@/components/ui/input-copyable';
 import { Alert } from '@/components/ui/alert';
-import { Button } from '@/components/ui/button';
-import { Minus, Plus } from 'lucide-react';
 import { useIntegerBaseConverter } from '@/hooks/use-integer-base-converter';
 import { ToolLayout } from '@/components/layout/tool-layout';
 
