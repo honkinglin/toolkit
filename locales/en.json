@@ -391,5 +391,14 @@
     "outputLabel": "TOML from your YAML",
     "outputPlaceholder": "The TOML representation of your YAML will appear here",
     "copyButton": "Copy TOML"
+  },
+  "jsonToYaml": {
+    "title": "JSON to YAML",
+    "description": "Online converter to convert JSON to YAML",
+    "inputLabel": "Your JSON",
+    "inputPlaceholder": "Paste your JSON here...",
+    "outputLabel": "YAML from your JSON",
+    "outputPlaceholder": "The YAML representation of your JSON will appear here",
+    "copyButton": "Copy YAML"
   }
 }
