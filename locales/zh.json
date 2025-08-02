@@ -514,5 +514,26 @@
     "copyDecodedTooltip": "复制解码字符串到剪贴板",
     "copySuccessTooltip": "已复制！",
     "parseError": "无法解析此字符串"
+  },
+  "htmlEntities": {
+    "title": "HTML实体编码/解码器",
+    "description": "转义或反转义HTML实体，以正确处理HTML中的特殊字符",
+    "escape": {
+      "title": "转义HTML实体",
+      "inputLabel": "您的字符串：",
+      "outputLabel": "转义后的字符串：",
+      "inputPlaceholder": "要转义的字符串",
+      "outputPlaceholder": "您转义后的字符串"
+    },
+    "unescape": {
+      "title": "反转义HTML实体",
+      "inputLabel": "您的转义字符串：",
+      "outputLabel": "反转义后的字符串：",
+      "inputPlaceholder": "要反转义的字符串",
+      "outputPlaceholder": "您反转义后的字符串"
+    },
+    "copyButton": "复制",
+    "copyTooltip": "复制到剪贴板",
+    "copySuccessTooltip": "已复制！"
   }
 }
