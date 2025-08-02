@@ -1,4 +1,69 @@
 {
+  "home": {
+    "title": "Developer Toolkit",
+    "subtitle": "A collection of practical tools for developers and technical professionals",
+    "description": "Including encryption/decryption, data conversion, code generation and other practical tools",
+    "featuredTools": "Featured Tools",
+    "stats": {
+      "totalTools": "Total Tools",
+      "categories": "Categories",
+      "freeToUse": "Free to Use",
+      "available": "Available"
+    },
+    "badges": {
+      "recommended": "Recommended",
+      "addToFavorites": "Add to Favorites",
+      "removeFromFavorites": "Remove from Favorites"
+    },
+    "categories": {
+      "crypto": "Cryptography",
+      "generator": "Generators",
+      "security": "Security",
+      "converter": "Converters"
+    },
+    "tools": {
+      "token-generator": {
+        "title": "Token Generator",
+        "description": "Generate random strings using the characters you want, uppercase or lowercase letters, numbers and/or symbols."
+      },
+      "hash-text": {
+        "title": "Hash Text",
+        "description": "Hash text strings using desired functions: MD5, SHA1, SHA256, SHA224, SHA512..."
+      },
+      "bcrypt": {
+        "title": "Bcrypt",
+        "description": "Hash and compare text strings using bcrypt. Bcrypt is a password hashing function based on the Blowfish cipher..."
+      },
+      "uuids-generator": {
+        "title": "UUIDs Generator",
+        "description": "A Universally Unique Identifier (UUID) is a 128-bit number used to identify information in computer systems."
+      },
+      "ulid-generator": {
+        "title": "ULID Generator",
+        "description": "Generate random Universally Unique Lexicographically Sortable Identifiers (ULID)"
+      },
+      "encrypt-decrypt-text": {
+        "title": "Encrypt/Decrypt Text",
+        "description": "Encrypt and decrypt text plaintext using encryption algorithms (such as AES, TripleDES, Rabbit or RC4)."
+      },
+      "bip39-generator": {
+        "title": "BIP39 Passphrase Generator",
+        "description": "Generate BIP39 passphrases from existing or random mnemonics, or get mnemonics from passphrases."
+      },
+      "hmac-generator": {
+        "title": "HMAC Generator",
+        "description": "Compute Hash-based Message Authentication Code (HMAC) using keys and hash-based hash algorithms."
+      },
+      "rsa-key-pair-generator": {
+        "title": "RSA Key Pair Generator",
+        "description": "Generate new random RSA private and public key pem certificates."
+      },
+      "password-strength-analyzer": {
+        "title": "Password Strength Analyzer",
+        "description": "Use this password strength analyzer and crack time estimation tool to discover password strength."
+      }
+    }
+  },
   "sidebar": {
     "crypto": "Crypto",
     "tokenGenerator": "Token generator",
