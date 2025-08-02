@@ -11,7 +11,7 @@ import {
   isValid,
   parseISO,
 } from 'date-fns';
-import type { DateFormat, ToDateMapper } from '@/app/[locale]/date-time-converter/date-time-converter.types';
+import type { DateFormat, ToDateMapper } from '@/lib/date-time-converter.types';
 import {
   dateToExcelFormat,
   excelFormatToDate,
@@ -24,7 +24,7 @@ import {
   isTimestamp,
   isUTCDateString,
   isUnixTimestamp,
-} from '@/app/[locale]/date-time-converter/date-time-converter.models';
+} from '@/lib/date-time-converter.models';
 
 export function useDateTimeConverter() {
   const [inputDate, setInputDate] = useState('');
