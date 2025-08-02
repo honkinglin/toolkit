@@ -90,7 +90,7 @@ export default function Base64StringConverterPage() {
       </Card>
 
       {/* Base64 to String */}
-      <Card className="w-full mt-6">
+      <Card className="w-full">
         <CardHeader>
           <CardTitle>{b64('base64ToString')}</CardTitle>
         </CardHeader>
