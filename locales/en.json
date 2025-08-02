@@ -144,5 +144,17 @@
     "generationError": "Failed to generate key pair",
     "publicKeyCopied": "Public key copied to clipboard",
     "privateKeyCopied": "Private key copied to clipboard"
+  },
+  "passwordStrengthAnalyzer": {
+    "title": "Password Strength Analyzer",
+    "description": "Use this password strength analyzer and breach time estimation tool to check your password strength.",
+    "passwordPlaceholder": "Enter a password...",
+    "crackDuration": "Duration to crack this password with brute force",
+    "passwordLength": "Password length:",
+    "entropy": "Entropy:",
+    "characterSetSize": "Character set size:",
+    "score": "Score:",
+    "note": "Note:",
+    "noteText": "The computed strength is based on the time it would take to crack the password using a brute force approach, it does not take into account the possibility of a dictionary attack."
   }
 }
