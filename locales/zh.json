@@ -574,5 +574,19 @@
       "platform": "平台",
       "userAgent": "用户代理"
     }
+  },
+  "basicAuthGenerator": {
+    "title": "基本身份验证生成器",
+    "description": "从用户名和密码生成 base64 基本身份验证标头",
+    "cardTitle": "基本身份验证生成器",
+    "usernameLabel": "用户名",
+    "passwordLabel": "密码",
+    "usernamePlaceholder": "您的用户名...",
+    "passwordPlaceholder": "您的密码...",
+    "authorizationHeader": "Authorization header:",
+    "headerPlaceholder": "输入用户名和密码以生成授权标头",
+    "copyButton": "复制标头",
+    "copyTooltip": "复制授权标头到剪贴板",
+    "copySuccessTooltip": "标头已复制到剪贴板！"
   }
 }
