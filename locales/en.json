@@ -409,5 +409,28 @@
     "outputLabel": "TOML from your JSON",
     "outputPlaceholder": "The TOML representation of your JSON will appear here",
     "copyButton": "Copy TOML"
+  },
+  "listConverter": {
+    "title": "List Converter",
+    "description": "Transform lists with various filtering, sorting, and formatting options (remove duplicates, sort, wrap items, etc.).",
+    "inputLabel": "Your input data",
+    "inputPlaceholder": "Paste your input data here...",
+    "outputLabel": "Your transformed data",
+    "outputPlaceholder": "Your transformed data will appear here",
+    "copyButton": "Copy Result",
+    "trimItems": "Trim list items",
+    "removeDuplicates": "Remove duplicates",
+    "convertToLowercase": "Convert to lowercase",
+    "keepLineBreaks": "Keep line breaks",
+    "sortList": "Sort list",
+    "sortPlaceholder": "Sort alphabetically",
+    "noSort": "No sort",
+    "separator": "Separator",
+    "wrapItem": "Wrap item",
+    "itemPrefix": "Item prefix",
+    "itemSuffix": "Item suffix",
+    "wrapList": "Wrap list",
+    "listPrefix": "List prefix",
+    "listSuffix": "List suffix"
   }
 }
