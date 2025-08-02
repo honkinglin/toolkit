@@ -1,34 +1,37 @@
-"use client"
+'use client';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Copy } from "lucide-react";
-import { useCopy } from "@/hooks/use-copy";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Copy } from 'lucide-react';
+import { useCopy } from '@/hooks/use-copy';
+import { cn } from '@/lib/utils';
 
 interface InputCopyableProps {
   value: string;
   readonly?: boolean;
   className?: string;
+  inputClassName?: string;
   copyMessage?: string;
 }
 
-export function InputCopyable({ 
-  value, 
-  readonly = true, 
+export function InputCopyable({
+  value,
+  readonly = true,
   className,
-  copyMessage = "Copied to clipboard"
+  inputClassName,
+  copyMessage = 'Copied to clipboard',
 }: InputCopyableProps) {
-  const { copy } = useCopy({ 
-    source: value, 
-    successMessage: copyMessage 
+  const { copy } = useCopy({
+    source: value,
+    successMessage: copyMessage,
   });
 
   return (
-    <div className="flex">
+    <div className={cn('flex', className)}>
       <Input
         value={value}
         readOnly={readonly}
-        className={`flex-1 rounded-r-none font-mono text-sm ${className}`}
+        className={`flex-1 rounded-r-none font-mono text-sm ${inputClassName}`}
       />
       <Button
         variant="outline"
