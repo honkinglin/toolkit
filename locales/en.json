@@ -131,5 +131,18 @@
     "resultPlaceholder": "The result of the HMAC...",
     "copyHMAC": "Copy HMAC",
     "hmacCopied": "HMAC copied to clipboard"
+  },
+  "rsaKeyPairGenerator": {
+    "title": "RSA Key Pair Generator",
+    "description": "Generate new and secure RSA key pairs with optional PEM passphrase.",
+    "bits": "Bits:",
+    "refreshKeyPair": "Refresh key-pair",
+    "publicKey": "Public key",
+    "privateKey": "Private key",
+    "generating": "Generating...",
+    "bitsValidation": "Bits should be 256 <= bits <= 16384 and be a multiple of 8",
+    "generationError": "Failed to generate key pair",
+    "publicKeyCopied": "Public key copied to clipboard",
+    "privateKeyCopied": "Private key copied to clipboard"
   }
 }
