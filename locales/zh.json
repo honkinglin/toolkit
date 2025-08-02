@@ -246,5 +246,16 @@
     "inputPlaceholder": "请在此输入您的日期字符串...",
     "invalidDateError": "此日期格式无效",
     "invalidDatePlaceholder": "无效日期..."
+  },
+  "integerBaseConverter": {
+    "inputNumber": "输入数字",
+    "inputBase": "输入进制",
+    "inputNumberPlaceholder": "请在此输入您的数字 (例: 42)",
+    "binary": "二进制 (2)",
+    "octal": "八进制 (8)",
+    "decimal": "十进制 (10)",
+    "hexadecimal": "十六进制 (16)",
+    "base64": "Base64 (64)",
+    "custom": "自定义:"
   }
 }

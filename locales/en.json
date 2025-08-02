@@ -246,5 +246,16 @@
     "inputPlaceholder": "Put your date string here...",
     "invalidDateError": "This date is invalid for this format",
     "invalidDatePlaceholder": "Invalid date..."
+  },
+  "integerBaseConverter": {
+    "inputNumber": "Input number",
+    "inputBase": "Input base",
+    "inputNumberPlaceholder": "Put your number here (ex: 42)",
+    "binary": "Binary (2)",
+    "octal": "Octal (8)",
+    "decimal": "Decimal (10)",
+    "hexadecimal": "Hexadecimal (16)",
+    "base64": "Base64 (64)",
+    "custom": "Custom:"
   }
 }
