@@ -1,9 +1,8 @@
 "use client";
 
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState } from "react";
 import { ToolLayout } from "@/components/layout/tool-layout";
 import { useTranslations } from "next-intl";
-import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 
 import { Button } from "@/components/ui/button";
 import {
@@ -23,47 +22,13 @@ import { createToken } from "@/lib/token-generator";
 
 export default function TokenGenerator() {
   const t = useTranslations("tokenGenerator");
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
 
-  // 本地状态（不会立即更新 URL）
-  const [length, setLength] = useState(() => {
-    const param = searchParams.get('length');
-    return param ? Number(param) : 64;
-  });
-  const [withUppercase, setWithUppercase] = useState(() => {
-    const param = searchParams.get('uppercase');
-    return param ? param === 'true' : true;
-  });
-  const [withLowercase, setWithLowercase] = useState(() => {
-    const param = searchParams.get('lowercase');
-    return param ? param === 'true' : true;
-  });
-  const [withNumbers, setWithNumbers] = useState(() => {
-    const param = searchParams.get('numbers');
-    return param ? param === 'true' : true;
-  });
-  const [withSymbols, setWithSymbols] = useState(() => {
-    const param = searchParams.get('symbols');
-    return param ? param === 'true' : false;
-  });
-
-  // 防抖更新 URL
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.set('length', String(length));
-      params.set('uppercase', String(withUppercase));
-      params.set('lowercase', String(withLowercase));
-      params.set('numbers', String(withNumbers));
-      params.set('symbols', String(withSymbols));
-      
-      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
-    }, 500); // 500ms 防抖
-
-    return () => clearTimeout(timeoutId);
-  }, [length, withUppercase, withLowercase, withNumbers, withSymbols, searchParams, router, pathname]);
+  // 本地状态
+  const [length, setLength] = useState(64);
+  const [withUppercase, setWithUppercase] = useState(true);
+  const [withLowercase, setWithLowercase] = useState(true);
+  const [withNumbers, setWithNumbers] = useState(true);
+  const [withSymbols, setWithSymbols] = useState(false);
 
   // 生成 token 的计算函数
   const computeToken = useCallback(() => {
@@ -172,7 +137,7 @@ export default function TokenGenerator() {
             {t('copy')}
           </Button>
           <Button onClick={refreshToken} className="flex-1">
-            <RefreshCw className="w-4 w-4 mr-2" />
+            <RefreshCw className="w-4 h-4 mr-2" />
             {t('refresh')}
           </Button>
         </CardFooter>
