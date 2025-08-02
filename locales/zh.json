@@ -96,7 +96,24 @@
     "tomlToYaml": "TOML到YAML",
     "xmlToJson": "XML到JSON",
     "jsonToXml": "JSON到XML",
-    "markdownToHtml": "Markdown到HTML"
+    "markdownToHtml": "Markdown到HTML",
+    "web": "Web工具",
+    "urlEncoderDecoder": "编码/解码URL格式的字符串",
+    "htmlEntities": "转义html实体",
+    "uriParser": "Uri分析器",
+    "deviceInfo": "设备信息",
+    "basicAuthGenerator": "基本身份验证生成器",
+    "openGraphGenerator": "开放式图形元生成器",
+    "otpCodeGenerator": "OTP代码生成器",
+    "mimeTypes": "mime类型",
+    "jwtParser": "JWT解析器",
+    "keycodeInfo": "Keycode信息",
+    "unicodeCharCodes": "打乱字符串",
+    "htmlWysiwygEditor": "HTML所见即所得编辑器",
+    "userAgentParser": "用户代理分析器",
+    "httpStatusCodes": "HTTP状态码",
+    "jsonDiff": "JSON差异比较",
+    "outlookSafelinkDecoder": "Outlook Safelink decoder"
   },
   "tokenGenerator": {
     "title": "令牌生成器",
@@ -478,5 +495,9 @@
     "outputPlaceholder": "您的Markdown的HTML表示将显示在这里",
     "copyButton": "复制HTML",
     "printButton": "打印为PDF"
+  },
+  "urlEncoderDecoder": {
+    "title": "URL编码/解码器",
+    "description": "对URL字符串进行编码和解码，正确处理特殊字符和空格"
   }
 }
