@@ -632,5 +632,29 @@
       "copyTooltip": "Copy meta tags to clipboard",
       "copySuccessTooltip": "Meta tags copied to clipboard!"
     }
+  },
+  "otpCodeGenerator": {
+    "title": "OTP Code Generator",
+    "description": "Generate time-based one-time passwords (TOTP) for multi-factor authentication",
+    "secret": "Secret",
+    "secretPlaceholder": "Paste your TOTP secret...",
+    "secretValidation": "Secret should be a base32 string",
+    "generateSecret": "Generate a new random secret",
+    "previous": "Previous",
+    "currentOtp": "Current OTP",
+    "next": "Next",
+    "nextIn": "Next in",
+    "copied": "Copied!",
+    "copyPrevious": "Copy previous OTP",
+    "copyCurrent": "Copy current OTP",
+    "copyNext": "Copy next OTP",
+    "openKeyUri": "Open Key URI in new tab",
+    "generatingQR": "Generating QR Code...",
+    "technicalDetails": "Technical Details",
+    "secretInHex": "Secret in hexadecimal",
+    "epoch": "Epoch",
+    "iteration": "Iteration",
+    "count": "Count",
+    "paddedHex": "Padded hex"
   }
 }
