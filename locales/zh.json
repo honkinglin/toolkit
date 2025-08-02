@@ -450,5 +450,14 @@
     "outputLabel": "来自您TOML的YAML",
     "outputPlaceholder": "您的TOML的YAML表示将显示在这里",
     "copyButton": "复制YAML"
+  },
+  "xmlToJson": {
+    "title": "XML到JSON",
+    "description": "将XML转换为JSON",
+    "inputLabel": "您的XML内容",
+    "inputPlaceholder": "请在此粘贴您的XML内容...",
+    "outputLabel": "转换后的JSON",
+    "outputPlaceholder": "您的XML的JSON表示将显示在这里",
+    "copyButton": "复制JSON"
   }
 }
