@@ -10,14 +10,16 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { Copy } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { convertTomlToJson, isValidToml, withDefaultOnError } from '@/lib/toml-to-json';
+import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 export default function TomlToJsonPage() {
   const t = useTranslations('sidebar');
   const tj = useTranslations('tomlToJson');
 
   const [inputToml, setInputToml] = useState('');
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
+
+  // Use the custom copy hook
+  const { copied, tooltipOpen, handleCopy, handleTooltipOpenChange } = useCopyWithTooltip();
 
   // Convert TOML to JSON with error handling
   const jsonFromToml = useMemo(() => {
@@ -37,35 +39,8 @@ export default function TomlToJsonPage() {
     };
   }, [inputToml]);
 
-  const handleCopy = async () => {
-    if (!jsonFromToml) return;
-
-    try {
-      await navigator.clipboard.writeText(jsonFromToml);
-
-      // Set copied state
-      setCopied(true);
-      setTooltipOpen(true);
-
-      // Reset after 2 seconds
-      setTimeout(() => {
-        setCopied(false);
-        setTooltipOpen(false);
-      }, 2000);
-
-      console.log('JSON copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
-
-  const handleTooltipOpenChange = (open: boolean) => {
-    setTooltipOpen(open);
-
-    // If tooltip is being closed, also reset copied state
-    if (!open) {
-      setCopied(false);
-    }
+  const handleCopyJson = () => {
+    handleCopy(jsonFromToml);
   };
 
   return (
@@ -105,7 +80,7 @@ export default function TomlToJsonPage() {
           <div className="flex justify-center">
             <Tooltip open={tooltipOpen} onOpenChange={handleTooltipOpenChange}>
               <TooltipTrigger asChild>
-                <Button onClick={handleCopy} disabled={!jsonFromToml} className="px-6">
+                <Button onClick={handleCopyJson} disabled={!jsonFromToml} className="px-6">
                   <Copy className="h-4 w-4 mr-2" />
                   {tj('copyButton')}
                 </Button>

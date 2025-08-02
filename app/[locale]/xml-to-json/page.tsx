@@ -10,6 +10,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { Copy } from 'lucide-react';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { convertXmlToJson, withDefaultOnError } from '@/lib/xml-to-json';
+import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 const defaultValue = '<a x="1.234" y="It\'s"/>';
 
@@ -39,9 +40,10 @@ export default function XmlToJsonPage() {
   const xj = useTranslations('xmlToJson');
 
   const [inputXml, setInputXml] = useState(defaultValue);
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
+
+  // Use the custom copy hook
+  const { copied, tooltipOpen, handleCopy, handleTooltipOpenChange } = useCopyWithTooltip();
 
   // Ensure we're on the client side
   useEffect(() => {
@@ -66,29 +68,8 @@ export default function XmlToJsonPage() {
     };
   }, [inputXml, isClient]);
 
-  const handleCopy = async () => {
-    if (!jsonFromXml) return;
-
-    try {
-      await navigator.clipboard.writeText(jsonFromXml);
-
-      // Set copied state
-      setCopied(true);
-      setTooltipOpen(true);
-
-      console.log('JSON copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
-
-  const handleTooltipOpenChange = (open: boolean) => {
-    setTooltipOpen(open);
-
-    // If tooltip is being closed, also reset copied state
-    if (!open) {
-      setCopied(false);
-    }
+  const handleCopyJson = () => {
+    handleCopy(jsonFromXml);
   };
 
   return (
@@ -130,7 +111,7 @@ export default function XmlToJsonPage() {
           <div className="flex justify-center">
             <Tooltip open={tooltipOpen} onOpenChange={handleTooltipOpenChange}>
               <TooltipTrigger asChild>
-                <Button onClick={handleCopy} disabled={!jsonFromXml} className="px-6">
+                <Button onClick={handleCopyJson} disabled={!jsonFromXml} className="px-6">
                   <Copy className="h-4 w-4 mr-2" />
                   {xj('copyButton')}
                 </Button>

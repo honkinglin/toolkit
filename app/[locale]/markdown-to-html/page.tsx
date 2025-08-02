@@ -11,15 +11,17 @@ import { Copy, Printer } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { convertMarkdownToHtml, printHtmlAsPdf } from '@/lib/markdown-to-html';
+import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 export default function MarkdownToHtmlPage() {
   const t = useTranslations('sidebar');
   const mh = useTranslations('markdownToHtml');
 
   const [inputMarkdown, setInputMarkdown] = useState('');
-  const [copied, setCopied] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
+
+  // Use the custom copy hook
+  const { copied, tooltipOpen, handleCopy, handleTooltipOpenChange } = useCopyWithTooltip();
 
   // Ensure we're on the client side
   useEffect(() => {
@@ -32,40 +34,13 @@ export default function MarkdownToHtmlPage() {
     return convertMarkdownToHtml(inputMarkdown);
   }, [inputMarkdown, isClient]);
 
-  const handleCopy = async () => {
-    if (!outputHtml) return;
-
-    try {
-      await navigator.clipboard.writeText(outputHtml);
-
-      // Set copied state
-      setCopied(true);
-      setTooltipOpen(true);
-
-      // Reset after 2 seconds
-      setTimeout(() => {
-        setCopied(false);
-        setTooltipOpen(false);
-      }, 2000);
-
-      console.log('HTML copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
+  const handleCopyHtml = () => {
+    handleCopy(outputHtml);
   };
 
   const handlePrintAsPdf = () => {
     if (!outputHtml) return;
     printHtmlAsPdf(outputHtml);
-  };
-
-  const handleTooltipOpenChange = (open: boolean) => {
-    setTooltipOpen(open);
-
-    // If tooltip is being closed, also reset copied state
-    if (!open) {
-      setCopied(false);
-    }
   };
 
   return (
@@ -105,7 +80,7 @@ export default function MarkdownToHtmlPage() {
             <Tooltip open={tooltipOpen} onOpenChange={handleTooltipOpenChange}>
               <TooltipTrigger asChild>
                 <Button
-                  onClick={handleCopy}
+                  onClick={handleCopyHtml}
                   disabled={!outputHtml}
                   variant="outline"
                   className="px-6"
