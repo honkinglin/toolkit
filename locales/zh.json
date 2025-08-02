@@ -459,5 +459,14 @@
     "outputLabel": "转换后的JSON",
     "outputPlaceholder": "您的XML的JSON表示将显示在这里",
     "copyButton": "复制JSON"
+  },
+  "jsonToXml": {
+    "title": "JSON到XML",
+    "description": "将JSON转换为XML",
+    "inputLabel": "您的JSON内容",
+    "inputPlaceholder": "请在此粘贴您的JSON内容...",
+    "outputLabel": "转换后的XML",
+    "outputPlaceholder": "您的JSON的XML表示将显示在这里",
+    "copyButton": "复制XML"
   }
 }
