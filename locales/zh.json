@@ -373,5 +373,14 @@
     "textOutputPlaceholder": "您的unicode的文本表示将显示在这里",
     "copyUnicodeButton": "复制unicode到剪贴板",
     "copyTextButton": "复制文本到剪贴板"
+  },
+  "yamlToJson": {
+    "title": "YAML到JSON转换器",
+    "description": "使用此在线转换器将您的YAML转换为JSON",
+    "inputLabel": "您的YAML",
+    "inputPlaceholder": "请在此粘贴您的yaml...",
+    "outputLabel": "来自您YAML的JSON",
+    "outputPlaceholder": "您的YAML的JSON表示将显示在这里",
+    "copyButton": "复制JSON"
   }
 }
