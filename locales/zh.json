@@ -262,5 +262,21 @@
     "arabicToRoman": "阿拉伯数字转罗马数字",
     "romanToArabic": "罗马数字转阿拉伯数字",
     "copy": "复制"
+  },
+  "base64StringConverter": {
+    "stringToBase64": "字符串转Base64",
+    "base64ToString": "Base64转字符串",
+    "encodeUrlSafe": "编码URL安全",
+    "decodeUrlSafe": "解码URL安全",
+    "stringToEncode": "要编码的字符串",
+    "stringPlaceholder": "请在此输入您的字符串...",
+    "base64OfString": "字符串的Base64编码",
+    "base64OutputPlaceholder": "您字符串的base64编码将显示在这里",
+    "copyBase64": "复制Base64",
+    "base64StringToDecode": "要解码的Base64字符串",
+    "base64Placeholder": "您的base64字符串...",
+    "decodedString": "解码后的字符串",
+    "decodedPlaceholder": "解码后的字符串将显示在这里",
+    "copyDecodedString": "复制解码字符串"
   }
 }
