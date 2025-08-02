@@ -29,7 +29,7 @@ export function generateMnemonic(entropy: string, language: Language = 'english'
     const entropyBuffer = Buffer.from(entropy, 'hex');
     return bip39.entropyToMnemonic(entropyBuffer, wordlist);
   } catch (error) {
-    throw new Error('Failed to generate mnemonic from entropy');
+    throw new Error(`Failed to generate mnemonic from entropy ${entropy}: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
 
@@ -37,8 +37,8 @@ export function validateMnemonic(mnemonic: string, language: Language = 'english
   try {
     const wordlist = getWordlist(language);
     return bip39.validateMnemonic(mnemonic, wordlist);
-  } catch (error) {
-    return false;
+  } catch {
+    return false; // 如果验证失败，返回 false
   }
 }
 
@@ -47,7 +47,7 @@ export function mnemonicToEntropy(mnemonic: string, language: Language = 'englis
     const wordlist = getWordlist(language);
     return bip39.mnemonicToEntropy(mnemonic, wordlist);
   } catch (error) {
-    throw new Error('Failed to convert mnemonic to entropy');
+    throw new Error(`Failed to convert mnemonic to entropy: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
 

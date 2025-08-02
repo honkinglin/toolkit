@@ -13,7 +13,7 @@ import {
 
 export interface Tool {
   id: string;
-  icon: any;
+  icon: React.ElementType;
   category: string;
   featured: boolean;
   href: string;

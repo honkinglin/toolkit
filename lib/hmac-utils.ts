@@ -78,6 +78,6 @@ export function generateHMAC(
     const hmacResult = hmacAlgorithms[algorithm](plainText, secret);
     return formatWithEncoding(hmacResult, encoding);
   } catch (error) {
-    return '';
+    return `Error: ${error instanceof Error ? error.message : 'Unknown error'}`;
   }
 }

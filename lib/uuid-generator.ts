@@ -40,7 +40,7 @@ export function generateUUIDs(version: UUIDVersion, count: number, v35Args?: V35
           return '';
       }
     }).filter(uuid => uuid !== ''); // 过滤掉空字符串
-  } catch (error) {
+  } catch {
     return [];
   }
 }

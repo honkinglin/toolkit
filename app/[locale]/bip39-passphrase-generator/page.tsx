@@ -68,7 +68,7 @@ export default function BIP39PassphraseGenerator() {
 
       const newMnemonic = generateMnemonic(entropyValue, language);
       setMnemonic(newMnemonic);
-    } catch (error) {
+    } catch {
       setMnemonic("");
     }
   }, [language]);
@@ -88,7 +88,7 @@ export default function BIP39PassphraseGenerator() {
 
       const newEntropy = mnemonicToEntropy(mnemonicValue, language);
       setEntropy(newEntropy);
-    } catch (error) {
+    } catch {
       setEntropy("");
     }
   }, [language]);
