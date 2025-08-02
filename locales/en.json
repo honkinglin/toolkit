@@ -357,5 +357,21 @@
     "textOutputPlaceholder": "The text representation of your binary will be here",
     "copyBinaryButton": "Copy binary to clipboard",
     "copyTextButton": "Copy text to clipboard"
+  },
+  "textToUnicode": {
+    "title": "Text to Unicode",
+    "description": "Convert text to Unicode entities and vice versa",
+    "textToUnicodeTitle": "Text to Unicode",
+    "unicodeToTextTitle": "Unicode to Text",
+    "textInputLabel": "Enter text to convert to unicode",
+    "textInputPlaceholder": "e.g. 'Hello Avengers'",
+    "unicodeOutputLabel": "Unicode from your text",
+    "unicodeOutputPlaceholder": "The unicode representation of your text will be here",
+    "unicodeInputLabel": "Enter unicode to convert to text",
+    "unicodeInputPlaceholder": "Input Unicode",
+    "textOutputLabel": "Text from your Unicode",
+    "textOutputPlaceholder": "The text representation of your unicode will be here",
+    "copyUnicodeButton": "Copy unicode to clipboard",
+    "copyTextButton": "Copy text to clipboard"
   }
 }

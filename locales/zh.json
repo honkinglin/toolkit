@@ -357,5 +357,21 @@
     "textOutputPlaceholder": "您的二进制的文本表示将显示在这里",
     "copyBinaryButton": "复制二进制到剪贴板",
     "copyTextButton": "复制文本到剪贴板"
+  },
+  "textToUnicode": {
+    "title": "文本转Unicode",
+    "description": "解析文本并将其转换为unicode，反之亦然",
+    "textToUnicodeTitle": "文本转Unicode",
+    "unicodeToTextTitle": "Unicode转文本",
+    "textInputLabel": "输入要转换为unicode的文本",
+    "textInputPlaceholder": "例如 'Hello Avengers'",
+    "unicodeOutputLabel": "文本的Unicode表示",
+    "unicodeOutputPlaceholder": "您的文本的unicode表示将显示在这里",
+    "unicodeInputLabel": "输入要转换为文本的unicode",
+    "unicodeInputPlaceholder": "输入Unicode",
+    "textOutputLabel": "Unicode的文本表示",
+    "textOutputPlaceholder": "您的unicode的文本表示将显示在这里",
+    "copyUnicodeButton": "复制unicode到剪贴板",
+    "copyTextButton": "复制文本到剪贴板"
   }
 }
