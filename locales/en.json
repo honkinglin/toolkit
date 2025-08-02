@@ -468,5 +468,15 @@
     "outputLabel": "Converted XML",
     "outputPlaceholder": "The XML representation of your JSON will appear here",
     "copyButton": "Copy XML"
+  },
+  "markdownToHtml": {
+    "title": "Markdown to HTML",
+    "description": "Convert Markdown to Html and allow to print (as PDF)",
+    "inputLabel": "Your Markdown to convert:",
+    "inputPlaceholder": "Your Markdown content...",
+    "outputLabel": "Output HTML:",
+    "outputPlaceholder": "The HTML representation of your Markdown will appear here",
+    "copyButton": "Copy HTML",
+    "printButton": "Print as PDF"
   }
 }
