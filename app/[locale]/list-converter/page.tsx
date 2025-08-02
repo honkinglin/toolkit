@@ -92,7 +92,7 @@ export default function ListConverterPage() {
   return (
     <ToolLayout title={t('listConverter')} description={lc('description')}>
       {/* Configuration Card */}
-      <Card className="w-full max-w-4xl mx-auto">
+      <Card className="w-full mx-auto">
         <CardContent>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Left Column - Switches */}
