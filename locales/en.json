@@ -498,6 +498,21 @@
   },
   "urlEncoderDecoder": {
     "title": "URL Encoder/Decoder",
-    "description": "Encode and decode URL strings to handle special characters and spaces properly"
+    "description": "Encode and decode URL strings to handle special characters and spaces properly",
+    "encodeTitle": "Encode",
+    "decodeTitle": "Decode",
+    "inputStringLabel": "Your string :",
+    "encodedStringLabel": "Your string encoded :",
+    "encodedInputLabel": "Your encoded string :",
+    "decodedStringLabel": "Your string decoded :",
+    "encodeInputPlaceholder": "The string to encode",
+    "encodedOutputPlaceholder": "Your string encoded",
+    "decodeInputPlaceholder": "The string to decode",
+    "decodedOutputPlaceholder": "Your string decoded",
+    "copyButton": "Copy",
+    "copyEncodedTooltip": "Copy encoded string to clipboard",
+    "copyDecodedTooltip": "Copy decoded string to clipboard",
+    "copySuccessTooltip": "Copied!",
+    "parseError": "Impossible to parse this string"
   }
 }
