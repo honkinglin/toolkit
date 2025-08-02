@@ -313,5 +313,25 @@
     "name": "name:",
     "copy": "Copy",
     "clear": "Clear"
+  },
+  "caseConverter": {
+    "title": "Case Converter",
+    "description": "Convert text between different case formats",
+    "yourString": "Your string",
+    "yourStringPlaceholder": "Your string...",
+    "lowercase": "Lowercase",
+    "uppercase": "Uppercase",
+    "camelcase": "Camelcase",
+    "capitalcase": "Capitalcase",
+    "constantcase": "Constantcase",
+    "dotcase": "Dotcase",
+    "headercase": "Headercase",
+    "nocase": "Nocase",
+    "paramcase": "Paramcase",
+    "pascalcase": "Pascalcase",
+    "pathcase": "Pathcase",
+    "sentencecase": "Sentencecase",
+    "snakecase": "Snakecase",
+    "mockingcase": "Mockingcase"
   }
 }

@@ -313,5 +313,25 @@
     "name": "name:",
     "copy": "复制",
     "clear": "清除"
+  },
+  "caseConverter": {
+    "title": "大小写转换",
+    "description": "更多字符的大小写并在不同格式之间进行转换",
+    "yourString": "您的字符串",
+    "yourStringPlaceholder": "您的字符串...",
+    "lowercase": "小写",
+    "uppercase": "大写",
+    "camelcase": "驼峰命名",
+    "capitalcase": "首字母大写",
+    "constantcase": "常量命名",
+    "dotcase": "点分命名",
+    "headercase": "标题命名",
+    "nocase": "无格式",
+    "paramcase": "参数命名",
+    "pascalcase": "帕斯卡命名",
+    "pathcase": "路径命名",
+    "sentencecase": "句子命名",
+    "snakecase": "蛇形命名",
+    "mockingcase": "模拟命名"
   }
 }
