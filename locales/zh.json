@@ -432,5 +432,14 @@
     "wrapList": "包装列表",
     "listPrefix": "列表前缀",
     "listSuffix": "列表后缀"
+  },
+  "tomlToJson": {
+    "title": "TOML到JSON",
+    "description": "解析TOML并将其转换为JSON",
+    "inputLabel": "您的TOML",
+    "inputPlaceholder": "请在此粘贴您的TOML...",
+    "outputLabel": "来自您TOML的JSON",
+    "outputPlaceholder": "您的TOML的JSON表示将显示在这里",
+    "copyButton": "复制JSON"
   }
 }
