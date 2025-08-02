@@ -10,8 +10,7 @@
     "bip39PassphraseGenerator": "BIP39 passphrase generator",
     "hmacGenerator": "Hmac generator",
     "rsaKeyPairGenerator": "RSA key pair generator",
-    "passwordStrengthAnalyzer": "Password strength analyzer",
-    "pdfSignatureChecker": "PDF signature checker"
+    "passwordStrengthAnalyzer": "Password strength analyzer"
   },
   "tokenGenerator": {
     "title": "Token Generator",

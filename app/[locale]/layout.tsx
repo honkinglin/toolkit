@@ -2,6 +2,7 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import AppLayout from '@/components/layout/app-layout';
+import { FavoritesProvider } from "@/contexts/favorites-context";
 
 const locales = ['en', 'zh'];
 
@@ -20,9 +21,11 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <AppLayout>
-        {children}
-      </AppLayout>
+      <FavoritesProvider>
+        <AppLayout>
+          {children}
+        </AppLayout>
+      </FavoritesProvider>
     </NextIntlClientProvider>
   );
 }
