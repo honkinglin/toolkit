@@ -341,5 +341,21 @@
     "inputPlaceholder": "Put your text here...",
     "outputLabel": "Your text in NATO phonetic alphabet",
     "copyButton": "Copy NATO string"
+  },
+  "textToAsciiBinary": {
+    "title": "Text to ASCII Binary",
+    "description": "Convert text to ASCII binary representation and vice versa",
+    "textToBinaryTitle": "Text to ASCII binary",
+    "binaryToTextTitle": "ASCII binary to text",
+    "textInputLabel": "Enter text to convert to binary",
+    "textInputPlaceholder": "e.g. 'Hello world'",
+    "binaryOutputLabel": "Binary from your text",
+    "binaryOutputPlaceholder": "The binary representation of your text will be here",
+    "binaryInputLabel": "Enter binary to convert to text",
+    "binaryInputPlaceholder": "e.g. '01001000 01100101 01101100 01101100 01101111'",
+    "textOutputLabel": "Text from your binary",
+    "textOutputPlaceholder": "The text representation of your binary will be here",
+    "copyBinaryButton": "Copy binary to clipboard",
+    "copyTextButton": "Copy text to clipboard"
   }
 }

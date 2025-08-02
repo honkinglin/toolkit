@@ -341,5 +341,21 @@
     "inputPlaceholder": "请在此输入您的文本...",
     "outputLabel": "您的文本的北约拼音字母表示",
     "copyButton": "复制北约字符串"
+  },
+  "textToAsciiBinary": {
+    "title": "文本到ASCII二进制",
+    "description": "将文本转换为ASCII二进制表示形式，反之亦然",
+    "textToBinaryTitle": "文本到ASCII二进制",
+    "binaryToTextTitle": "ASCII二进制到文本",
+    "textInputLabel": "输入要转换为二进制的文本",
+    "textInputPlaceholder": "例如 'Hello world'",
+    "binaryOutputLabel": "文本的二进制表示",
+    "binaryOutputPlaceholder": "您的文本的二进制表示将显示在这里",
+    "binaryInputLabel": "输入要转换为文本的二进制",
+    "binaryInputPlaceholder": "例如 '01001000 01100101 01101100 01101100 01101111'",
+    "textOutputLabel": "二进制的文本表示",
+    "textOutputPlaceholder": "您的二进制的文本表示将显示在这里",
+    "copyBinaryButton": "复制二进制到剪贴板",
+    "copyTextButton": "复制文本到剪贴板"
   }
 }
