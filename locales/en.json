@@ -333,5 +333,13 @@
     "sentencecase": "Sentencecase",
     "snakecase": "Snakecase",
     "mockingcase": "Mockingcase"
+  },
+  "textToNatoAlphabet": {
+    "title": "Text to NATO Alphabet",
+    "description": "Convert text to NATO phonetic alphabet for clear oral transmission",
+    "inputLabel": "Your text to convert to NATO phonetic alphabet",
+    "inputPlaceholder": "Put your text here...",
+    "outputLabel": "Your text in NATO phonetic alphabet",
+    "copyButton": "Copy NATO string"
   }
 }
