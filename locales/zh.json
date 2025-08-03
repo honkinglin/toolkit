@@ -4,6 +4,10 @@
     "subtitle": "为开发者和技术人员提供的实用工具集合",
     "description": "包含加密解密、数据转换、代码生成等多种实用工具",
     "featuredTools": "特色工具",
+    "searchPlaceholder": "搜索工具...",
+    "allCategories": "全部",
+    "searchResults": "搜索结果",
+    "noToolsFound": "未找到匹配的工具",
     "stats": {
       "totalTools": "总工具数",
       "categories": "工具分类",
@@ -16,10 +20,11 @@
       "removeFromFavorites": "取消收藏"
     },
     "categories": {
-      "crypto": "加密",
+      "crypto": "加密工具",
       "generator": "生成器",
-      "security": "安全",
       "converter": "转换器",
+      "format": "格式转换",
+      "web": "Web工具",
       "utility": "实用工具"
     },
     "tools": {
@@ -47,7 +52,7 @@
         "title": "加密/解密文本",
         "description": "使用加密算法（如AES、TripleDES、Rabbit或RC4）加密和解密文本明文。"
       },
-      "bip39-generator": {
+      "bip39-passphrase-generator": {
         "title": "BIP39密码生成器",
         "description": "从现有或随机助记词生成BIP39密码短语，或从密码短语获取助记词。"
       },
@@ -74,6 +79,130 @@
       "http-status-codes": {
         "title": "HTTP状态码",
         "description": "所有HTTP状态的列表对其含义和描述。"
+      },
+      "json-diff": {
+        "title": "JSON差异比较",
+        "description": "比较两个JSON对象并获取它们之间的差异。"
+      },
+      "base64-string-encode-decode": {
+        "title": "Base64字符串编码/解码",
+        "description": "编码和解码Base64字符串，支持标准和URL安全编码。"
+      },
+      "base64-file-converter": {
+        "title": "Base64文件转换器",
+        "description": "将文件转换为Base64编码字符串，并将Base64字符串解码回文件。"
+      },
+      "basic-auth-generator": {
+        "title": "基本认证生成器",
+        "description": "从用户名和密码生成HTTP基本认证头。"
+      },
+      "case-converter": {
+        "title": "大小写转换器",
+        "description": "在不同的大小写格式之间转换文本：驼峰命名、帕斯卡命名、蛇形命名、短横线命名等。"
+      },
+      "color-picker": {
+        "title": "颜色选择器",
+        "description": "选择颜色并在不同颜色格式之间转换：HEX、RGB、HSL、HSV。"
+      },
+      "date-time-converter": {
+        "title": "日期时间转换器",
+        "description": "在不同的日期和时间格式之间转换，包括Unix时间戳。"
+      },
+      "device-info": {
+        "title": "设备信息",
+        "description": "获取有关您的设备、浏览器、屏幕分辨率等信息。"
+      },
+      "html-entities": {
+        "title": "HTML实体",
+        "description": "编码和解码HTML实体以安全显示HTML中的特殊字符。"
+      },
+      "html-wysiwyg-editor": {
+        "title": "HTML可视化编辑器",
+        "description": "用于创建和编辑HTML内容的富文本编辑器，具有可视化界面。"
+      },
+      "integer-base-converter": {
+        "title": "整数进制转换器",
+        "description": "在不同进制之间转换数字：二进制、八进制、十进制、十六进制。"
+      },
+      "json-to-toml": {
+        "title": "JSON转TOML",
+        "description": "将JSON数据转换为TOML（Tom的明显、最小语言）格式。"
+      },
+      "json-to-xml": {
+        "title": "JSON转XML",
+        "description": "将JSON数据转换为具有适当结构和格式的XML格式。"
+      },
+      "json-to-yaml": {
+        "title": "JSON转YAML",
+        "description": "将JSON数据转换为具有适当缩进和结构的YAML格式。"
+      },
+      "jwt-parser": {
+        "title": "JWT解析器",
+        "description": "解析和解码JSON Web令牌（JWT）以查看头部、有效载荷和签名。"
+      },
+      "list-converter": {
+        "title": "列表转换器",
+        "description": "在不同的列表格式之间转换：数组、逗号分隔、换行分隔。"
+      },
+      "markdown-to-html": {
+        "title": "Markdown转HTML",
+        "description": "将Markdown文本转换为HTML，支持语法高亮和格式化。"
+      },
+      "mime-types": {
+        "title": "MIME类型",
+        "description": "查找文件扩展名的MIME类型以及MIME类型的文件扩展名。"
+      },
+      "open-graph-generator": {
+        "title": "开放图形生成器",
+        "description": "生成开放图形元标签以改善社交媒体分享和SEO。"
+      },
+      "otp-code-generator": {
+        "title": "OTP代码生成器",
+        "description": "生成基于时间的一次性密码（TOTP）代码用于双因素认证。"
+      },
+      "roman-numeral-converter": {
+        "title": "罗马数字转换器",
+        "description": "在阿拉伯数字和罗马数字之间转换。"
+      },
+      "text-to-ascii-binary": {
+        "title": "文本转ASCII二进制",
+        "description": "将文本转换为ASCII码和二进制表示。"
+      },
+      "text-to-nato-alphabet": {
+        "title": "文本转北约字母表",
+        "description": "将文本转换为北约语音字母表以进行清晰的通信。"
+      },
+      "text-to-unicode": {
+        "title": "文本转Unicode",
+        "description": "将文本转换为Unicode码点和转义序列。"
+      },
+      "toml-to-json": {
+        "title": "TOML转JSON",
+        "description": "将TOML（Tom的明显、最小语言）数据转换为JSON格式。"
+      },
+      "toml-to-yaml": {
+        "title": "TOML转YAML",
+        "description": "将TOML数据转换为具有适当结构的YAML格式。"
+      },
+      "url-encoder-decoder": {
+        "title": "URL编码器/解码器",
+        "description": "编码和解码URL和URL组件以安全传输。"
+      },
+      "url-parser": {
+        "title": "URL解析器",
+        "description": "解析URL并提取组件：协议、主机、路径、查询参数。"
+      },
+      "xml-to-json": {
+        "title": "XML转JSON",
+        "description": "将XML数据转换为具有适当结构保留的JSON格式。"
+      },
+      "yaml-to-json": {
+        "title": "YAML转JSON",
+        "description": "将YAML数据转换为JSON格式，具有验证和错误检查。"
+      },
+      "yaml-to-toml": {
+        "title": "YAML转TOML",
+        "description": "将YAML数据转换为具有适当语法转换的TOML格式。"
       }
     }
   },

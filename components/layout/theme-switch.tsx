@@ -1,37 +1,33 @@
-"use client"
+'use client';
 
-import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-
-import { Switch } from "@/components/ui/switch"
+import * as React from 'react';
+import { Moon, Sun } from 'lucide-react';
+import { useTheme } from 'next-themes';
+import { Button } from '@/components/ui/button';
 
 export function ThemeSwitch() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = React.useState(false)
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
 
   if (!mounted) {
     return (
-      <div className="flex items-center space-x-2">
+      <Button variant="ghost" size="icon" disabled>
         <Sun className="h-4 w-4" />
-        <Switch disabled />
-        <Moon className="h-4 w-4" />
-      </div>
-    )
+      </Button>
+    );
   }
 
   return (
-    <div className="flex items-center space-x-2">
-      <Sun className="h-4 w-4" />
-      <Switch
-        checked={theme === "dark"}
-        onCheckedChange={(checked) => setTheme(checked ? "dark" : "light")}
-      />
-      <Moon className="h-4 w-4" />
-    </div>
-  )
+    <Button variant="ghost" size="icon" onClick={toggleTheme}>
+      {theme === 'dark' ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+    </Button>
+  );
 }
