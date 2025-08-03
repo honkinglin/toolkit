@@ -25,7 +25,8 @@
       "converter": "Converters",
       "format": "Format Converters",
       "web": "Web Tools",
-      "utility": "Utilities"
+      "utility": "Utilities",
+      "media": "Media & Graphics"
     },
     "tools": {
       "token-generator": {
@@ -203,6 +204,22 @@
       "yaml-to-toml": {
         "title": "YAML to TOML",
         "description": "Convert YAML data to TOML format with proper syntax conversion."
+      },
+      "qr-code-generator": {
+        "title": "QR Code Generator",
+        "description": "Generate QR codes for text, URLs, and other data with customizable options."
+      },
+      "wifi-qr-code-generator": {
+        "title": "WiFi QR Code Generator",
+        "description": "Generate QR codes for WiFi network credentials for easy sharing."
+      },
+      "svg-placeholder-generator": {
+        "title": "SVG Placeholder Generator",
+        "description": "Generate customizable SVG placeholder images with various sizes and colors."
+      },
+      "camera-recorder": {
+        "title": "Camera Recorder",
+        "description": "Record video and capture photos using your device's camera."
       }
     }
   },
@@ -253,7 +270,12 @@
     "htmlWysiwygEditor": "HTML WYSIWYG Editor",
     "userAgentParser": "User Agent Parser",
     "httpStatusCodes": "HTTP Status Codes",
-    "jsonDiff": "JSON Diff"
+    "jsonDiff": "JSON Diff",
+    "media": "Media & Graphics",
+    "qrCodeGenerator": "QR Code Generator",
+    "wifiQrCodeGenerator": "WiFi QR Code Generator",
+    "svgPlaceholderGenerator": "SVG Placeholder Generator",
+    "cameraRecorder": "Camera Recorder"
   },
   "tokenGenerator": {
     "title": "Token Generator",
@@ -890,5 +912,22 @@
     "invalidJsonFormat": "Invalid JSON format",
     "onlyShowDifferences": "Only show differences",
     "jsonAreTheSame": "The provided JSONs are the same"
+  },
+  "qrCodeGenerator": {
+    "title": "QR Code Generator",
+    "description": "Generate and download a QR code for a URL (or just plain text), and customize the background and foreground colors.",
+    "textLabel": "Text:",
+    "textPlaceholder": "Your link or text...",
+    "foregroundColor": "Foreground color:",
+    "backgroundColor": "Background color:",
+    "errorCorrectionLevel": "Error correction level:",
+    "downloadButton": "Download QR Code",
+    "noQrCode": "Enter text to generate QR code",
+    "errorLevels": {
+      "low": "Low (~7%)",
+      "medium": "Medium (~15%)",
+      "quartile": "Quartile (~25%)",
+      "high": "High (~30%)"
+    }
   }
 }

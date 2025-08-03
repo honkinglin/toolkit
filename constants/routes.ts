@@ -3,12 +3,14 @@ import { LucideIcon } from 'lucide-react';
 import { CRYPTO_ROUTES, cryptoNavigationConfig } from './crypto';
 import { CONVERTER_ROUTES, converterNavigationConfig } from './converter';
 import { WEB_ROUTES, webNavigationConfig } from './web';
+import { MEDIA_ROUTES, mediaNavigationConfig } from './media';
 
 // 路由路径常量
 export const ROUTES = {
   CRYPTO: CRYPTO_ROUTES,
   CONVERTER: CONVERTER_ROUTES,
   WEB: WEB_ROUTES,
+  MEDIA: MEDIA_ROUTES,
 } as const;
 
 // 路由配置类型
@@ -31,6 +33,7 @@ export const navigationConfig: NavGroup[] = [
   { ...cryptoNavigationConfig },
   { ...converterNavigationConfig },
   { ...webNavigationConfig },
+  { ...mediaNavigationConfig },
 ];
 
 // 其他工具函数保持不变...
