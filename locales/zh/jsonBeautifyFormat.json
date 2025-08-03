@@ -1,0 +1,23 @@
+{
+  "title": "JSON美化和格式化",
+  "description": "将JSON数据进行美化和正确的缩进格式化",
+  "config": {
+    "sortKeys": "排序键",
+    "indentSize": "缩进大小"
+  },
+  "input": {
+    "title": "原始JSON",
+    "placeholder": "在此粘贴您的原始JSON..."
+  },
+  "output": {
+    "title": "美化后的JSON",
+    "copy": "复制"
+  },
+  "validation": {
+    "invalid": "提供的JSON无效。"
+  },
+  "copy": {
+    "success": "已复制到剪贴板",
+    "error": "复制失败"
+  }
+}

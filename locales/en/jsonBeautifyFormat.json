@@ -1,0 +1,23 @@
+{
+  "title": "JSON Beautify & Format",
+  "description": "Format and beautify JSON data with proper indentation",
+  "config": {
+    "sortKeys": "Sort keys",
+    "indentSize": "Indent size"
+  },
+  "input": {
+    "title": "Your raw JSON",
+    "placeholder": "Paste your raw JSON here..."
+  },
+  "output": {
+    "title": "Prettified version of your JSON",
+    "copy": "Copy"
+  },
+  "validation": {
+    "invalid": "Provided JSON is not valid."
+  },
+  "copy": {
+    "success": "Copied to clipboard",
+    "error": "Failed to copy"
+  }
+}
