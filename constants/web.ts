@@ -32,7 +32,6 @@ export const WEB_ROUTES = {
   USER_AGENT_PARSER: '/user-agent-parser',
   HTTP_STATUS_CODES: '/http-status-codes',
   JSON_DIFF: '/json-diff',
-  OUTLOOK_SAFELINK_DECODER: '/outlook-safelink-decoder',
 };
 
 export const webNavigationConfig = {
@@ -109,11 +108,6 @@ export const webNavigationConfig = {
       titleKey: 'jsonDiff',
       url: WEB_ROUTES.JSON_DIFF,
       icon: Search,
-    },
-    {
-      titleKey: 'outlookSafelinkDecoder',
-      url: WEB_ROUTES.OUTLOOK_SAFELINK_DECODER,
-      icon: Mail,
     },
   ],
 };
