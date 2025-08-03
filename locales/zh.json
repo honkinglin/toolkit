@@ -682,5 +682,9 @@
       "mimeTypeHeader": "MIME类型",
       "extensionsHeader": "扩展名"
     }
+  },
+  "jwtParser": {
+    "title": "JWT 解析器",
+    "description": "解析和解码JSON Web Token (JWT) 并显示其内容。"
   }
 }

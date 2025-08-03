@@ -682,5 +682,9 @@
       "mimeTypeHeader": "MIME types",
       "extensionsHeader": "Extensions"
     }
+  },
+  "jwtParser": {
+    "title": "JWT Parser",
+    "description": "Decode and analyze JSON Web Token (JWT) content."
   }
 }
