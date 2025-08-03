@@ -321,5 +321,18 @@
     "refreshButton": "Refresh",
     "copyButton": "Copy",
     "copySuccess": "MAC addresses copied to clipboard!"
+  },
+  "ipv6UlaGenerator": {
+    "title": "IPv6 ULA Generator",
+    "description": "Generate IPv6 Unique Local Address (ULA) according to RFC4193 to create your own private routable IP address.",
+    "infoDescription": "This tool uses the first method suggested by IETF using the current timestamp plus the mac address, sha1 hashed, and the lower 40 bits to generate your random ULA.",
+    "inputTitle": "Input",
+    "resultTitle": "Generated IPv6 ULA",
+    "macAddressLabel": "MAC address:",
+    "macAddressPlaceholder": "Type a MAC address",
+    "invalidMacAddress": "Invalid MAC address format",
+    "enterValidMac": "Enter a valid MAC address to generate IPv6 ULA",
+    "copyTooltip": "Copy to clipboard",
+    "copySuccess": "IPv6 ULA copied to clipboard!"
   }
 }
