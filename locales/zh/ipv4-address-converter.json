@@ -1,0 +1,10 @@
+{
+  "description": "将IPv4地址转换为十进制、十六进制、二进制和IPv6格式",
+  "inputTitle": "输入",
+  "outputTitle": "转换结果",
+  "ipAddressLabel": "IPv4地址：",
+  "ipAddressPlaceholder": "输入IPv4地址（例如：192.168.1.1）",
+  "invalidIpAddress": "无效的IPv4地址格式",
+  "enterValidIp": "输入有效的IPv4地址以查看转换格式",
+  "copy": "复制到剪贴板"
+}
