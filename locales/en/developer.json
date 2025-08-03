@@ -91,5 +91,27 @@
       "success": "Copied to clipboard",
       "error": "Failed to copy"
     }
+  },
+  "chmodCalculator": {
+    "title": "Chmod Calculator",
+    "description": "Use this online chmod calculator to compute chmod permissions and concepts",
+    "permissions": {
+      "read": "Read (4)",
+      "write": "Write (2)",
+      "execute": "Execute (1)"
+    },
+    "groups": {
+      "owner": "Owner (u)",
+      "group": "Group (g)",
+      "public": "Public (o)"
+    },
+    "command": {
+      "title": "chmod command"
+    },
+    "copy": "Copy",
+    "copyMessages": {
+      "success": "Copied to clipboard",
+      "error": "Failed to copy"
+    }
   }
 }
