@@ -113,7 +113,6 @@
     "mimeTypes": "MIME Types",
     "jwtParser": "JWT Parser",
     "keycodeInfo": "Keycode Info",
-    "unicodeCharCodes": "Unicode Char Codes",
     "htmlWysiwygEditor": "HTML WYSIWYG Editor",
     "userAgentParser": "User Agent Parser",
     "httpStatusCodes": "HTTP Status Codes",
@@ -697,5 +696,9 @@
     "description": "Get keycode and key information by pressing any key",
     "instructions": "Press any key on your keyboard to get information about it:",
     "noKeyPressed": "Press any key to see its information here"
+  },
+  "htmlWysiwygEditor": {
+    "title": "HTML WYSIWYG Editor",
+    "description": "Online HTML editor with rich text features to create and edit HTML content visually"
   }
 }

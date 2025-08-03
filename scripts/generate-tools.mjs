@@ -63,6 +63,11 @@ const toolsConfig = {
     category: 'utility',
     featured: false,
   },
+  'html-wysiwyg-editor': {
+    icon: 'FileText',
+    category: 'utility',
+    featured: false,
+  },
 };
 
 // 扫描已实现的工具

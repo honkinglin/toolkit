@@ -113,7 +113,6 @@
     "mimeTypes": "mime类型",
     "jwtParser": "JWT解析器",
     "keycodeInfo": "键码信息",
-    "unicodeCharCodes": "打乱字符串",
     "htmlWysiwygEditor": "HTML所见即所得编辑器",
     "userAgentParser": "用户代理分析器",
     "httpStatusCodes": "HTTP状态码",
@@ -697,5 +696,9 @@
     "description": "通过按下键盘上的任意键获取键码和按键信息",
     "instructions": "按下键盘上的任意键以查看其信息：",
     "noKeyPressed": "按下任意键以在此查看其信息"
+  },
+  "htmlWysiwygEditor": {
+    "title": "HTML所见即所得编辑器",
+    "description": "在线HTML编辑器，具有富文本功能，可以可视化地创建和编辑HTML内容"
   }
 }

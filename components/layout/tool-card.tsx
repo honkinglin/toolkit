@@ -51,9 +51,9 @@ export function ToolCard({ tool, featured = false }: { tool: typeof implementedT
               <div className={`p-2 rounded-lg ${
                 featured ? 'bg-primary/10' : 'bg-muted'
               }`}>
-                <Icon className={`h-5 w-5 ${
-                  featured ? 'text-primary' : 'text-muted-foreground'
-                }`} />
+                <span className={`h-5 w-5 ${featured ? 'text-primary' : 'text-muted-foreground'}`}>
+                  <Icon />
+                </span>
               </div>
               <div>
                 <CardTitle className="text-lg group-hover:text-primary transition-colors">

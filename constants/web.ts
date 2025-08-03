@@ -91,11 +91,6 @@ export const webNavigationConfig = {
       icon: Type,
     },
     {
-      titleKey: 'unicodeCharCodes',
-      url: WEB_ROUTES.UNICODE_CHAR_CODES,
-      icon: Binary,
-    },
-    {
       titleKey: 'htmlWysiwygEditor',
       url: WEB_ROUTES.HTML_WYSIWYG_EDITOR,
       icon: Eye,
