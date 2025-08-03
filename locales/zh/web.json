@@ -275,5 +275,22 @@
     "invalidIpAddress": "无效的IPv4地址格式",
     "enterValidIp": "输入有效的IPv4地址以查看转换格式",
     "copy": "复制到剪贴板"
+  },
+  "ipv4RangeExpander": {
+    "title": "IPv4范围扩展器",
+    "description": "给定起始和结束IPv4地址，此工具找到所有有效IPv4网络的最优CIDR表示法。",
+    "inputTitle": "输入",
+    "resultTitle": "结果",
+    "startAddressLabel": "起始地址",
+    "endAddressLabel": "结束地址",
+    "startAddressPlaceholder": "起始IPv4地址...",
+    "endAddressPlaceholder": "结束IPv4地址...",
+    "invalidIpAddress": "无效的IPv4地址",
+    "oldValue": "旧值",
+    "newValue": "新值",
+    "invalidCombinationTitle": "起始和结束IPv4地址组合无效",
+    "invalidCombinationDescription": "结束IPv4地址低于起始IPv4地址。这是无效的，无法计算结果。在大多数情况下，解决此问题的方法是更改起始和结束地址。",
+    "switchAddresses": "交换起始和结束IPv4地址",
+    "copy": "复制"
   }
 }
