@@ -26,7 +26,8 @@
       "format": "Format Converter",
       "web": "Web Tools",
       "utility": "Utilities",
-      "media": "Media & Graphics"
+      "media": "Media & Graphics",
+      "network": "Network Tools"
     },
     "tools": {
       "token-generator": {
@@ -220,6 +221,54 @@
       "camera-recorder": {
         "title": "Camera Recorder",
         "description": "Record videos and take photos using device camera."
+      },
+      "chmod-calculator": {
+        "title": "Chmod Calculator",
+        "description": "Calculate and convert Unix file permissions between octal, symbolic, and human-readable formats."
+      },
+      "crontab-expression-generator": {
+        "title": "Crontab Expression Generator",
+        "description": "Generate and validate cron expressions for scheduled tasks with visual interface."
+      },
+      "ipv4-address-converter": {
+        "title": "IPv4 Address Converter",
+        "description": "Convert IPv4 addresses between different formats: decimal, binary, and hexadecimal."
+      },
+      "ipv4-network-calculator": {
+        "title": "IPv4 Network Calculator",
+        "description": "Calculate network information from IPv4 address and CIDR notation including subnet details."
+      },
+      "ipv4-range-expander": {
+        "title": "IPv4 Range Expander",
+        "description": "Expand IPv4 CIDR notation or range into individual IP addresses list."
+      },
+      "ipv6-ula-generator": {
+        "title": "IPv6 ULA Generator",
+        "description": "Generate IPv6 Unique Local Addresses (ULA) with customizable prefixes and settings."
+      },
+      "mac-address-generator": {
+        "title": "MAC Address Generator",
+        "description": "Generate random MAC addresses with customizable vendor prefixes and formats."
+      },
+      "mac-address-lookup": {
+        "title": "MAC Address Lookup",
+        "description": "Look up MAC address vendor information and manufacturer details."
+      },
+      "json-beautify-format": {
+        "title": "JSON Beautify & Format",
+        "description": "Format and beautify JSON data with proper indentation and syntax highlighting."
+      },
+      "json-compress": {
+        "title": "JSON Compress",
+        "description": "Compress and minify JSON data by removing whitespace and formatting."
+      },
+      "json-to-csv": {
+        "title": "JSON to CSV",
+        "description": "Convert JSON data to CSV format with customizable field mapping and options."
+      },
+      "sql-beautify-format": {
+        "title": "SQL Beautify & Format",
+        "description": "Format and beautify SQL queries with proper indentation and syntax highlighting."
       }
     }
   }
