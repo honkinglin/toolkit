@@ -70,6 +70,10 @@
       "user-agent-parser": {
         "title": "User Agent Parser",
         "description": "Parse and analyze user agent strings to extract browser, engine, OS, CPU and device information."
+      },
+      "http-status-codes": {
+        "title": "HTTP Status Codes",
+        "description": "Complete list of HTTP status codes with their meanings and descriptions."
       }
     }
   },
@@ -737,5 +741,15 @@
       "noDeviceVendor": "No device vendor available",
       "noCpuArchitecture": "No CPU architecture available"
     }
+  },
+  "httpStatusCodes": {
+    "title": "HTTP Status Codes",
+    "description": "Complete list of HTTP status codes with their meanings and descriptions",
+    "searchPlaceholder": "Search http status...",
+    "searchResults": "Search results",
+    "code": "Code",
+    "name": "Name",
+    "descriptionHeader": "Description",
+    "type": "Type"
   }
 }
