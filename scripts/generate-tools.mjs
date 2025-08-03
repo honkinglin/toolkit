@@ -239,6 +239,85 @@ const toolsConfig = {
     category: 'utility',
     featured: false,
   },
+  'qr-code-generator': {
+    icon: 'QrCode',
+    category: 'utility',
+    featured: false,
+  },
+  'wifi-qr-code-generator': {
+    icon: 'Wifi',
+    category: 'utility',
+    featured: false,
+  },
+  'svg-placeholder-generator': {
+    icon: 'Image',
+    category: 'utility',
+    featured: false,
+  },
+  'chmod-calculator': {
+    icon: 'Calculator',
+    category: 'utility',
+    featured: false,
+  },
+  'crontab-expression-generator': {
+    icon: 'Clock',
+    category: 'utility',
+    featured: false,
+  },
+
+  // 网络工具
+  'ipv4-address-converter': {
+    icon: 'Network',
+    category: 'network',
+    featured: false,
+  },
+  'ipv4-network-calculator': {
+    icon: 'Calculator',
+    category: 'network',
+    featured: false,
+  },
+  'ipv4-range-expander': {
+    icon: 'Expand',
+    category: 'network',
+    featured: false,
+  },
+  'ipv6-ula-generator': {
+    icon: 'Globe',
+    category: 'network',
+    featured: false,
+  },
+  'mac-address-generator': {
+    icon: 'Shuffle',
+    category: 'network',
+    featured: false,
+  },
+  'mac-address-lookup': {
+    icon: 'Search',
+    category: 'network',
+    featured: false,
+  },
+
+  // 格式化工具
+  'json-beautify-format': {
+    icon: 'Code',
+    category: 'format',
+    featured: false,
+  },
+  'json-compress': {
+    icon: 'Archive',
+    category: 'format',
+    featured: false,
+  },
+  'json-to-csv': {
+    icon: 'Table',
+    category: 'format',
+    featured: false,
+  },
+  'sql-beautify-format': {
+    icon: 'Database',
+    category: 'format',
+    featured: false,
+  },
 };
 
 // 扫描已实现的工具
