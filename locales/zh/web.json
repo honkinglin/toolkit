@@ -229,5 +229,40 @@
     "invalidJsonFormat": "无效的JSON格式",
     "onlyShowDifferences": "仅显示差异",
     "jsonAreTheSame": "提供的JSON是相同的"
+  },
+  "ipv4NetworkCalculator": {
+    "title": "IPv4子网计算器",
+    "description": "解析IPv4 CIDR块，并获取关于子网的所有信息",
+    "input": {
+      "title": "IPv4地址输入",
+      "label": "带有或不带有掩码的IPv4地址",
+      "placeholder": "192.168.1.0/24"
+    },
+    "fields": {
+      "netmask": "网络掩码",
+      "networkAddress": "网络地址",
+      "networkMask": "网络掩码",
+      "networkMaskBinary": "二进制网络掩码",
+      "cidrNotation": "CIDR表示法",
+      "wildcardMask": "通配符掩码",
+      "networkSize": "网络大小",
+      "firstAddress": "首地址",
+      "lastAddress": "末地址",
+      "broadcastAddress": "广播地址",
+      "ipClass": "IP类别",
+      "noBroadcast": "此掩码没有广播地址",
+      "unknownClass": "未知类别类型"
+    },
+    "navigation": {
+      "previousBlock": "上一个网段",
+      "nextBlock": "下一个网段"
+    },
+    "validation": {
+      "invalidFormat": "无法解析此地址，请检查格式"
+    },
+    "copyMessages": {
+      "success": "已复制到剪贴板",
+      "error": "复制失败"
+    }
   }
 }
