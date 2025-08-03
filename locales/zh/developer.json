@@ -67,5 +67,29 @@
       "success": "已复制到剪贴板",
       "error": "复制失败"
     }
+  },
+  "sqlBeautifyFormat": {
+    "title": "SQL美化和格式化",
+    "description": "在线格式化和美化SQL查询（支持各种SQL方言）",
+    "config": {
+      "dialect": "方言",
+      "keywordCase": "关键字大小写",
+      "indentStyle": "缩进样式"
+    },
+    "input": {
+      "label": "您的SQL查询",
+      "placeholder": "在此输入您的SQL查询..."
+    },
+    "output": {
+      "label": "美化后的查询"
+    },
+    "error": {
+      "invalidSQL": "无效的SQL语法"
+    },
+    "copy": "复制",
+    "copyMessages": {
+      "success": "已复制到剪贴板",
+      "error": "复制失败"
+    }
   }
 }
