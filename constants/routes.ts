@@ -4,6 +4,7 @@ import { CRYPTO_ROUTES, cryptoNavigationConfig } from './crypto';
 import { CONVERTER_ROUTES, converterNavigationConfig } from './converter';
 import { WEB_ROUTES, webNavigationConfig } from './web';
 import { MEDIA_ROUTES, mediaNavigationConfig } from './media';
+import { DEVELOPER_ROUTES, developerNavigationConfig } from './developer';
 
 // 路由路径常量
 export const ROUTES = {
@@ -11,6 +12,7 @@ export const ROUTES = {
   CONVERTER: CONVERTER_ROUTES,
   WEB: WEB_ROUTES,
   MEDIA: MEDIA_ROUTES,
+  DEVELOPER: DEVELOPER_ROUTES,
 } as const;
 
 // 路由配置类型
@@ -34,6 +36,7 @@ export const navigationConfig: NavGroup[] = [
   { ...converterNavigationConfig },
   { ...webNavigationConfig },
   { ...mediaNavigationConfig },
+  { ...developerNavigationConfig },
 ];
 
 // 其他工具函数保持不变...

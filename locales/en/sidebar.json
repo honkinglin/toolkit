@@ -51,6 +51,20 @@
     "qrCodeGenerator": "QR Code Generator",
     "wifiQrCodeGenerator": "WiFi QR Code Generator",
     "svgPlaceholderGenerator": "SVG Placeholder Generator",
-    "cameraRecorder": "Camera Recorder"
+    "developer": "Developer Tools",
+    "gitMemo": "Git Memo",
+    "randomPortGenerator": "Random Port Generator",
+    "crontabExpressionGenerator": "Crontab Expression Generator",
+    "jsonBeautifyFormat": "JSON Beautify & Format",
+    "jsonCompress": "JSON Compress",
+    "jsonToCsv": "JSON to CSV",
+    "sqlBeautifyFormat": "SQL Beautify & Format",
+    "chmodCalculator": "Chmod Calculator",
+    "dockerRunToDockerCompose": "Docker Run to Docker Compose",
+    "xmlFormat": "XML Format",
+    "yamlBeautifyFormat": "YAML Beautify & Format",
+    "emailNormalizer": "Email Normalizer",
+    "regexTester": "Regex Tester",
+    "regexCheatsheet": "Regex Cheatsheet"
   }
 }

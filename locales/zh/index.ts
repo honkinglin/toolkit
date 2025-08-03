@@ -4,6 +4,7 @@ import crypto from './crypto.json' with { type: 'json' };
 import generators from './generators.json' with { type: 'json' };
 import converters from './converters.json' with { type: 'json' };
 import web from './web.json' with { type: 'json' };
+import developer from './developer.json' with { type: 'json' };
 
 const translations = {
   ...home,
@@ -12,6 +13,7 @@ const translations = {
   ...generators,
   ...converters,
   ...web,
+  ...developer,
 };
 
 export default translations;
