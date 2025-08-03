@@ -32,6 +32,14 @@ interface UseCopyWithTooltipOptions {
    * @default 2000
    */
   duration?: number;
+  /**
+   * Success message to show in toast
+   */
+  successMessage?: string;
+  /**
+   * Error message to show in toast
+   */
+  errorMessage?: string;
 }
 
 interface UseCopyWithTooltipReturn {
@@ -47,7 +55,7 @@ interface UseCopyWithTooltipReturn {
 export function useCopyWithTooltip(
   options: UseCopyWithTooltipOptions = {}
 ): UseCopyWithTooltipReturn {
-  const { duration = 2000 } = options;
+  const { duration = 2000, successMessage = '已复制到剪贴板', errorMessage = '复制失败' } = options;
 
   const [copied, setCopied] = useState(false);
   const [tooltipOpen, setTooltipOpen] = useState(false);
@@ -58,13 +66,23 @@ export function useCopyWithTooltip(
     try {
       await navigator.clipboard.writeText(text);
 
-      // Set copied state
+      // Set copied state and show tooltip
       setCopied(true);
       setTooltipOpen(true);
+
+      // Show success toast
+      toast.success(successMessage);
+
+      // Auto-reset copied state after duration
+      setTimeout(() => {
+        setCopied(false);
+        setTooltipOpen(false);
+      }, duration);
 
       console.log('Text copied to clipboard');
     } catch (err) {
       console.error('Failed to copy:', err);
+      toast.error(errorMessage);
     }
   };
 
