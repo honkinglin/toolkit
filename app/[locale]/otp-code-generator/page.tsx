@@ -5,10 +5,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ToolLayout } from '@/components/layout/tool-layout';
 import { Progress } from '@/components/ui/progress';
 import { useOTP } from '@/hooks/use-otp';
-import { TokenDisplay } from '@/components/otp/token-display';
-import { QRCodeDisplay } from '@/components/otp/qrcode-display';
-import { TechnicalDetails } from '@/components/otp/technical-details';
-import { SecretInput } from '@/components/otp/secret-input';
+import { TokenDisplay } from './components/token-display';
+import { QRCodeDisplay } from './components/qrcode-display';
+import { TechnicalDetails } from './components/technical-details';
+import { SecretInput } from './components/secret-input';
 
 export default function OtpCodeGeneratorPage() {
   const otp = useTranslations('otpCodeGenerator');
