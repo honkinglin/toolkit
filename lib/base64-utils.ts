@@ -6,17 +6,18 @@ import {
 export function textToBase64(text: string, options: { makeUrlSafe?: boolean } = {}) {
   if (!text) return '';
 
-  try {
-    const encoded = btoa(unescape(encodeURIComponent(text)));
-
-    if (options.makeUrlSafe) {
-      return encoded.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
-    }
-
-    return encoded;
-  } catch {
+  // 检查文本是否包含无效字符
+  if (!/^[\x00-\xFF]*$/.test(text)) {
     return '';
   }
+
+  const encoded = btoa(unescape(encodeURIComponent(text)));
+
+  if (options.makeUrlSafe) {
+    return encoded.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+  }
+
+  return encoded;
 }
 
 export function base64ToText(base64: string, options: { makeUrlSafe?: boolean } = {}) {
@@ -37,19 +38,15 @@ export function base64ToText(base64: string, options: { makeUrlSafe?: boolean } 
 
     return decodeURIComponent(escape(atob(normalizedBase64)));
   } catch {
-    throw new Error('Invalid base64 string');
+    return '';
   }
 }
 
 export function isValidBase64(base64: string, options: { makeUrlSafe?: boolean } = {}) {
   if (!base64) return true; // Empty string is valid
 
-  try {
-    base64ToText(base64, options);
-    return true;
-  } catch {
-    return false;
-  }
+  const result = base64ToText(base64, options);
+  return result !== '';
 }
 
 // Common MIME type signatures for base64 detection
@@ -93,7 +90,7 @@ export function base64ToBlob(base64: string, mimeType?: string): Blob {
 
 export function downloadBase64AsFile(base64: string, filename: string, mimeType?: string) {
   if (!base64) {
-    throw new Error('Base64 string is empty');
+    return; // 直接返回，不执行下载
   }
 
   let finalBase64 = base64;
@@ -215,31 +212,27 @@ export function isImageMimeType(mimeType: string): boolean {
 }
 
 export function createImagePreviewFromBase64(base64: string): HTMLImageElement | null {
-  try {
-    if (!base64) {
-      throw new Error('Base64 string is empty');
-    }
-
-    const mimeType = getMimeTypeFromBase64(base64);
-    if (!mimeType || !isImageMimeType(mimeType)) {
-      return null;
-    }
-
-    const img = document.createElement('img');
-
-    // Ensure proper data URL format
-    if (base64.startsWith('data:')) {
-      img.src = base64;
-    } else {
-      img.src = `data:${mimeType};base64,${base64}`;
-    }
-
-    img.style.maxWidth = '100%';
-    img.style.maxHeight = '400px';
-    img.style.objectFit = 'contain';
-
-    return img;
-  } catch {
+  if (!base64) {
     return null;
   }
+
+  const mimeType = getMimeTypeFromBase64(base64);
+  if (!mimeType || !isImageMimeType(mimeType)) {
+    return null;
+  }
+
+  const img = document.createElement('img');
+
+  // Ensure proper data URL format
+  if (base64.startsWith('data:')) {
+    img.src = base64;
+  } else {
+    img.src = `data:${mimeType};base64,${base64}`;
+  }
+
+  img.style.maxWidth = '100%';
+  img.style.maxHeight = '400px';
+  img.style.objectFit = 'contain';
+
+  return img;
 }

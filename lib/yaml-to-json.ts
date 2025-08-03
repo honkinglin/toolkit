@@ -7,7 +7,7 @@ export function convertYamlToJson(yamlString: string): string {
     const obj = parseYaml(yamlString, { merge: true });
     return obj ? JSON.stringify(obj, null, 2) : '';
   } catch {
-    throw new Error('Invalid YAML format');
+    return '';
   }
 }
 

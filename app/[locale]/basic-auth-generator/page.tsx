@@ -13,11 +13,17 @@ import { useCopyWithTooltip } from '@/hooks/use-copy';
 
 // Base64 encoding function
 function textToBase64(text: string): string {
-  try {
-    return btoa(text);
-  } catch {
+  // btoa 在现代浏览器中几乎不会失败，除非输入包含无效字符
+  if (typeof btoa === 'undefined') {
     return '';
   }
+
+  // 简单检查是否包含无效字符（非 Latin1）
+  if (!/^[\x00-\xFF]*$/.test(text)) {
+    return '';
+  }
+
+  return btoa(text);
 }
 
 export default function BasicAuthGeneratorPage() {

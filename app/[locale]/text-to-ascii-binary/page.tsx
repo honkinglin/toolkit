@@ -29,13 +29,9 @@ export default function TextToAsciiBinaryPage() {
     return convertTextToAsciiBinary(inputText);
   }, [inputText]);
 
-  // Convert binary to text with error handling
+  // Convert binary to text
   const textFromBinary = useMemo(() => {
-    try {
-      return convertAsciiBinaryToText(inputBinary);
-    } catch {
-      return '';
-    }
+    return convertAsciiBinaryToText(inputBinary);
   }, [inputBinary]);
 
   // Validation for binary input
