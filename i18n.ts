@@ -1,5 +1,5 @@
-import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { getRequestConfig } from 'next-intl/server';
 
 const locales = ['en', 'zh'];
 
@@ -11,8 +11,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     notFound();
   }
 
+  const messages = (await import(`./locales/${locale}/index.ts`)).default;
+
   return {
-    locale: locale as string,
-    messages: (await import(`./locales/${locale}.json`)).default
+    locale,
+    messages,
   };
 });

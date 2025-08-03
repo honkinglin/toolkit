@@ -1,0 +1,92 @@
+{
+  "uuidsGenerator": {
+    "title": "UUIDs Generator",
+    "description": "A Universally Unique Identifier (UUID) is a 128-bit number used to identify information in computer systems. The number of possible UUIDs is 16^32, which is 2^128 or about 3.4x10^38 (which is a very large number!).",
+    "uuidVersion": "UUID Version",
+    "quantity": "Quantity",
+    "namespace": "Namespace",
+    "name": "Name",
+    "namespacePlaceholder": "Namespace",
+    "namePlaceholder": "Name",
+    "uuidPlaceholder": "Generated UUIDs",
+    "copy": "Copy",
+    "refresh": "Refresh",
+    "uuidsCopied": "UUIDs copied to clipboard",
+    "invalidUuid": "Invalid UUID"
+  },
+  "ulidGenerator": {
+    "title": "ULID Generator",
+    "description": "Generate random machine-readable Universally Unique Lexicographically Sortable Identifiers (ULID).",
+    "quantity": "Quantity:",
+    "format": "Format:",
+    "refresh": "Refresh",
+    "copy": "Copy",
+    "ulidsCopied": "ULIDs copied to clipboard"
+  },
+  "otpCodeGenerator": {
+    "title": "OTP Code Generator",
+    "description": "Generate time-based one-time passwords (OTP) for multi-factor authentication",
+    "secret": "Secret",
+    "secretPlaceholder": "Paste your TOTP secret...",
+    "secretValidation": "Secret should be base32 string",
+    "generateSecret": "Generate new random secret",
+    "previous": "Previous",
+    "currentOtp": "Current OTP",
+    "next": "Next",
+    "nextIn": "Next in",
+    "copied": "Copied!",
+    "copyPrevious": "Copy previous OTP",
+    "copyCurrent": "Copy current OTP",
+    "copyNext": "Copy next OTP",
+    "openKeyUri": "Open key URI in new tab",
+    "generatingQR": "Generating QR code...",
+    "technicalDetails": "Technical details",
+    "secretInHex": "Secret in hex",
+    "epoch": "Epoch",
+    "iteration": "Iteration",
+    "count": "Count",
+    "paddedHex": "Padded hex"
+  },
+  "qrCodeGenerator": {
+    "title": "QR Code generator",
+    "description": "Generate and download a QR code for a URL (or plaintext) and customize background and foreground colors.",
+    "textLabel": "Text:",
+    "textPlaceholder": "Your link or text...",
+    "foregroundColor": "Foreground color:",
+    "backgroundColor": "Background color:",
+    "errorCorrectionLevel": "Error correction level:",
+    "downloadButton": "Download QR code",
+    "noQrCode": "Enter text to generate QR code",
+    "errorLevels": {
+      "low": "Low (~7%)",
+      "medium": "Medium (~15%)",
+      "quartile": "Quartile (~25%)",
+      "high": "High (~30%)"
+    }
+  },
+  "wifiQrCodeGenerator": {
+    "title": "WiFi QR Code generator",
+    "description": "Generate a QR code for quick connection to a WiFi network.",
+    "encryptionMethod": "Encryption method:",
+    "ssid": "SSID:",
+    "ssidPlaceholder": "Your WiFi SSID...",
+    "hiddenSsid": "Hidden SSID",
+    "password": "Password:",
+    "passwordPlaceholder": "Your WiFi Password...",
+    "eapMethod": "EAP method:",
+    "eapIdentity": "Identity:",
+    "eapIdentityPlaceholder": "Your EAP Identity...",
+    "anonymous": "Anonymous?",
+    "eapPhase2Method": "EAP Phase 2 method:",
+    "foregroundColor": "Foreground color:",
+    "backgroundColor": "Background color:",
+    "downloadButton": "Download QR code",
+    "noQrCode": "Enter WiFi details to generate QR code",
+    "encryptionOptions": {
+      "nopass": "No password",
+      "wpa": "WPA/WPA2",
+      "wep": "WEP",
+      "wpa2eap": "WPA2-EAP"
+    }
+  }
+}

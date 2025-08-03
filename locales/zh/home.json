@@ -1,0 +1,226 @@
+{
+  "home": {
+    "title": "开发者工具集合",
+    "subtitle": "为开发者和技术人员提供的实用工具集合",
+    "description": "包含加密解密、数据转换、代码生成等多种实用工具",
+    "featuredTools": "特色工具",
+    "searchPlaceholder": "搜索工具...",
+    "allCategories": "全部",
+    "searchResults": "搜索结果",
+    "noToolsFound": "未找到匹配的工具",
+    "stats": {
+      "totalTools": "总工具数",
+      "categories": "工具分类",
+      "freeToUse": "免费使用",
+      "available": "随时可用"
+    },
+    "badges": {
+      "recommended": "推荐",
+      "addToFavorites": "添加收藏",
+      "removeFromFavorites": "取消收藏"
+    },
+    "categories": {
+      "crypto": "加密工具",
+      "generator": "生成器",
+      "converter": "转换器",
+      "format": "格式转换",
+      "web": "Web工具",
+      "utility": "实用工具",
+      "media": "媒体工具"
+    },
+    "tools": {
+      "token-generator": {
+        "title": "Token 生成器",
+        "description": "使用您想要的字符，大写或小写字母，数字和/或符号生成随机字符串。"
+      },
+      "hash-text": {
+        "title": "Hash 文本",
+        "description": "使用所需的函数哈希文本字符串：MD5、SHA1、SHA256、SHA224、SHA512..."
+      },
+      "bcrypt": {
+        "title": "Bcrypt",
+        "description": "使用bcrypt对文本字符串进行哈希和比较。Bcrypt是一个基于Blowfish密码的密码哈希函数..."
+      },
+      "uuids-generator": {
+        "title": "UUIDs 生成器",
+        "description": "通用唯一标识符（UUID）是一个128位数字，用于标识计算机系统中的信息。"
+      },
+      "ulid-generator": {
+        "title": "ULID 生成器",
+        "description": "生成随机的通用唯一一词典可排序标识符（ULID）"
+      },
+      "encrypt-decrypt-text": {
+        "title": "加密/解密文本",
+        "description": "使用加密算法（如AES、TripleDES、Rabbit或RC4）加密和解密文本明文。"
+      },
+      "bip39-passphrase-generator": {
+        "title": "BIP39密码生成器",
+        "description": "从现有或随机助记词生成BIP39密码短语，或从密码短语获取助记词。"
+      },
+      "hmac-generator": {
+        "title": "HMAC 生成器",
+        "description": "使用密钥和基于哈希的希希算法计算基于哈希的消息身份验证代码（HMAC）。"
+      },
+      "rsa-key-pair-generator": {
+        "title": "RSA密钥对生成器",
+        "description": "生成新的随机RSA私钥和公钥pem证书。"
+      },
+      "password-strength-analyzer": {
+        "title": "密码强度分析仪",
+        "description": "使用此密码强度分析器和破解时间估算工具来发现密码的强度。"
+      },
+      "keycode-info": {
+        "title": "键码信息",
+        "description": "通过按下键盘上的任意键来获取JavaScript键码和按键信息。"
+      },
+      "user-agent-parser": {
+        "title": "用户代理分析器",
+        "description": "解析和分析用户代理字符串，提取浏览器、引擎、操作系统、CPU和设备信息。"
+      },
+      "http-status-codes": {
+        "title": "HTTP状态码",
+        "description": "所有HTTP状态的列表对其含义和描述。"
+      },
+      "json-diff": {
+        "title": "JSON差异比较",
+        "description": "比较两个JSON对象并获取它们之间的差异。"
+      },
+      "base64-string-encode-decode": {
+        "title": "Base64字符串编码/解码",
+        "description": "编码和解码Base64字符串，支持标准和URL安全编码。"
+      },
+      "base64-file-converter": {
+        "title": "Base64文件转换器",
+        "description": "将文件转换为Base64编码字符串，并将Base64字符串解码回文件。"
+      },
+      "basic-auth-generator": {
+        "title": "基本认证生成器",
+        "description": "从用户名和密码生成HTTP基本认证头。"
+      },
+      "case-converter": {
+        "title": "大小写转换器",
+        "description": "在不同的大小写格式之间转换文本：驼峰命名、帕斯卡命名、蛇形命名、短横线命名等。"
+      },
+      "color-picker": {
+        "title": "颜色选择器",
+        "description": "选择颜色并在不同颜色格式之间转换：HEX、RGB、HSL、HSV。"
+      },
+      "date-time-converter": {
+        "title": "日期时间转换器",
+        "description": "在不同的日期和时间格式之间转换，包括Unix时间戳。"
+      },
+      "device-info": {
+        "title": "设备信息",
+        "description": "获取有关您的设备、浏览器、屏幕分辨率等信息。"
+      },
+      "html-entities": {
+        "title": "HTML实体",
+        "description": "编码和解码HTML实体以安全显示HTML中的特殊字符。"
+      },
+      "html-wysiwyg-editor": {
+        "title": "HTML可视化编辑器",
+        "description": "用于创建和编辑HTML内容的富文本编辑器，具有可视化界面。"
+      },
+      "integer-base-converter": {
+        "title": "整数进制转换器",
+        "description": "在不同进制之间转换数字：二进制、八进制、十进制、十六进制。"
+      },
+      "json-to-toml": {
+        "title": "JSON转TOML",
+        "description": "将JSON数据转换为TOML（Tom的明显、最小语言）格式。"
+      },
+      "json-to-xml": {
+        "title": "JSON转XML",
+        "description": "将JSON数据转换为具有适当结构和格式的XML格式。"
+      },
+      "json-to-yaml": {
+        "title": "JSON转YAML",
+        "description": "将JSON数据转换为具有适当缩进和结构的YAML格式。"
+      },
+      "jwt-parser": {
+        "title": "JWT解析器",
+        "description": "解析和解码JSON Web令牌（JWT）以查看头部、有效载荷和签名。"
+      },
+      "list-converter": {
+        "title": "列表转换器",
+        "description": "在不同的列表格式之间转换：数组、逗号分隔、换行分隔。"
+      },
+      "markdown-to-html": {
+        "title": "Markdown转HTML",
+        "description": "将Markdown文本转换为HTML，支持语法高亮和格式化。"
+      },
+      "mime-types": {
+        "title": "MIME类型",
+        "description": "查找文件扩展名的MIME类型以及MIME类型的文件扩展名。"
+      },
+      "open-graph-generator": {
+        "title": "开放图形生成器",
+        "description": "生成开放图形元标签以改善社交媒体分享和SEO。"
+      },
+      "otp-code-generator": {
+        "title": "OTP代码生成器",
+        "description": "生成基于时间的一次性密码（TOTP）代码用于双因素认证。"
+      },
+      "roman-numeral-converter": {
+        "title": "罗马数字转换器",
+        "description": "在阿拉伯数字和罗马数字之间转换。"
+      },
+      "text-to-ascii-binary": {
+        "title": "文本转ASCII二进制",
+        "description": "将文本转换为ASCII码和二进制表示。"
+      },
+      "text-to-nato-alphabet": {
+        "title": "文本转北约字母表",
+        "description": "将文本转换为北约语音字母表以进行清晰的通信。"
+      },
+      "text-to-unicode": {
+        "title": "文本转Unicode",
+        "description": "将文本转换为Unicode码点和转义序列。"
+      },
+      "toml-to-json": {
+        "title": "TOML转JSON",
+        "description": "将TOML（Tom的明显、最小语言）数据转换为JSON格式。"
+      },
+      "toml-to-yaml": {
+        "title": "TOML转YAML",
+        "description": "将TOML数据转换为具有适当结构的YAML格式。"
+      },
+      "url-encoder-decoder": {
+        "title": "URL编码器/解码器",
+        "description": "编码和解码URL和URL组件以安全传输。"
+      },
+      "url-parser": {
+        "title": "URL解析器",
+        "description": "解析URL并提取组件：协议、主机、路径、查询参数。"
+      },
+      "xml-to-json": {
+        "title": "XML转JSON",
+        "description": "将XML数据转换为具有适当结构保留的JSON格式。"
+      },
+      "yaml-to-json": {
+        "title": "YAML转JSON",
+        "description": "将YAML数据转换为JSON格式，具有验证和错误检查。"
+      },
+      "yaml-to-toml": {
+        "title": "YAML转TOML",
+        "description": "将YAML数据转换为具有适当语法转换的TOML格式。"
+      },
+      "qr-code-generator": {
+        "title": "二维码生成器",
+        "description": "为文本、URL和其他数据生成二维码，具有可自定义选项。"
+      },
+      "wifi-qr-code-generator": {
+        "title": "WiFi二维码生成器",
+        "description": "为WiFi网络凭据生成二维码，便于共享。"
+      },
+      "svg-placeholder-generator": {
+        "title": "SVG占位符生成器",
+        "description": "生成可自定义的SVG占位符图像，具有各种尺寸和颜色。"
+      },
+      "camera-recorder": {
+        "title": "摄像机记录器",
+        "description": "使用设备摄像头录制视频和拍摄照片。"
+      }
+    }
+  }
+}
