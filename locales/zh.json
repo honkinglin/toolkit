@@ -66,6 +66,10 @@
       "keycode-info": {
         "title": "键码信息",
         "description": "通过按下键盘上的任意键来获取JavaScript键码和按键信息。"
+      },
+      "user-agent-parser": {
+        "title": "用户代理分析器",
+        "description": "解析和分析用户代理字符串，提取浏览器、引擎、操作系统、CPU和设备信息。"
       }
     }
   },
@@ -700,5 +704,38 @@
   "htmlWysiwygEditor": {
     "title": "HTML所见即所得编辑器",
     "description": "在线HTML编辑器，具有富文本功能，可以可视化地创建和编辑HTML内容"
+  },
+  "userAgentParser": {
+    "title": "用户代理分析器",
+    "description": "解析和分析用户代理字符串，提取浏览器、引擎、操作系统、CPU和设备信息",
+    "userAgentStringLabel": "用户代理字符串",
+    "userAgentStringPlaceholder": "请在此输入您的用户代理字符串...",
+    "sections": {
+      "browser": "浏览器",
+      "engine": "引擎",
+      "os": "操作系统",
+      "device": "设备",
+      "cpu": "CPU"
+    },
+    "labels": {
+      "name": "名称",
+      "version": "版本",
+      "model": "型号",
+      "type": "类型",
+      "vendor": "供应商",
+      "architecture": "架构"
+    },
+    "fallbacks": {
+      "noBrowserName": "无浏览器名称信息",
+      "noBrowserVersion": "无浏览器版本信息",
+      "noEngineName": "无引擎名称信息",
+      "noEngineVersion": "无引擎版本信息",
+      "noOsName": "无操作系统名称信息",
+      "noOsVersion": "无操作系统版本信息",
+      "noDeviceModel": "无设备型号信息",
+      "noDeviceType": "无设备类型信息",
+      "noDeviceVendor": "无设备供应商信息",
+      "noCpuArchitecture": "无CPU架构信息"
+    }
   }
 }

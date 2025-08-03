@@ -66,6 +66,10 @@
       "keycode-info": {
         "title": "Keycode Info",
         "description": "Get javascript keycode and key information by pressing any key on the keyboard."
+      },
+      "user-agent-parser": {
+        "title": "User Agent Parser",
+        "description": "Parse and analyze user agent strings to extract browser, engine, OS, CPU and device information."
       }
     }
   },
@@ -700,5 +704,38 @@
   "htmlWysiwygEditor": {
     "title": "HTML WYSIWYG Editor",
     "description": "Online HTML editor with rich text features to create and edit HTML content visually"
+  },
+  "userAgentParser": {
+    "title": "User Agent Parser",
+    "description": "Parse and analyze user agent strings to extract browser, engine, OS, CPU and device information",
+    "userAgentStringLabel": "User agent string",
+    "userAgentStringPlaceholder": "Put your user-agent here...",
+    "sections": {
+      "browser": "Browser",
+      "engine": "Engine",
+      "os": "OS",
+      "device": "Device",
+      "cpu": "CPU"
+    },
+    "labels": {
+      "name": "Name",
+      "version": "Version",
+      "model": "Model",
+      "type": "Type",
+      "vendor": "Vendor",
+      "architecture": "Architecture"
+    },
+    "fallbacks": {
+      "noBrowserName": "No browser name available",
+      "noBrowserVersion": "No browser version available",
+      "noEngineName": "No engine name available",
+      "noEngineVersion": "No engine version available",
+      "noOsName": "No OS name available",
+      "noOsVersion": "No OS version available",
+      "noDeviceModel": "No device model available",
+      "noDeviceType": "No device type available",
+      "noDeviceVendor": "No device vendor available",
+      "noCpuArchitecture": "No CPU architecture available"
+    }
   }
 }
