@@ -25,5 +25,24 @@
       "success": "Copied to clipboard",
       "error": "Failed to copy"
     }
+  },
+  "jsonCompress": {
+    "title": "JSON Compress",
+    "description": "Compress JSON data by removing unnecessary whitespace",
+    "input": {
+      "title": "Your raw JSON",
+      "placeholder": "Paste your raw JSON here..."
+    },
+    "output": {
+      "title": "Minified version of your JSON",
+      "copy": "Copy"
+    },
+    "validation": {
+      "invalid": "Provided JSON is not valid."
+    },
+    "copy": {
+      "success": "Copied to clipboard",
+      "error": "Failed to copy"
+    }
   }
 }
