@@ -59,12 +59,6 @@
     "jsonCompress": "JSON压缩",
     "jsonToCsv": "JSON转CSV",
     "sqlBeautifyFormat": "SQL美化和格式化",
-    "chmodCalculator": "Chmod计算器",
-    "dockerRunToDockerCompose": "Docker Run到Docker Compose",
-    "xmlFormat": "XML格式化",
-    "yamlBeautifyFormat": "YAML美化和格式化",
-    "emailNormalizer": "Email标准化器",
-    "regexTester": "正则表达式测试器",
-    "regexCheatsheet": "正则表达式速查表"
+    "chmodCalculator": "Chmod计算器"
   }
 }
