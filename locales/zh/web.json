@@ -305,5 +305,21 @@
     "copyVendorInfo": "复制供应商信息",
     "copyTooltip": "复制供应商信息到剪贴板",
     "copySuccess": "供应商信息已复制！"
+  },
+  "macAddressGenerator": {
+    "title": "MAC地址生成器",
+    "description": "输入数量和前缀，MAC地址将以您选择的大小写（大写或小写）生成",
+    "configTitle": "配置",
+    "resultTitle": "生成的MAC地址",
+    "quantityLabel": "数量：",
+    "prefixLabel": "MAC地址前缀：",
+    "prefixPlaceholder": "设置前缀，例如 64:16:7F",
+    "invalidPrefix": "无效的MAC地址前缀格式",
+    "caseLabel": "大小写：",
+    "separatorLabel": "分隔符：",
+    "noValidPrefix": "输入有效的MAC地址前缀以生成地址",
+    "refreshButton": "刷新",
+    "copyButton": "复制",
+    "copySuccess": "MAC地址已复制到剪贴板！"
   }
 }
