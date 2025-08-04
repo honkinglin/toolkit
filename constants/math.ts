@@ -1,4 +1,4 @@
-import { Calculator, Clock, Percent } from 'lucide-react';
+import { Calculator, Clock } from 'lucide-react';
 
 import { NavGroup } from './routes';
 
@@ -6,7 +6,6 @@ import { NavGroup } from './routes';
 export const MATH_ROUTES = {
   MATH_EVALUATOR: '/math-evaluator',
   ETA_CALCULATOR: '/eta-calculator',
-  PERCENTAGE_CALCULATOR: '/percentage-calculator',
 } as const;
 
 // 数学工具导航配置
@@ -23,11 +22,6 @@ export const mathNavigationConfig: NavGroup = {
       titleKey: 'etaCalculator',
       url: MATH_ROUTES.ETA_CALCULATOR,
       icon: Clock,
-    },
-    {
-      titleKey: 'percentageCalculator',
-      url: MATH_ROUTES.PERCENTAGE_CALCULATOR,
-      icon: Percent,
     },
   ],
 };
