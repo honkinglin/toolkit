@@ -74,11 +74,7 @@
     "temperatureConverter": "Temperature Converter",
     "text": "Text",
     "textStatistics": "Text Statistics",
-    "emojiPicker": "Emoji Picker",
-    "stringObfuscator": "String Obfuscator",
     "textDiff": "Text Diff",
-    "numeronymGenerator": "Numeronym Generator",
-    "asciiTextDrawer": "ASCII Text Drawer",
     "data": "Data",
     "phoneParserFormatter": "Phone Parser & Formatter",
     "ibanValidatorParser": "IBAN Validator & Parser"

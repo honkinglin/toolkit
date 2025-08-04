@@ -235,5 +235,27 @@
     "outputPlaceholder": "您的Markdown的HTML表示将显示在这里",
     "copyButton": "复制HTML",
     "printButton": "打印为PDF"
+  },
+  "phoneParserFormatter": {
+    "title": "电话号码解析器/格式化器",
+    "description": "解析电话号码并提取有用信息，如国家、运营商、线路类型等。",
+    "defaultCountryCode": "默认国家代码",
+    "selectCountry": "选择国家",
+    "phoneNumber": "电话号码",
+    "phonePlaceholder": "+86 138 0013 8000",
+    "invalidPhoneNumber": "电话号码格式无效",
+    "unknown": "未知",
+    "details": {
+      "countryCode": "国家代码",
+      "country": "国家",
+      "countryCallingCode": "国家电话代码",
+      "isValid": "是否有效",
+      "isPossible": "是否可能",
+      "type": "类型",
+      "internationalFormat": "国际格式",
+      "nationalFormat": "国内格式",
+      "e164Format": "E.164格式",
+      "rfc3966Format": "RFC 3966格式"
+    }
   }
 }

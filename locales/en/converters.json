@@ -235,5 +235,27 @@
     "outputPlaceholder": "The HTML representation of your Markdown will appear here",
     "copyButton": "Copy HTML",
     "printButton": "Print to PDF"
+  },
+  "phoneParserFormatter": {
+    "title": "Phone Parser / Formatter",
+    "description": "Parse phone numbers and extract useful information like country, carrier, line type, etc.",
+    "defaultCountryCode": "Default country code",
+    "selectCountry": "Select country",
+    "phoneNumber": "Phone number",
+    "phonePlaceholder": "+1 202 555 0123",
+    "invalidPhoneNumber": "Invalid phone number format",
+    "unknown": "Unknown",
+    "details": {
+      "countryCode": "Country code",
+      "country": "Country",
+      "countryCallingCode": "Country calling code",
+      "isValid": "Is valid",
+      "isPossible": "Is possible",
+      "type": "Type",
+      "internationalFormat": "International format",
+      "nationalFormat": "National format",
+      "e164Format": "E.164 format",
+      "rfc3966Format": "RFC 3966 format"
+    }
   }
 }
