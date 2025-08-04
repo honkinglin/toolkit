@@ -5,11 +5,13 @@ import generators from './generators.json' with { type: 'json' };
 import converters from './converters.json' with { type: 'json' };
 import web from './web.json' with { type: 'json' };
 import developer from './developer.json' with { type: 'json' };
+import math from './math.json' with { type: 'json' };
 
 const translations = {
   ...home,
   ...sidebar,
   ...crypto,
+  ...math,
   ...generators,
   ...converters,
   ...web,
