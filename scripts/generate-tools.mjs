@@ -318,6 +318,89 @@ const toolsConfig = {
     category: 'format',
     featured: false,
   },
+
+  // 数学工具
+  'math-evaluator': {
+    icon: 'Calculator',
+    category: 'math',
+    featured: false,
+  },
+  'eta-calculator': {
+    icon: 'Clock',
+    category: 'math',
+    featured: false,
+  },
+  'percentage-calculator': {
+    icon: 'Percent',
+    category: 'math',
+    featured: false,
+  },
+
+  // 测量工具
+  chronometer: {
+    icon: 'Timer',
+    category: 'measurement',
+    featured: false,
+  },
+  'temperature-converter': {
+    icon: 'Thermometer',
+    category: 'measurement',
+    featured: false,
+  },
+  'benchmark-builder': {
+    icon: 'Target',
+    category: 'measurement',
+    featured: false,
+  },
+
+  // 文本工具
+  'lorem-ipsum-generator': {
+    icon: 'FileText',
+    category: 'text',
+    featured: false,
+  },
+  'text-statistics': {
+    icon: 'Hash',
+    category: 'text',
+    featured: false,
+  },
+  'emoji-picker': {
+    icon: 'Smile',
+    category: 'text',
+    featured: false,
+  },
+  'string-obfuscator': {
+    icon: 'Eraser',
+    category: 'text',
+    featured: false,
+  },
+  'text-diff': {
+    icon: 'GitCompare',
+    category: 'text',
+    featured: false,
+  },
+  'numeronym-generator': {
+    icon: 'Hash',
+    category: 'text',
+    featured: false,
+  },
+  'ascii-text-drawer': {
+    icon: 'Palette',
+    category: 'text',
+    featured: false,
+  },
+
+  // 数据工具
+  'phone-parser-formatter': {
+    icon: 'Phone',
+    category: 'data',
+    featured: false,
+  },
+  'iban-validator-parser': {
+    icon: 'CreditCard',
+    category: 'data',
+    featured: false,
+  },
 };
 
 // 扫描已实现的工具

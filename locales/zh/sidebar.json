@@ -65,6 +65,25 @@
     "jsonCompress": "JSON压缩",
     "jsonToCsv": "JSON转CSV",
     "sqlBeautifyFormat": "SQL美化和格式化",
-    "chmodCalculator": "Chmod计算器"
+    "chmodCalculator": "Chmod计算器",
+    "math": "数学",
+    "mathEvaluator": "数学计算器",
+    "etaCalculator": "ETA计算器",
+    "percentageCalculator": "百分比计算器",
+    "measurement": "测量",
+    "chronometer": "计时器",
+    "temperatureConverter": "温度转换器",
+    "benchmarkBuilder": "基准生成器",
+    "text": "文本",
+    "loremIpsumGenerator": "Lorem ipsum生成器",
+    "textStatistics": "文本统计",
+    "emojiPicker": "Emoji选择器",
+    "stringObfuscator": "字符串清洁器",
+    "textDiff": "文本比较",
+    "numeronymGenerator": "数字名称生成器",
+    "asciiTextDrawer": "ASCII Art文本生成器",
+    "data": "数据",
+    "phoneParserFormatter": "电话分析器和格式化程序",
+    "ibanValidatorParser": "IBAN验证器和解析器"
   }
 }

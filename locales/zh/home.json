@@ -27,7 +27,11 @@
       "web": "Web工具",
       "utility": "实用工具",
       "media": "媒体工具",
-      "network": "网络工具"
+      "network": "网络工具",
+      "math": "数学工具",
+      "measurement": "测量工具",
+      "text": "文本工具",
+      "data": "数据工具"
     },
     "tools": {
       "token-generator": {
@@ -269,6 +273,66 @@
       "sql-beautify-format": {
         "title": "SQL美化格式化",
         "description": "格式化和美化SQL查询，提供正确的缩进和语法高亮。"
+      },
+      "math-evaluator": {
+        "title": "数学计算器",
+        "description": "计算复杂的数学表达式，支持各种数学函数和运算。"
+      },
+      "eta-calculator": {
+        "title": "ETA计算器",
+        "description": "基于当前进度和速度计算预计到达时间或完成时间。"
+      },
+      "percentage-calculator": {
+        "title": "百分比计算器",
+        "description": "计算百分比、百分比变化和比例关系的工具。"
+      },
+      "chronometer": {
+        "title": "计时器",
+        "description": "精确的秒表和计时器工具，支持多个计时器同时运行。"
+      },
+      "temperature-converter": {
+        "title": "温度转换器",
+        "description": "在摄氏度、华氏度、开尔文等温度单位之间进行转换。"
+      },
+      "benchmark-builder": {
+        "title": "基准生成器",
+        "description": "创建和管理性能基准测试，用于比较不同系统或算法的性能。"
+      },
+      "lorem-ipsum-generator": {
+        "title": "Lorem ipsum生成器",
+        "description": "生成Lorem ipsum占位符文本，支持自定义长度和格式。"
+      },
+      "text-statistics": {
+        "title": "文本统计",
+        "description": "分析文本内容，提供字符数、单词数、行数等详细统计信息。"
+      },
+      "emoji-picker": {
+        "title": "Emoji选择器",
+        "description": "浏览和选择Emoji表情符号，支持分类查找和复制功能。"
+      },
+      "string-obfuscator": {
+        "title": "字符串清洁器",
+        "description": "清洁和处理文本字符串，去除特殊字符或进行格式化。"
+      },
+      "text-diff": {
+        "title": "文本比较",
+        "description": "比较两个文本文件或字符串的差异，显示详细的变更信息。"
+      },
+      "numeronym-generator": {
+        "title": "数字名称生成器",
+        "description": "将长单词转换为数字缩写形式（如internationalization → i18n）。"
+      },
+      "ascii-text-drawer": {
+        "title": "ASCII Art文本生成器",
+        "description": "将普通文本转换为ASCII艺术字体，支持多种字体样式。"
+      },
+      "phone-parser-formatter": {
+        "title": "电话分析器和格式化程序",
+        "description": "解析和格式化电话号码，支持国际号码格式验证。"
+      },
+      "iban-validator-parser": {
+        "title": "IBAN验证器和解析器",
+        "description": "验证和解析国际银行账户号码（IBAN），提供详细信息。"
       }
     }
   }

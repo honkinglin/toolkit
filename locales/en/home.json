@@ -27,7 +27,11 @@
       "web": "Web Tools",
       "utility": "Utilities",
       "media": "Media & Graphics",
-      "network": "Network Tools"
+      "network": "Network Tools",
+      "math": "Math Tools",
+      "measurement": "Measurement Tools",
+      "text": "Text Tools",
+      "data": "Data Tools"
     },
     "tools": {
       "token-generator": {
@@ -269,6 +273,66 @@
       "sql-beautify-format": {
         "title": "SQL Beautify & Format",
         "description": "Format and beautify SQL queries with proper indentation and syntax highlighting."
+      },
+      "math-evaluator": {
+        "title": "Math Evaluator",
+        "description": "Calculate complex mathematical expressions with support for various functions and operations."
+      },
+      "eta-calculator": {
+        "title": "ETA Calculator",
+        "description": "Calculate estimated time of arrival or completion based on current progress and speed."
+      },
+      "percentage-calculator": {
+        "title": "Percentage Calculator",
+        "description": "Calculate percentages, percentage changes, and proportional relationships."
+      },
+      "chronometer": {
+        "title": "Chronometer",
+        "description": "Precise stopwatch and timer tool with support for multiple concurrent timers."
+      },
+      "temperature-converter": {
+        "title": "Temperature Converter",
+        "description": "Convert between temperature units including Celsius, Fahrenheit, and Kelvin."
+      },
+      "benchmark-builder": {
+        "title": "Benchmark Builder",
+        "description": "Create and manage performance benchmarks for comparing system or algorithm performance."
+      },
+      "lorem-ipsum-generator": {
+        "title": "Lorem Ipsum Generator",
+        "description": "Generate Lorem ipsum placeholder text with customizable length and formatting."
+      },
+      "text-statistics": {
+        "title": "Text Statistics",
+        "description": "Analyze text content with detailed statistics including character, word, and line counts."
+      },
+      "emoji-picker": {
+        "title": "Emoji Picker",
+        "description": "Browse and select emoji symbols with category search and copy functionality."
+      },
+      "string-obfuscator": {
+        "title": "String Obfuscator",
+        "description": "Clean and process text strings by removing special characters or applying formatting."
+      },
+      "text-diff": {
+        "title": "Text Diff",
+        "description": "Compare two text files or strings to show detailed differences and changes."
+      },
+      "numeronym-generator": {
+        "title": "Numeronym Generator",
+        "description": "Convert long words to numbered abbreviations (like internationalization → i18n)."
+      },
+      "ascii-text-drawer": {
+        "title": "ASCII Text Drawer",
+        "description": "Convert plain text to ASCII art fonts with support for multiple font styles."
+      },
+      "phone-parser-formatter": {
+        "title": "Phone Parser & Formatter",
+        "description": "Parse and format phone numbers with international number format validation."
+      },
+      "iban-validator-parser": {
+        "title": "IBAN Validator & Parser",
+        "description": "Validate and parse International Bank Account Numbers (IBAN) with detailed information."
       }
     }
   }

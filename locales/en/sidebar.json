@@ -65,6 +65,25 @@
     "jsonCompress": "JSON Compress",
     "jsonToCsv": "JSON to CSV",
     "sqlBeautifyFormat": "SQL Beautify & Format",
-    "chmodCalculator": "Chmod Calculator"
+    "chmodCalculator": "Chmod Calculator",
+    "math": "Math",
+    "mathEvaluator": "Math Evaluator",
+    "etaCalculator": "ETA Calculator",
+    "percentageCalculator": "Percentage Calculator",
+    "measurement": "Measurement",
+    "chronometer": "Chronometer",
+    "temperatureConverter": "Temperature Converter",
+    "benchmarkBuilder": "Benchmark Builder",
+    "text": "Text",
+    "loremIpsumGenerator": "Lorem Ipsum Generator",
+    "textStatistics": "Text Statistics",
+    "emojiPicker": "Emoji Picker",
+    "stringObfuscator": "String Obfuscator",
+    "textDiff": "Text Diff",
+    "numeronymGenerator": "Numeronym Generator",
+    "asciiTextDrawer": "ASCII Text Drawer",
+    "data": "Data",
+    "phoneParserFormatter": "Phone Parser & Formatter",
+    "ibanValidatorParser": "IBAN Validator & Parser"
   }
 }
