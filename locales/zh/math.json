@@ -22,10 +22,6 @@
       "minutes": "分钟",
       "hours": "小时",
       "days": "天"
-    },
-    "percentageCalculator": {
-      "title": "百分比计算器",
-      "description": "计算百分比、百分比变化和比例关系的工具。"
     }
   }
 }

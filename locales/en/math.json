@@ -22,10 +22,6 @@
       "minutes": "minutes",
       "hours": "hours",
       "days": "days"
-    },
-    "percentageCalculator": {
-      "title": "Percentage Calculator",
-      "description": "Calculate percentages, percentage changes, and proportional relationships."
     }
   }
 }

@@ -1,0 +1,11 @@
+{
+  "measurement": {
+    "chronometer": {
+      "title": "Chronometer",
+      "description": "Monitor the duration of events. Essentially a tool with simple time-measuring functionality.",
+      "start": "Start",
+      "stop": "Stop",
+      "reset": "Reset"
+    }
+  }
+}
