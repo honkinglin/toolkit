@@ -1,0 +1,18 @@
+{
+  "math": {
+    "mathEvaluator": {
+      "title": "数学计算器",
+      "description": "计算数学表达式的计算器，您可以使用sqrt、cos、sin、abs等函数。",
+      "placeholder": "您的数学表达式 (例如: 2*sqrt(6) )...",
+      "resultTitle": "计算结果"
+    },
+    "etaCalculator": {
+      "title": "ETA计算器",
+      "description": "基于当前进度和速度计算预计到达时间或完成时间。"
+    },
+    "percentageCalculator": {
+      "title": "百分比计算器",
+      "description": "计算百分比、百分比变化和比例关系的工具。"
+    }
+  }
+}

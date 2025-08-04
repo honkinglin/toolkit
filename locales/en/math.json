@@ -1,0 +1,18 @@
+{
+  "math": {
+    "mathEvaluator": {
+      "title": "Math Evaluator",
+      "description": "Calculate complex mathematical expressions. You can use functions like sqrt, cos, sin, abs, etc.",
+      "placeholder": "Your math expression (ex: 2*sqrt(6) )...",
+      "resultTitle": "Result"
+    },
+    "etaCalculator": {
+      "title": "ETA Calculator",
+      "description": "Calculate estimated time of arrival or completion based on current progress and speed."
+    },
+    "percentageCalculator": {
+      "title": "Percentage Calculator",
+      "description": "Calculate percentages, percentage changes, and proportional relationships."
+    }
+  }
+}

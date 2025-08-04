@@ -50,6 +50,7 @@
     "lodash": "^4.17.21",
     "lucide-react": "^0.535.0",
     "markdown-it": "^14.1.0",
+    "mathjs": "^14.6.0",
     "mime-db": "^1.54.0",
     "mime-types": "^3.0.1",
     "netmask": "^2.0.2",
