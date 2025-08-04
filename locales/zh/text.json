@@ -1,0 +1,13 @@
+{
+  "text": {
+    "textStatistics": {
+      "title": "文本统计",
+      "description": "获取有关文本、字符数、字数、大小等的信息",
+      "placeholder": "您的文本...",
+      "characterCount": "字符数",
+      "wordCount": "字数",
+      "lineCount": "行数",
+      "byteSize": "字节大小"
+    }
+  }
+}

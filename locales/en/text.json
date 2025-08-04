@@ -1,0 +1,13 @@
+{
+  "text": {
+    "textStatistics": {
+      "title": "Text Statistics",
+      "description": "Get statistics about your text: character count, word count, line count, and byte size.",
+      "placeholder": "Your text...",
+      "characterCount": "Character count",
+      "wordCount": "Word count",
+      "lineCount": "Line count",
+      "byteSize": "Byte size"
+    }
+  }
+}
