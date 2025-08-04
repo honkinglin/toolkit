@@ -5,6 +5,10 @@ import { CONVERTER_ROUTES, converterNavigationConfig } from './converter';
 import { WEB_ROUTES, webNavigationConfig } from './web';
 import { MEDIA_ROUTES, mediaNavigationConfig } from './media';
 import { DEVELOPER_ROUTES, developerNavigationConfig } from './developer';
+import { MATH_ROUTES, mathNavigationConfig } from './math';
+import { MEASUREMENT_ROUTES, measurementNavigationConfig } from './measurement';
+import { TEXT_ROUTES, textNavigationConfig } from './text';
+import { DATA_ROUTES, dataNavigationConfig } from './data';
 
 // 路由路径常量
 export const ROUTES = {
@@ -13,6 +17,10 @@ export const ROUTES = {
   WEB: WEB_ROUTES,
   MEDIA: MEDIA_ROUTES,
   DEVELOPER: DEVELOPER_ROUTES,
+  MATH: MATH_ROUTES,
+  MEASUREMENT: MEASUREMENT_ROUTES,
+  TEXT: TEXT_ROUTES,
+  DATA: DATA_ROUTES,
 } as const;
 
 // 路由配置类型
@@ -37,6 +45,10 @@ export const navigationConfig: NavGroup[] = [
   { ...webNavigationConfig },
   { ...mediaNavigationConfig },
   { ...developerNavigationConfig },
+  { ...mathNavigationConfig },
+  { ...measurementNavigationConfig },
+  { ...textNavigationConfig },
+  { ...dataNavigationConfig },
 ];
 
 // 其他工具函数保持不变...
