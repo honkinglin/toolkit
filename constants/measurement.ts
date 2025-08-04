@@ -1,4 +1,4 @@
-import { Timer, Thermometer, Target } from 'lucide-react';
+import { Timer, Thermometer } from 'lucide-react';
 
 import { NavGroup } from './routes';
 
@@ -6,7 +6,6 @@ import { NavGroup } from './routes';
 export const MEASUREMENT_ROUTES = {
   CHRONOMETER: '/chronometer',
   TEMPERATURE_CONVERTER: '/temperature-converter',
-  BENCHMARK_BUILDER: '/benchmark-builder',
 } as const;
 
 // 测量工具导航配置
@@ -23,11 +22,6 @@ export const measurementNavigationConfig: NavGroup = {
       titleKey: 'temperatureConverter',
       url: MEASUREMENT_ROUTES.TEMPERATURE_CONVERTER,
       icon: Thermometer,
-    },
-    {
-      titleKey: 'benchmarkBuilder',
-      url: MEASUREMENT_ROUTES.BENCHMARK_BUILDER,
-      icon: Target,
     },
   ],
 };

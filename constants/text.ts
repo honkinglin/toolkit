@@ -1,10 +1,9 @@
-import { Type, FileText, Smile, Eraser, GitCompare, Hash, Palette } from 'lucide-react';
+import { Type, Smile, Eraser, GitCompare, Hash, Palette } from 'lucide-react';
 
 import { NavGroup } from './routes';
 
 // 文本工具路由常量
 export const TEXT_ROUTES = {
-  LOREM_IPSUM_GENERATOR: '/lorem-ipsum-generator',
   TEXT_STATISTICS: '/text-statistics',
   EMOJI_PICKER: '/emoji-picker',
   STRING_OBFUSCATOR: '/string-obfuscator',
@@ -18,11 +17,6 @@ export const textNavigationConfig: NavGroup = {
   titleKey: 'text',
   icon: Type,
   items: [
-    {
-      titleKey: 'loremIpsumGenerator',
-      url: TEXT_ROUTES.LOREM_IPSUM_GENERATOR,
-      icon: FileText,
-    },
     {
       titleKey: 'textStatistics',
       url: TEXT_ROUTES.TEXT_STATISTICS,

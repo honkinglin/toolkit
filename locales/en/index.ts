@@ -7,6 +7,7 @@ import web from './web.json' with { type: 'json' };
 import developer from './developer.json' with { type: 'json' };
 import math from './math.json' with { type: 'json' };
 import measurement from './measurement.json' with { type: 'json' };
+import text from './text.json' with { type: 'json' };
 
 const en = {
   ...home,
@@ -18,6 +19,7 @@ const en = {
   ...developer,
   ...math,
   ...measurement,
+  ...text,
 };
 
 export default en;
