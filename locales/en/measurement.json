@@ -6,6 +6,20 @@
       "start": "Start",
       "stop": "Stop",
       "reset": "Reset"
+    },
+    "temperatureConverter": {
+      "title": "Temperature Converter",
+      "description": "Convert temperatures between Kelvin, Celsius, Fahrenheit, Rankine, Delisle, Newton, Réaumur and Rømer.",
+      "scales": {
+        "kelvin": "Kelvin",
+        "celsius": "Celsius",
+        "fahrenheit": "Fahrenheit",
+        "rankine": "Rankine",
+        "delisle": "Delisle",
+        "newton": "Newton",
+        "reaumur": "Réaumur",
+        "romer": "Rømer"
+      }
     }
   }
 }
