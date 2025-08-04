@@ -257,5 +257,24 @@
       "e164Format": "E.164格式",
       "rfc3966Format": "RFC 3966格式"
     }
+  },
+  "ibanValidatorParser": {
+    "title": "IBAN验证器和解析器",
+    "description": "验证和分析IBAN号码，检查IBAN是否有效，如果它是QR-IBAN和IBAN友好格式。",
+    "inputLabel": "IBAN号码",
+    "inputPlaceholder": "输入IBAN号码以检查有效性...",
+    "detailsTitle": "IBAN详细信息",
+    "examplesTitle": "有效的IBAN示例",
+    "unknown": "未知",
+    "yes": "是",
+    "no": "否",
+    "details": {
+      "isValid": "IBAN是否有效？",
+      "errors": "IBAN错误",
+      "isQRIBAN": "是否为QR-IBAN？",
+      "countryCode": "国家代码",
+      "bban": "BBAN",
+      "friendlyFormat": "IBAN友好格式"
+    }
   }
 }

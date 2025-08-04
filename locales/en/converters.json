@@ -257,5 +257,24 @@
       "e164Format": "E.164 format",
       "rfc3966Format": "RFC 3966 format"
     }
+  },
+  "ibanValidatorParser": {
+    "title": "IBAN Validator and Parser",
+    "description": "Validate and parse IBAN numbers, check if IBAN is valid, and extract useful information like country code, BBAN, QR-IBAN status.",
+    "inputLabel": "IBAN Number",
+    "inputPlaceholder": "Enter an IBAN to check for validity...",
+    "detailsTitle": "IBAN Details",
+    "examplesTitle": "Valid IBAN Examples",
+    "unknown": "Unknown",
+    "yes": "Yes",
+    "no": "No",
+    "details": {
+      "isValid": "Is IBAN valid?",
+      "errors": "IBAN errors",
+      "isQRIBAN": "Is IBAN a QR-IBAN?",
+      "countryCode": "Country code",
+      "bban": "BBAN",
+      "friendlyFormat": "IBAN friendly format"
+    }
   }
 }
