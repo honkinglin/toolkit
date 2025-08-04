@@ -7,6 +7,7 @@ import {
   QrCode,
   Type,
   Calculator,
+  Timer,
   Palette,
   Clock,
   Smartphone,
@@ -16,6 +17,7 @@ import {
   Code,
   Edit,
   Globe,
+  CreditCard,
   Network,
   Expand,
   Archive,
@@ -31,10 +33,12 @@ import {
   FileDown,
   FileType,
   Target,
+  Phone,
   Crown,
   Key,
   Database,
   Image,
+  Thermometer,
   Radio,
   Languages,
   Snowflake,
@@ -105,6 +109,13 @@ export const implementedTools: Tool[] = [
     href: "/chmod-calculator"
   },
   {
+    id: "chronometer",
+    icon: Timer,
+    category: "measurement",
+    featured: false,
+    href: "/chronometer"
+  },
+  {
     id: "color-picker",
     icon: Palette,
     category: "utility",
@@ -140,6 +151,13 @@ export const implementedTools: Tool[] = [
     href: "/encrypt-decrypt-text"
   },
   {
+    id: "eta-calculator",
+    icon: Clock,
+    category: "math",
+    featured: false,
+    href: "/eta-calculator"
+  },
+  {
     id: "hash-text",
     icon: Hash,
     category: "crypto",
@@ -173,6 +191,13 @@ export const implementedTools: Tool[] = [
     category: "web",
     featured: false,
     href: "/http-status-codes"
+  },
+  {
+    id: "iban-validator-parser",
+    icon: CreditCard,
+    category: "data",
+    featured: false,
+    href: "/iban-validator-parser"
   },
   {
     id: "integer-base-converter",
@@ -301,6 +326,13 @@ export const implementedTools: Tool[] = [
     href: "/markdown-to-html"
   },
   {
+    id: "math-evaluator",
+    icon: Calculator,
+    category: "math",
+    featured: false,
+    href: "/math-evaluator"
+  },
+  {
     id: "mime-types",
     icon: FileType,
     category: "web",
@@ -327,6 +359,13 @@ export const implementedTools: Tool[] = [
     category: "generator",
     featured: false,
     href: "/password-strength-analyzer"
+  },
+  {
+    id: "phone-parser-formatter",
+    icon: Phone,
+    category: "data",
+    featured: false,
+    href: "/phone-parser-formatter"
   },
   {
     id: "qr-code-generator",
@@ -362,6 +401,20 @@ export const implementedTools: Tool[] = [
     category: "utility",
     featured: false,
     href: "/svg-placeholder-generator"
+  },
+  {
+    id: "temperature-converter",
+    icon: Thermometer,
+    category: "measurement",
+    featured: false,
+    href: "/temperature-converter"
+  },
+  {
+    id: "text-statistics",
+    icon: Hash,
+    category: "text",
+    featured: false,
+    href: "/text-statistics"
   },
   {
     id: "text-to-ascii-binary",
