@@ -36,7 +36,9 @@ export function ToolLayout({
     >
       <div className="tool-layout-header text-center relative w-full">
         <h2 className="text-4xl font-bold">{title}</h2>
-        <p className="text-lg text-gray-500 pt-4">{description}</p>
+        <p className="text-lg text-gray-500 pt-4" suppressHydrationWarning>
+          {description}
+        </p>
 
         {/* 收藏按钮 - 右上角 */}
         <Button

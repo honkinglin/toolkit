@@ -8,7 +8,20 @@
     },
     "etaCalculator": {
       "title": "ETA计算器",
-      "description": "基于当前进度和速度计算预计到达时间或完成时间。"
+      "description": "基于当前进度和速度计算预计到达时间或完成时间。",
+      "example": "举个具体例子，如果您3分钟洗5个盘子，而您有500个盘子要洗，那么洗完所有盘子需要5小时。",
+      "amountLabel": "待消费元素数量",
+      "startedAtLabel": "消费开始时间",
+      "selectDate": "选择日期",
+      "consumptionRateLabel": "时间跨度内消费的单位数量",
+      "in": "在",
+      "totalDuration": "总时长",
+      "willEnd": "预计结束",
+      "milliseconds": "毫秒",
+      "seconds": "秒",
+      "minutes": "分钟",
+      "hours": "小时",
+      "days": "天"
     },
     "percentageCalculator": {
       "title": "百分比计算器",
