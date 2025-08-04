@@ -8,7 +8,20 @@
     },
     "etaCalculator": {
       "title": "ETA Calculator",
-      "description": "Calculate estimated time of arrival or completion based on current progress and speed."
+      "description": "Calculate estimated time of arrival or completion based on current progress and speed.",
+      "example": "With a concrete example, if you wash 5 plates in 3 minutes and you have 500 plates to wash, it will take you 5 hours to wash them all.",
+      "amountLabel": "Amount of element to consume",
+      "startedAtLabel": "The consumption started at",
+      "selectDate": "Select date",
+      "consumptionRateLabel": "Amount of unit consumed by time span",
+      "in": "in",
+      "totalDuration": "Total duration",
+      "willEnd": "It will end",
+      "milliseconds": "milliseconds",
+      "seconds": "seconds",
+      "minutes": "minutes",
+      "hours": "hours",
+      "days": "days"
     },
     "percentageCalculator": {
       "title": "Percentage Calculator",
